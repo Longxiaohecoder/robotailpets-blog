@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd blog && npm install && npm run build",
+  "outputDirectory": "blog/dist",
+  "installCommand": "npm install && cd blog && npm install",
+  "devCommand": "cd blog && npm run dev",
+  "framework": "astro"
+}
