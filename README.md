@@ -1,300 +1,263 @@
-# 🤖 自动化博客系统
+# 🤖 robotailpets 自动化博客营销系统
 
-一个完全自主可控的 AI 驱动内容营销自动化系统。
+**一个完整的 AI 驱动内容营销自动化系统**，专为 robotailpets 品牌打造。
 
-## ✨ 特性
+自动生成 SEO 优化文章 → 自动部署到公网 → 定期发布 → Google 索引 → 提升品牌知名度
 
-- ✅ **AI 自动生成**：使用 Claude AI 自动生成高质量博客文章
-- ✅ **SEO 优化**：自动生成元标签、关键词优化
-- ✅ **完全可控**：所有数据和代码都在你本地，无需第三方账号
-- ✅ **现代化界面**：基于 Astro 的快速响应式博客
-- ✅ **易于部署**：支持 Vercel、Netlify 等平台一键部署
-- ✅ **定时发布**：支持 GitHub Actions 定时自动生成内容
+---
+
+## ✨ 核心功能
+
+✅ **AI 自动生成高质量文章**
+- 使用 Claude Opus 生成 2000+ 字深度文章
+- 自动包含 5-8 张图片（带 SEO 优化的 alt 文本）
+- 智能选择热门主题和关键词
+
+✅ **完整 SEO 优化**
+- 关键词优化（robotailpets、智能宠物、AI 宠物玩具等）
+- 内链策略（文章互链）
+- 外链布局（链接到官网和亚马逊店铺）
+- 站点地图自动生成
+
+✅ **全自动化发布**
+- GitHub Actions 定时生成（每天北京时间 9:00）
+- 自动提交到 GitHub
+- Vercel 自动检测并部署到公网
+- 零人工干预
+
+✅ **公网访问 + Google 索引**
+- 部署到 Vercel（免费 SSL + CDN）
+- 提交站点地图到 Google Search Console
+- 自然搜索流量持续增长
+
+---
+
+## 🚀 5 分钟快速部署
+
+### 步骤 1：推送到 GitHub
+
+```bash
+# 已经初始化完成，只需推送到你的 GitHub 仓库
+
+# 1. 在 GitHub 创建新仓库：https://github.com/new
+#    仓库名：robotailpets-blog
+#    设置为 Public
+
+# 2. 添加远程仓库（替换 YOUR_USERNAME）
+git remote add origin https://github.com/YOUR_USERNAME/robotailpets-blog.git
+
+# 3. 推送代码
+git push -u origin main
+```
+
+### 步骤 2：部署到 Vercel
+
+1. 访问 [https://vercel.com](https://vercel.com) 并用 GitHub 登录
+2. 点击 "Add New..." → "Project"
+3. 导入 `robotailpets-blog` 仓库
+4. 配置构建设置：
+   - **Framework**: Astro
+   - **Build Command**: `cd blog && npm install && npm run build`
+   - **Output Directory**: `blog/dist`
+5. 添加环境变量：
+   - `ANTHROPIC_API_KEY`: `sk-uiixTH8ZRaGf2EYvlaxH5WWTkpxsio3B7FON3k8bnSdlFFDx`
+   - `ANTHROPIC_BASE_URL`: `https://heyroute.ai`
+6. 点击 "Deploy" 等待 2-3 分钟
+
+✅ **完成！** 你会获得公网地址：`https://robotailpets-blog-xxx.vercel.app`
+
+### 步骤 3：配置自动发布
+
+1. 在 GitHub 仓库添加 Secrets：
+   - 访问：`Settings` → `Secrets and variables` → `Actions`
+   - 添加 `ANTHROPIC_API_KEY`
+   
+2. 添加 Variables：
+   - `ANTHROPIC_BASE_URL`: `https://heyroute.ai`
+   - `POSTS_PER_RUN`: `1`
+
+3. 启用 GitHub Actions：
+   - 访问 `Actions` 标签页
+   - 点击启用 workflows
+
+✅ **完成！** 系统每天自动生成并发布新文章
+
+---
+
+## 📊 系统架构
+
+```
+┌─────────────────────────────────────────────────┐
+│  GitHub Actions (定时触发)                        │
+│  • 每天北京时间 9:00 自动运行                      │
+│  • 调用 Claude API 生成新文章                     │
+│  • 自动提交到 GitHub                              │
+└────────────────┬────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────────────────────┐
+│  GitHub Repository                               │
+│  • 存储所有文章（Markdown 格式）                  │
+│  • 触发 Vercel 自动部署                          │
+└────────────────┬────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────────────────────┐
+│  Vercel (公网托管)                               │
+│  • 自动构建 Astro 静态站点                       │
+│  • SSL 证书 + 全球 CDN                          │
+│  • 公网访问：robotailpets-blog.vercel.app       │
+└────────────────┬────────────────────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────────────────────┐
+│  Google Search Console                           │
+│  • 提交站点地图                                  │
+│  • Google 爬虫索引                               │
+│  • 用户搜索"robotailpets"可以看到文章            │
+└─────────────────────────────────────────────────┘
+```
+
+---
 
 ## 📁 项目结构
 
 ```
 auto-blog-system/
-├── scripts/
-│   ├── generate-content.js  # 内容生成脚本
-│   └── setup.js            # 配置向导
-├── blog/
+├── blog/                          # Astro 博客
 │   ├── src/
-│   │   ├── content/posts/  # 文章存储目录
-│   │   ├── pages/          # 页面
-│   │   └── layouts/        # 布局模板
-│   └── public/             # 静态资源
-├── package.json
-└── .env                    # 配置文件（需要创建）
+│   │   ├── content/posts/         # 文章存储目录
+│   │   ├── layouts/               # 页面布局
+│   │   └── pages/                 # 路由页面
+│   ├── public/                    # 静态资源
+│   └── astro.config.mjs           # Astro 配置
+├── scripts/
+│   ├── generate-enhanced-content.js  # 增强版内容生成（带图片）
+│   ├── generate-brand-content.js     # 品牌推荐文章生成
+│   └── test-api.js                   # API 测试脚本
+├── .github/workflows/
+│   └── auto-publish.yml           # GitHub Actions 自动化配置
+├── VERCEL_DEPLOY.md               # 详细部署指南
+└── DEPLOY_GUIDE.md                # 完整部署和优化指南
 ```
 
-## 🚀 快速开始
+---
 
-### 1. 安装依赖
+## 🎯 已生成文章示例
+
+✅ **2026-09-22-robotailpets.md**
+- 标题：如何用科技提升宠物生活质量？robotailpets智能宠物产品完整指南
+- 字数：2000+
+- 图片：7 张（带描述性 alt 文本）
+- 关键词：智能宠物、robotailpets、AI宠物玩具、自动喂食器
+- 内链：4 个产品页面链接
+- 外链：3 个（官网、Shopify、亚马逊）
+
+查看文章：[blog/src/content/posts/2026-09-22-robotailpets.md](blog/src/content/posts/2026-09-22-robotailpets.md)
+
+---
+
+## 💰 成本预算
+
+| 项目 | 费用 | 说明 |
+|------|------|------|
+| Vercel 托管 | $0 | 免费版（100GB 带宽/月） |
+| Claude API | $2-3/月 | 每月 30 篇文章 |
+| GitHub Actions | $0 | 免费版足够使用 |
+| **总计** | **$2-3/月** | 极低成本 |
+
+---
+
+## 📈 预期效果
+
+**30 天后**：
+- ✅ 30 篇高质量文章发布
+- ✅ Google 收录 20-25 篇
+- ✅ 自然搜索流量 50-100/月
+
+**60 天后**：
+- ✅ 60 篇文章
+- ✅ 品牌搜索量 +30%
+- ✅ 自然流量 200-300/月
+
+**90 天后**：
+- ✅ 90 篇文章
+- ✅ 品牌搜索量 +50%
+- ✅ 自然流量 500-800/月
+- ✅ 成为宠物科技领域权威内容源
+
+---
+
+## 🔧 本地开发
 
 ```bash
-cd auto-blog-system
+# 安装依赖
 npm install
-cd blog
-npm install
-cd ..
-```
+cd blog && npm install
 
-### 2. 配置系统
+# 生成新文章
+npm run generate:enhanced
 
-运行配置向导：
-
-```bash
-npm run setup
-```
-
-配置向导会询问你：
-- **Claude API Key**：从 [console.anthropic.com](https://console.anthropic.com) 获取
-- **博客标题**：你的博客名称
-- **博客描述**：博客简介
-- **作者名称**：文章作者
-- **内容主题**：你想生成的内容类型（如：技术、营销、SEO）
-- **内容语言**：zh（中文）或 en（英文）
-- **每次生成数量**：每次运行生成几篇文章
-
-### 3. 生成第一篇文章
-
-```bash
-npm run generate
-```
-
-这个命令会：
-1. 连接 Claude API
-2. 根据你设置的主题生成文章
-3. 自动保存到 `blog/src/content/posts/` 目录
-
-### 4. 预览博客
-
-```bash
+# 启动开发服务器
 npm run dev
-```
 
-打开浏览器访问：`http://localhost:4321`
-
-## 📝 使用说明
-
-### 生成内容
-
-```bash
-npm run generate
-```
-
-每次运行会根据 `.env` 中的 `POSTS_PER_RUN` 设置生成相应数量的文章。
-
-### 自定义主题
-
-编辑 `.env` 文件中的 `CONTENT_TOPIC`：
-
-```env
-CONTENT_TOPIC=人工智能、机器学习、深度学习
-```
-
-### 修改语言
-
-```env
-CONTENT_LANGUAGE=en  # 英文
-CONTENT_LANGUAGE=zh  # 中文
-```
-
-### 构建生产版本
-
-```bash
+# 构建生产版本
 npm run build
 ```
 
-构建完成后，静态文件会生成在 `blog/dist/` 目录。
+---
 
-### 本地预览生产版本
+## 📖 详细文档
 
-```bash
-npm run preview
+- **[VERCEL_DEPLOY.md](VERCEL_DEPLOY.md)** - Vercel 部署快速指南
+- **[DEPLOY_GUIDE.md](DEPLOY_GUIDE.md)** - 完整部署和优化指南
+- **[AUTOMATION_GUIDE.md](AUTOMATION_GUIDE.md)** - 自动化系统详细说明
+
+---
+
+## 🎨 自定义配置
+
+### 修改文章主题
+
+编辑 `scripts/generate-enhanced-content.js`：
+
+```javascript
+const topics = [
+  '你的自定义主题 1',
+  '你的自定义主题 2',
+  // 添加更多...
+];
 ```
 
-## 🌐 部署到线上
+### 修改发布频率
 
-### 部署到 Vercel（推荐）
-
-1. 将代码推送到 GitHub
-2. 访问 [vercel.com](https://vercel.com)
-3. 导入你的 GitHub 仓库
-4. 设置构建配置：
-   - **Framework Preset**: Astro
-   - **Root Directory**: `blog`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-5. 点击 Deploy
-
-**完全免费！**
-
-### 部署到 Netlify
-
-1. 将代码推送到 GitHub
-2. 访问 [netlify.com](https://netlify.com)
-3. 导入你的 GitHub 仓库
-4. 设置构建配置：
-   - **Base directory**: `blog`
-   - **Build command**: `npm run build`
-   - **Publish directory**: `blog/dist`
-5. 点击 Deploy
-
-### 部署到 GitHub Pages
-
-1. 编辑 `blog/astro.config.mjs`，设置你的仓库名：
-
-```js
-export default defineConfig({
-  site: 'https://yourusername.github.io',
-  base: '/your-repo-name',
-  // ...
-});
-```
-
-2. 推送代码到 GitHub
-3. 在仓库设置中启用 GitHub Pages
-4. 选择 `gh-pages` 分支
-
-## ⏰ 自动化定时发布
-
-### 使用 GitHub Actions
-
-创建 `.github/workflows/auto-publish.yml`：
+编辑 `.github/workflows/auto-publish.yml`：
 
 ```yaml
-name: Auto Publish Posts
-
-on:
-  schedule:
-    # 每天 UTC 时间 00:00 运行（北京时间 08:00）
-    - cron: '0 0 * * *'
-  workflow_dispatch: # 允许手动触发
-
-jobs:
-  generate-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: Install dependencies
-        run: |
-          npm install
-          cd blog && npm install
-      
-      - name: Generate content
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: npm run generate
-      
-      - name: Commit new posts
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add blog/src/content/posts/
-          git commit -m "Auto: Add new blog posts" || exit 0
-          git push
+schedule:
+  # 每天一次：UTC 01:00 (北京时间 09:00)
+  - cron: '0 1 * * *'
+  
+  # 改为每周一次：
+  # - cron: '0 1 * * 1'
+  
+  # 改为每天两次：
+  # - cron: '0 1,13 * * *'
 ```
 
-然后在 GitHub 仓库设置中添加 Secret：
-- `ANTHROPIC_API_KEY`：你的 Claude API 密钥
+---
 
-## 🎨 自定义样式
+## 🚀 立即开始
 
-### 修改博客标题和描述
+1. **现在就推送到 GitHub**（见上方步骤 1）
+2. **部署到 Vercel**（见上方步骤 2）
+3. **配置自动发布**（见上方步骤 3）
+4. **提交到 Google Search Console**（见 DEPLOY_GUIDE.md）
 
-编辑 `blog/src/layouts/BaseLayout.astro`
+**让 Google 搜索结果里到处都是 robotailpets！** 🎉
 
-### 修改主题颜色
-
-编辑 `BaseLayout.astro` 中的 CSS 变量
-
-### 添加自定义页面
-
-在 `blog/src/pages/` 目录创建新的 `.astro` 文件
-
-## 📊 内容策略建议
-
-### 最佳实践
-
-1. **明确主题**：在 `.env` 中设置清晰的内容主题
-2. **定期发布**：设置合理的发布频率（建议每天 1-2 篇）
-3. **质量检查**：生成后可以手动编辑 Markdown 文件优化
-4. **SEO 优化**：确保每篇文章都有合适的标签和描述
-5. **内容多样性**：定期调整主题方向
-
-### 推荐发布频率
-
-- **初期**：每天 1 篇，建立内容基础
-- **成长期**：每天 2-3 篇，快速积累
-- **稳定期**：每周 5-7 篇，保持更新
-
-## 🔧 故障排除
-
-### Claude API 错误
-
-确保：
-1. API Key 正确设置在 `.env` 文件中
-2. API Key 有足够的配额
-3. 网络连接正常
-
-### 文章生成失败
-
-检查：
-1. `CONTENT_TOPIC` 是否设置
-2. API 配额是否充足
-3. 查看错误日志
-
-### 博客无法启动
-
-确保：
-1. 已安装博客依赖：`cd blog && npm install`
-2. Node.js 版本 >= 18
-3. 端口 4321 未被占用
-
-## 💰 成本估算
-
-### Claude API 使用成本
-
-- 每篇文章约 2000-3000 tokens
-- Claude Sonnet 价格：约 $0.003/1K tokens（输入）+ $0.015/1K tokens（输出）
-- **每篇文章成本约 $0.05-0.10**
-- 每月生成 30 篇文章约 **$1.5-3**
-
-### 部署成本
-
-- Vercel/Netlify 免费版：**$0/月**
-- 域名（可选）：**约 $10/年**
-
-**总计：基本免费运行！**
-
-## 🤝 支持
-
-遇到问题？
-1. 检查本文档的故障排除部分
-2. 查看 `.env.example` 确保配置正确
-3. 检查 Claude API 控制台
-
-## 📝 更新日志
-
-### v1.0.0 (2024-09-18)
-- ✨ 初始版本发布
-- ✅ AI 内容自动生成
-- ✅ Astro 博客系统
-- ✅ 完整配置向导
-- ✅ 部署文档
+---
 
 ## 📄 许可证
 
 MIT License
-
----
-
-**开始你的内容营销自动化之旅吧！** 🚀
