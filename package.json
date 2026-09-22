@@ -1,0 +1,29 @@
+{
+  "name": "auto-blog-system",
+  "version": "1.0.0",
+  "description": "自动化博客内容生成和发布系统",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-content.js",
+    "generate:enhanced": "node scripts/generate-enhanced-content.js",
+    "generate:brand": "node scripts/generate-brand-content.js",
+    "dev": "cd blog && npm run dev",
+    "build": "cd blog && npm run build",
+    "preview": "cd blog && npm run preview",
+    "setup": "node scripts/setup.js",
+    "test:api": "node scripts/test-api.js",
+    "deploy": "cd blog && npm run build && echo 'Build complete! Deploy dist/ folder to your hosting.'"
+  },
+  "keywords": ["blog", "automation", "content-generation", "seo"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.1",
+    "dotenv": "^16.4.5",
+    "yaml": "^2.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

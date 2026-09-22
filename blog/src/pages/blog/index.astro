@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts')).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+---
+
+<BaseLayout title="所有文章 - 自动化博客系统">
+  <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">📚 所有文章</h1>
+
+  {posts.length === 0 ? (
+    <div style="text-align: center; padding: 60px 20px; background: #f9f9f9; border-radius: 8px;">
+      <h2 style="font-size: 1.5rem; color: #666; margin-bottom: 1rem;">还没有文章</h2>
+      <p style="color: #999; margin-bottom: 1.5rem;">开始生成你的第一篇文章吧！</p>
+      <code style="background: #fff; padding: 8px 16px; border-radius: 4px; display: inline-block;">npm run generate</code>
+    </div>
+  ) : (
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      {posts.map((post) => (
+        <article style="border: 1px solid #e0e0e0; padding: 24px; border-radius: 8px; transition: all 0.2s; background: white;">
+          <h2 style="font-size: 1.8rem; margin-bottom: 0.8rem;">
+            <a href={`/blog/${post.slug}`} style="color: #1a1a1a;">{post.data.title}</a>
+          </h2>
+          <div style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
+            <time datetime={post.data.pubDate}>
+              {new Date(post.data.pubDate).toLocaleDateString('zh-CN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })}
+            </time>
+            <span style="margin: 0 10px;">•</span>
+            <span>{post.data.author}</span>
+          </div>
+          <p style="color: #555; line-height: 1.6; margin-bottom: 1rem;">{post.data.description}</p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              {post.data.tags.map((tag: string) => (
+                <span style="display: inline-block; background: #e3f2fd; color: #1976d2; padding: 4px 12px; border-radius: 16px; font-size: 0.85rem; margin-right: 8px;">
+                  #{tag}
+                </span>
+              ))}
+            </div>
+            <a href={`/blog/${post.slug}`} style="color: #1976d2; font-weight: 500;">
+              阅读全文 →
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  )}
+</BaseLayout>
