@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import readline from 'readline';
+import { editorialPolicy } from './content-policy.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,11 +39,12 @@ async function setup() {
   const apiKey = await question('Claude API Key（填写项目使用的密钥）: ');
   const baseURL = await question('API Base URL (默认: https://heyroute.ai): ') || 'https://heyroute.ai';
   const model = await question('模型 (默认: claude-opus-4-8): ') || 'claude-opus-4-8';
-  const blogTitle = await question('博客标题 (默认: 我的自动化博客): ') || '我的自动化博客';
-  const blogDescription = await question('博客描述 (默认: AI 驱动的内容营销): ') || 'AI 驱动的内容营销';
-  const blogAuthor = await question('作者名称 (默认: AI Content Generator): ') || 'AI Content Generator';
-  const contentTopic = await question('内容主题 (默认: Robotail 猫砂盆、喂食器及配件选购): ') || 'Robotail 猫砂盆、喂食器及配件选购';
-  const contentLanguage = await question('内容语言 zh/en (默认: zh): ') || 'zh';
+  const blogTitle = await question('博客标题 (默认: Robotail Journal): ') || 'Robotail Journal';
+  const blogDescription = await question('博客描述 (默认: A happier home with cats): ') || 'A happier home with cats';
+  const blogAuthor = editorialPolicy.author;
+  const contentTopic = await question('内容主题 (默认: Robotail litter boxes and everyday essentials): ') || 'Robotail litter boxes and everyday essentials for a cat-friendly home';
+  const contentLanguage = editorialPolicy.language;
+  console.log('内容语言固定为英文，面向欧美养猫家庭；规则见 content/editorial-policy.json。');
   const postsPerRun = await question('每次生成文章数 (默认: 1): ') || '1';
 
   // 生成 .env 文件

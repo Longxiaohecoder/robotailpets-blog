@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import YAML from 'yaml';
+import { editorialPolicy } from './content-policy.js';
 
 export function resolveConfig(local, environment, hasLocalFile) {
   // 本地项目与 CI 是两个完整配置来源，禁止拼接不同供应商的端点和模型。
@@ -50,9 +51,9 @@ export function saveDraft(article, postsDir, sources) {
   const filename = `${now.toISOString().slice(0, 10)}-robotail-${randomUUID().slice(0, 8)}.md`;
   const metadata = {
     title: article.title, description: article.description, tags: article.tags,
-    pubDate: now.toISOString(), author: 'Robotail 内容团队', draft: true,
+    pubDate: now.toISOString(), author: editorialPolicy.author, draft: true,
     sources: sources.sources.map(source => source.url), sourceVerifiedAt: sources.verifiedAt,
-    reviewNote: 'AI 草稿：发布前核对全部产品事实和来源，确认后将 draft 改为 false。'
+    reviewNote: 'AI draft: verify all product facts and sources before setting draft to false.'
   };
   const target = path.join(postsDir, filename);
   fs.writeFileSync(target, `---\n${YAML.stringify(metadata)}---\n\n${article.content}\n`, { flag: 'wx' });

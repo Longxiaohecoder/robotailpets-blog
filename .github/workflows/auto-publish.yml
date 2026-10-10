@@ -43,10 +43,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL || 'https://heyroute.ai' }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-8' }}
-          CONTENT_TOPIC: ${{ vars.CONTENT_TOPIC || 'Robotail 猫砂盆、喂食器及配件选购' }}
-          CONTENT_LANGUAGE: ${{ vars.CONTENT_LANGUAGE || 'zh' }}
+          CONTENT_TOPIC: ${{ vars.CONTENT_TOPIC || 'Robotail litter boxes, feeding routines, and accessories for a cat-friendly home' }}
+          CONTENT_LANGUAGE: en
           POSTS_PER_RUN: ${{ vars.POSTS_PER_RUN || '1' }}
-          BLOG_AUTHOR: ${{ vars.BLOG_AUTHOR || 'robotailpets 评测团队' }}
+          BLOG_AUTHOR: Robotail Editorial Team
         run: npm run generate:enhanced
 
       - name: Validate site before publishing repository changes

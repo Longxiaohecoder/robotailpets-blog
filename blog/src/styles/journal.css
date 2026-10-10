@@ -237,7 +237,7 @@ button {
 .hero h1 {
   font-size: clamp(38px, 4.4vw, 60px);
   line-height: 1.45;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.025em;
 }
 .hero-copy > p:not(.eyebrow) {
   font-size: 16px;
@@ -249,6 +249,7 @@ button {
 .hero-actions {
   margin-top: 32px;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
 }

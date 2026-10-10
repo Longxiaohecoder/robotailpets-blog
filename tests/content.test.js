@@ -58,6 +58,8 @@ test('quoted titles round-trip, every generated article is a draft, filenames do
     const metadata = YAML.parse(frontmatter);
     assert.equal(metadata.title, article.title);
     assert.equal(metadata.draft, true);
+    assert.equal(metadata.author, 'Robotail Editorial Team');
+    assert.doesNotMatch(metadata.reviewNote, /\p{Script=Han}/u);
     assert.deepEqual(metadata.sources, ['https://robotailpets.com/']);
   } finally { fs.rmSync(dir, { recursive: true }); }
 });

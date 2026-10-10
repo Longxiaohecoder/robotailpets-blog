@@ -1,12 +1,12 @@
 ---
 import '../styles/journal.css';
 interface Props { title: string; description?: string; image?: string; }
-const { title, description = '和宠物一起，把家过成喜欢的样子。Robotail 分享温馨家居、相处日常与宠物用品选购。', image = '/images/journal/home-together.webp' } = Astro.props;
+const { title, description = 'A warmer home, a happier life with cats. Explore cat-friendly spaces, everyday companionship, and thoughtful product guides with Robotail.', image = '/images/journal/home-with-cats.webp' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const isBlog = Astro.url.pathname.startsWith('/blog');
 ---
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +16,7 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
   <link rel="canonical" href={canonical} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:type" content={isBlog && Astro.url.pathname !== '/blog/' ? 'article' : 'website'} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={new URL(image, Astro.site)} />
@@ -28,22 +29,22 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">跳到正文</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="wrap nav-row">
-      <a class="brand" href="/" aria-label="Robotail 博客首页">
-        <span class="wordmark">Robotail</span><span class="brand-caption">宠物家庭<br />生活志</span>
+      <a class="brand" href="/" aria-label="Robotail Journal home">
+        <span class="wordmark">Robotail</span><span class="brand-caption">A journal for<br />life with cats.</span>
       </a>
-      <nav class="main-nav" id="main-nav" aria-label="主导航">
-        <a href="/" aria-current={!isBlog ? 'page' : undefined}>首页</a>
-        <a href="/blog/" aria-current={isBlog ? 'page' : undefined}>文章列表</a>
-        <a href="/#topics">生活主题</a>
-        <a href="/#together">我们的理念</a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="/" aria-current={!isBlog ? 'page' : undefined}>Home</a>
+        <a href="/blog/" aria-current={isBlog ? 'page' : undefined}>Journal</a>
+        <a href="/#topics">Topics</a>
+        <a href="/#together">Our Story</a>
       </nav>
       <div class="nav-actions">
-        <button class="text-control" id="theme-toggle" type="button" aria-label="切换页面配色">夜间</button>
-        <a class="shop-link" href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">品牌官网 ↗</a>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">菜单</button>
+        <button class="text-control" id="theme-toggle" type="button" aria-label="Switch color theme">Dark</button>
+        <a class="shop-link" href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">Shop Robotail ↗</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu</button>
       </div>
     </div>
   </header>
@@ -51,12 +52,12 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-top">
-        <div><a class="wordmark" href="/">Robotail</a><p>让每一个家，都有安心相伴的日常。</p></div>
-        <nav class="footer-links" aria-label="页脚导航">
-          <a href="/blog/">文章列表</a><a href="/#together">我们的理念</a><a href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">品牌官网 ↗</a>
+        <div><a class="wordmark" href="/">Robotail</a><p>For the little moments that make a house a home.</p></div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/blog/">Journal</a><a href="/#together">Our Story</a><a href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">Shop Robotail ↗</a>
         </nav>
       </div>
-      <div class="footer-bottom"><span>© {new Date().getFullYear()} Robotail 博客</span><span>家的温度，来自彼此的陪伴。</span></div>
+      <div class="footer-bottom"><span>© {new Date().getFullYear()} Robotail Journal</span><span>A good life, shared with cats.</span></div>
     </div>
   </footer>
   <script>
@@ -75,7 +76,7 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
     const theme = document.querySelector<HTMLButtonElement>('#theme-toggle');
     const label = () => {
       const dark = document.documentElement.dataset.theme === 'dark';
-      if (theme) { theme.textContent = dark ? '日间' : '夜间'; theme.setAttribute('aria-label', dark ? '切换为日间配色' : '切换为夜间配色'); }
+      if (theme) { theme.textContent = dark ? 'Light' : 'Dark'; theme.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode'); }
     };
     label();
     theme?.addEventListener('click', () => {

@@ -1,5 +1,38 @@
 # Robotail 宠物家庭生活志：界面改版
 
+## 当前版本：英文与猫咪主题（2026-10-10）
+
+验收：构建成功，9 项测试通过；Chrome 检查首页 320/390/768/1024/1440px，无横向溢出；页面语言、搜索、分类、空状态、文章目录与配色持久化通过。首页、文章列表、阅读页与图片说明无中文残留；旧含狗图片 URL 返回 404；草稿仍不对外公开。最新截图以 `output/playwright/cats-` 开头，以下历史性能评分不代表本次重新测量。
+
+- 网站受众：美国与欧洲的养猫家庭；统一使用自然英文，语气温暖、亲切、实用，不添加新产品效果或未经核实的事实。
+- HTML 语言、SEO/分享信息、导航、按钮、空状态、搜索、图片说明、作者、日期与现有已发布文章均改为英文；文章 URL 不变。
+- 新的语言与受众契约位于 `content/editorial-policy.json`。自动生成强制按该契约执行，不再被旧的本地/CI `CONTENT_LANGUAGE=zh` 设置覆盖；输出中文或犬类内容会在保存前失败。设置向导与 Actions 默认值同步更新。
+- 所有含狗的图片已从发布资源中撤下。旧版本由 Git 保留，原始生成文件未删除；本地备份位于 `.local/replaced-dog-images/`，不部署。
+- 当前配图仅含猫咪，使用内置图片生成工具编辑两个原始生活方式场景；不是产品实拍或客户故事。另保留现有的 `window-cat` 猫咪窗边图。
+- 新资源存放于 `blog/public/images/journal/`，每组包含 1500px、960px、640px WebP。以下为最终提示词与原图路径。
+
+### home-with-cats
+
+资源：`blog/public/images/journal/home-with-cats.webp`、`home-with-cats-960.webp`、`home-with-cats-640.webp`。
+
+原图：`/Users/longxiaohe/.codex/generated_images/01a0bdd3-f1a3-7913-9334-dcfb360528e8/exec-0fe56d91-a86f-4592-9f55-2c3949dc5654.png`
+
+```text
+Use case: precise-object-edit. Image 1 is the edit target: the current warm home journal hero photograph. Replace the golden retriever on the sofa with one realistically sized, relaxed silver-gray domestic shorthair cat nestled beside the woman's thigh. Adjust her hands naturally so she gently strokes the cat. Completely remove every trace of the dog. Preserve the adult woman's identity, sage knit outfit, seated posture, ivory linen sofa, natural oak furniture, window light, color palette, camera angle, wide 3:2 composition and the existing orange tabby curled on the rug. The only animals anywhere in the image must be those two cats. Natural feline anatomy, realistic fur and hands, candid photorealistic editorial photography. No dogs, dog imagery, other animals, logos, branded products, text, watermarks or collage.
+```
+
+### quiet-cat-moments
+
+资源：`blog/public/images/journal/quiet-cat-moments.webp`、`quiet-cat-moments-960.webp`、`quiet-cat-moments-640.webp`。
+
+原图：`/Users/longxiaohe/.codex/generated_images/01a0bdd3-f1a3-7913-9334-dcfb360528e8/exec-37755674-cdfa-41b7-8921-84c9492ddf9f.png`
+
+```text
+Use case: precise-object-edit. Image 1 is the edit target: the current warm home journal companionship photograph. Replace the golden retriever completely with one realistically sized relaxed orange tabby cat perched beside the seated man's knees on the linen armchair, his hand gently stroking the cat's head. Adjust hand position and nearby seating as needed for natural human-cat scale, no oversized cat. Preserve the cropped man's identity and clothing, warm sunlight, soft linen armchair, sage throw, oak floor and intimate wide 3:2 editorial composition. Only one cat, no dogs or other animals anywhere in the scene. Natural feline anatomy, realistic hands and fur, candid photorealistic home-life photography. No logos, products, text, watermarks or collage.
+```
+
+## 历史设计记录（以下为先前版本，含狗资源已停用）
+
 日期：2026-10-10
 
 ## 设计与保留范围

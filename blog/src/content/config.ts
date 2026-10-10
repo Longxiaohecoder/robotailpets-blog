@@ -11,7 +11,7 @@ const posts = defineCollection({
     draft: z.boolean().default(true),
     sources: z.array(z.string().url()).default([]),
     reviewNote: z.string().optional(),
-    category: z.enum(['温馨家居', '相处日常', '用品选择']).optional(),
+    category: z.enum(['Cat-Friendly Homes', 'Life with Cats', 'Product Guides', '温馨家居', '相处日常', '用品选择']).optional(),
     cover: z.string().regex(/^\/images\//).optional(),
     coverAlt: z.string().optional(),
     sourceVerifiedAt: z.union([z.string(), z.date()]).transform(value =>

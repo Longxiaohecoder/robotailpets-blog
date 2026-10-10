@@ -5,16 +5,16 @@ import { getCollection } from 'astro:content';
 import { topics } from '../../lib/journal';
 const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort((a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
-<BaseLayout title="文章列表 | Robotail 宠物家庭生活志">
+<BaseLayout title="The Journal | Robotail — Life at Home with Cats">
   <div class="wrap">
-    <header class="journal-header"><h1>生活里，慢慢发现。</h1><p>关于家、陪伴，以及人和宠物一起生活的小事。</p></header>
+    <header class="journal-header"><h1>Little discoveries. Better days.</h1><p>Stories about home, companionship, and the everyday joy of living with cats.</p></header>
     <div class="search-row">
-      <div class="filters" role="group" aria-label="按主题筛选文章"><button class="filter" data-filter="全部" aria-pressed="true">全部文章</button>{topics.map(topic => <button class="filter" data-filter={topic} aria-pressed="false">{topic}</button>)}</div>
-      <div><label class="search-label" for="article-search">搜索文章</label><input class="search-field" id="article-search" type="search" placeholder="试试：猫砂盆、家居、日常" autocomplete="off" /></div>
+      <div class="filters" role="group" aria-label="Filter articles by topic"><button class="filter" data-filter="All" aria-pressed="true">All articles</button>{topics.map(topic => <button class="filter" data-filter={topic} aria-pressed="false">{topic}</button>)}</div>
+      <div><label class="search-label" for="article-search">Search the journal</label><input class="search-field" id="article-search" type="search" placeholder="Try: litter boxes, home, routines" autocomplete="off" /></div>
     </div>
-    <p class="results-count" id="results-count" role="status" aria-live="polite">共 {posts.length} 篇文章</p>
+    <p class="results-count" id="results-count" role="status" aria-live="polite">{posts.length} {posts.length === 1 ? 'article' : 'articles'}</p>
     <div class="post-grid" id="post-grid">{posts.map(post => <PostCard post={post} />)}</div>
-    <div class="empty-state" id="empty-results" hidden={posts.length > 0}><h2>这里的故事，正在准备中</h2><p id="empty-message">换一个主题，或看看已经发布的文章。</p><button class="button secondary" id="reset-filters">查看全部文章</button></div>
+    <div class="empty-state" id="empty-results" hidden={posts.length > 0}><h2>More stories are on their way</h2><p id="empty-message">Try another topic, or explore our published articles.</p><button class="button secondary" id="reset-filters">View all articles</button></div>
   </div>
   <script>
     const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-filter]')];
@@ -22,38 +22,38 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort((a,
     const search = document.querySelector<HTMLInputElement>('#article-search');
     const params = new URLSearchParams(location.search);
     const allowed = buttons.map(button => button.dataset.filter);
-    let selected = allowed.includes(params.get('topic') || '') ? params.get('topic')! : '全部';
+    let selected = allowed.includes(params.get('topic') || '') ? params.get('topic')! : 'All';
     if (search) search.value = params.get('q') || '';
     const apply = (updateURL = true) => {
       const query = search?.value.trim().toLowerCase() || '';
       let count = 0;
       cards.forEach(card => {
-        const visible = (selected === '全部' || card.dataset.topic === selected) && (card.dataset.search || '').includes(query);
+        const visible = (selected === 'All' || card.dataset.topic === selected) && (card.dataset.search || '').includes(query);
         card.hidden = !visible;
         if (visible) count++;
       });
       buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === selected)));
       const counter = document.querySelector('#results-count');
-      if (counter) counter.textContent = '共 ' + count + ' 篇文章';
+      if (counter) counter.textContent = count + (count === 1 ? ' article' : ' articles');
       const empty = document.querySelector<HTMLElement>('#empty-results');
       if (empty) empty.hidden = count > 0;
       const grid = document.querySelector<HTMLElement>('#post-grid');
       if (grid) grid.hidden = count === 0;
       const message = document.querySelector('#empty-message');
-      if (message) message.textContent = query ? '没有找到匹配的文章，试试其他关键词。' : '这个主题的新文章正在准备中，可以先看看全部文章。';
+      if (message) message.textContent = query ? 'No articles matched your search. Try a different keyword.' : 'New stories for this topic are in the works. Explore all articles for now.';
       if (updateURL) {
         const url = new URL(location.href);
-        if (selected === '全部') url.searchParams.delete('topic'); else url.searchParams.set('topic', selected);
+        if (selected === 'All') url.searchParams.delete('topic'); else url.searchParams.set('topic', selected);
         if (query) url.searchParams.set('q', search?.value.trim() || ''); else url.searchParams.delete('q');
         history.replaceState(null, '', url);
       }
     };
-    buttons.forEach(button => button.addEventListener('click', () => { selected = button.dataset.filter || '全部'; apply(); }));
+    buttons.forEach(button => button.addEventListener('click', () => { selected = button.dataset.filter || 'All'; apply(); }));
     search?.addEventListener('input', () => apply());
-    document.querySelector('#reset-filters')?.addEventListener('click', () => { selected = '全部'; if (search) search.value = ''; apply(); });
+    document.querySelector('#reset-filters')?.addEventListener('click', () => { selected = 'All'; if (search) search.value = ''; apply(); });
     window.addEventListener('popstate', () => {
       const url = new URLSearchParams(location.search);
-      selected = allowed.includes(url.get('topic') || '') ? url.get('topic')! : '全部';
+      selected = allowed.includes(url.get('topic') || '') ? url.get('topic')! : 'All';
       if (search) search.value = url.get('q') || '';
       apply(false);
     });
