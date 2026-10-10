@@ -65,4 +65,14 @@ Vercel 需要连接 `Longxiaohecoder/robotailpets-blog`；Root Directory 为仓�
 - 本地首页、整理稿文章页返回 HTTP 200，旧品牌稿返回 HTTP 404；站点地图排除草稿。
 - `claude-opus-4-8` 最小请求返回 HTTP 200，完整草稿保存至 `blog/src/content/posts/2026-10-10-robotail-13c3baaf.md`。该草稿仍需审核，未对外发布。
 - 最近云端运行记录中，Commit and push new posts 被跳过。任务成功状态不能当作发布成功证据。
-- GitHub `git push --dry-run` 缺少 HTTPS 身份凭据。Vercel 请求超时。没有提交或推送代码，没有更改云端状态。
+- 初次本地验收时 GitHub `git push --dry-run` 缺少 HTTPS 身份凭据，尚未提交或推送；随后用户完成认证，见下方云端验收记录。
+
+## 2026-10-10 云端验收
+
+- 修复提交 `acb5d08` 已推送到原仓库 `Longxiaohecoder/robotailpets-blog`，沿用原 Vercel 集成。
+- 手动触发的工作流 [38039156217](https://github.com/Longxiaohecoder/robotailpets-blog/actions/runs/38039156217) 全流程成功：安装、6 项测试、实际生成、构建、新文件检测、Commit and push new posts 均成功。
+- 自动任务创建提交 `5784ae2` 和草稿 `2026-10-10-robotail-a299eaf1.md`，已快进同步回本地。
+- GitHub 上该提交的 Vercel 状态为 success，生产部署 6978509216 为 success，地址为 `https://auto-blog-system-eo4x9uviv-robotail.vercel.app`。
+- 公开文章仍为已核实官网来源的品牌介绍，AI 生成稿保持 `draft: true`，未对外展示。
+- 本环境访问原主域名和新部署地址均连接超时，尚未完成公网页面 HTTP 验收；该结果不等同于 Vercel 构建失败或网站下线。
+- 下次换电脑可按本说明恢复依赖；GitHub 定时任务和 Vercel 部署运行在云端，不依赖旧电脑开机。
