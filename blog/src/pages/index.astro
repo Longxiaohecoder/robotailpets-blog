@@ -1,62 +1,49 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import JournalImage from '../components/JournalImage.astro';
 import { getCollection } from 'astro:content';
-
-const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
-  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-);
-
-const recentPosts = posts.slice(0, 5);
+import { topicOf, dateLabel, readingTime } from '../lib/journal';
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort((a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const featured = posts[0];
 ---
-
-<BaseLayout title="Robotail 博客">
-  <div>
-    <h1 style="font-size: 2rem; margin-bottom: 1rem;">认识 Robotail，了解日常宠物用品</h1>
-
-    <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin-bottom: 2rem;">
-      <p>从猫砂盆、喂食器到配件，依据官方资料整理选购入口与一般使用建议。</p>
-    </div>
-
-    <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem; margin-top: 2rem;">📚 最新文章</h2>
-
-    {recentPosts.length === 0 ? (
-      <div style="text-align: center; padding: 40px; background: #f9f9f9; border-radius: 8px;">
-        <p style="font-size: 1.2rem; color: #666; margin-bottom: 1rem;">还没有文章</p>
-        <p style="color: #999;">运行 <code style="background: #fff; padding: 4px 8px; border-radius: 4px;">npm run generate</code> 生成第一篇文章</p>
+<BaseLayout title="Robotail 博客 | 和宠物一起，把家过成喜欢的样子">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">HOME, WITH YOU.</p>
+        <h1 id="hero-title">把日子，过成<br />有它的家。</h1>
+        <p>一张沙发，一缕阳光，一个安心的角落。<br />和毛孩子一起，发现家里的小美好。</p>
+        <div class="hero-actions"><a class="button" href="/blog/">浏览文章 <span aria-hidden="true">↗</span></a><a class="arrow-link" href="#together">认识我们 <span aria-hidden="true">↗</span></a></div>
       </div>
-    ) : (
-      <div style="display: flex; flex-direction: column; gap: 20px;">
-        {recentPosts.map((post) => (
-          <article style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; transition: box-shadow 0.2s;">
-            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">
-              <a href={`/blog/${post.slug}`} style="color: #1a1a1a;">{post.data.title}</a>
-            </h3>
-            <div style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">
-              <time datetime={post.data.pubDate}>
-                {new Date(post.data.pubDate).toLocaleDateString('zh-CN')}
-              </time>
-              <span style="margin: 0 8px;">•</span>
-              <span>{post.data.author}</span>
-            </div>
-            <p style="color: #555; margin-bottom: 1rem;">{post.data.description}</p>
-            <div>
-              {post.data.tags.map((tag: string) => (
-                <span style="display: inline-block; background: #f0f0f0; color: #666; padding: 3px 10px; border-radius: 12px; font-size: 0.85rem; margin-right: 6px;">
-                  #{tag}
-                </span>
-              ))}
-            </div>
-          </article>
-        ))}
-      </div>
-    )}
-
-    {posts.length > 5 && (
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="/blog" style="display: inline-block; background: #1976d2; color: white; padding: 12px 24px; border-radius: 6px; font-weight: 500;">
-          查看全部文章 →
-        </a>
-      </div>
-    )}
+      <figure class="hero-photo"><JournalImage src="/images/journal/home-together.webp" alt="主人坐在日光下的沙发上陪伴金毛犬，猫咪在旁边安心休息" priority sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 53vw, 640px" /></figure>
+    </section>
+    <nav class="topic-strip" aria-label="文章主题"><span>从生活里，找到相处的灵感</span><a href="/blog/?topic=温馨家居">温馨家居 <span aria-hidden="true">↗</span></a><a href="/blog/?topic=相处日常">相处日常 <span aria-hidden="true">↗</span></a><a href="/blog/?topic=用品选择">用品选择 <span aria-hidden="true">↗</span></a></nav>
+    <section class="section" aria-labelledby="latest-title">
+      <div class="section-heading row"><h2 id="latest-title">最近，想和你分享</h2><a class="arrow-link" href="/blog/">全部文章 <span aria-hidden="true">↗</span></a></div>
+      {featured ? <article class="featured">
+        <a class="featured-image" href={'/blog/' + featured.slug + '/'} aria-label={'阅读：' + featured.data.title}><JournalImage src="/images/journal/window-cat.webp" alt="猫咪在温馨家中的窗边休息" /></a>
+        <div class="featured-copy">
+          <div class="metadata"><span class="category-label">{topicOf(featured)}</span><time datetime={featured.data.pubDate.toISOString()}>{dateLabel(featured.data.pubDate)}</time><span>{readingTime(featured.body)} 分钟阅读</span></div>
+          <h3><a href={'/blog/' + featured.slug + '/'}>{featured.data.title}</a></h3>
+          <p>{featured.data.description}</p><a class="arrow-link" href={'/blog/' + featured.slug + '/'}>阅读全文 <span aria-hidden="true">↗</span></a>
+        </div>
+      </article> : <div class="empty-state"><h3>新的故事，正在准备中</h3><p>欢迎先探索我们的生活主题。</p><a class="arrow-link" href="#topics">查看生活主题 <span aria-hidden="true">↗</span></a></div>}
+    </section>
   </div>
+  <section class="topic-section section" id="topics" aria-labelledby="topics-title">
+    <div class="wrap">
+      <div class="section-heading"><h2 id="topics-title">一个家，不止一种美好</h2><p>从共同生活的小事开始，给彼此多一点舒适。</p></div>
+      <div class="topic-grid">
+        <a class="topic-large" href="/blog/?topic=温馨家居"><JournalImage src="/images/journal/window-cat.webp" alt="自然光、木质窗台和猫咪构成的舒适家居角落" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 65vw, 765px" /><div class="topic-content"><div><h3>留一个，属于它的角落</h3><p>空间布置、生活动线与宠物友好的家。</p></div><span aria-hidden="true">↗</span></div></a>
+        <div class="topic-side">
+          <a class="topic-small" href="/blog/?topic=相处日常"><div><p class="topic-tag">相处日常</p><h3>陪伴，藏在小事里</h3><p>把平凡的一天，过成安心相伴的日常。</p></div><span aria-hidden="true">↗</span></a>
+          <a class="topic-small" href="/blog/?topic=用品选择"><div><p class="topic-tag">用品选择</p><h3>选得合适，住得舒服</h3><p>从实际需要出发，了解家里的宠物用品。</p></div><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrap section home-note" id="together" aria-labelledby="together-title">
+    <JournalImage src="/images/journal/daily-companion.webp" alt="主人轻轻抚摸身边的金毛犬，共享安静的居家时光" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 36vw, 430px" />
+    <div><h2 id="together-title">家，是我们一起<br />舒服生活的地方。</h2><p>我们喜欢整洁的房间，也喜欢它留下的小小生活痕迹。Robotail 博客关注人和宠物共享一个家的日常：如何住得舒服，如何相处得自在，如何选择真正需要的用品。</p><p style="margin-top:16px">愿每一次回家，都有熟悉的脚步声迎接你。</p><a class="arrow-link" href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">探索品牌官网 <span aria-hidden="true">↗</span></a></div>
+  </section>
 </BaseLayout>

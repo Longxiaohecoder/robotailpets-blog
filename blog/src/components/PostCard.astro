@@ -1,0 +1,17 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { topicOf, coverOf, dateLabel } from '../lib/journal';
+import JournalImage from './JournalImage.astro';
+interface Props { post: CollectionEntry<'posts'>; }
+const { post } = Astro.props;
+const href = '/blog/' + post.slug + '/';
+---
+<article class="post-card" data-post data-topic={topicOf(post)} data-search={[post.data.title, post.data.description, ...post.data.tags].join(' ').toLowerCase()}>
+  <a class="card-image" href={href} aria-label={'阅读：' + post.data.title} style="display:block">
+    <JournalImage src={coverOf(post)} alt={post.data.coverAlt || '人与宠物共享温馨家居的生活场景'} />
+  </a>
+  <div class="metadata"><span class="category-label">{topicOf(post)}</span><time datetime={post.data.pubDate.toISOString()}>{dateLabel(post.data.pubDate)}</time></div>
+  <h2><a href={href}>{post.data.title}</a></h2>
+  <p>{post.data.description}</p>
+  <a class="arrow-link" href={href}>阅读全文 <span aria-hidden="true">↗</span></a>
+</article>

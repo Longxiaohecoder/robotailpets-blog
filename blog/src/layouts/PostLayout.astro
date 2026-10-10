@@ -1,103 +1,29 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-
+import { dateLabel } from '../lib/journal';
+import JournalImage from '../components/JournalImage.astro';
 interface Props {
-  title: string;
-  description: string;
-  pubDate: string;
-  tags: string[];
-  author: string;
+  title: string; description: string; pubDate: Date; tags: string[]; author: string;
+  category: string; cover: string; coverAlt?: string; minutes: number;
+  headings: { depth: number; slug: string; text: string }[];
 }
-
-const { title, description, pubDate, tags, author } = Astro.props;
-const formattedDate = new Date(pubDate).toLocaleDateString('zh-CN', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
-});
+const { title, description, pubDate, tags, author, category, cover, coverAlt, minutes, headings } = Astro.props;
+const toc = headings.filter(heading => heading.depth === 2);
 ---
-
-<BaseLayout title={title} description={description}>
-  <article>
-    <header style="margin-bottom: 2rem; border-bottom: 2px solid #eee; padding-bottom: 1.5rem;">
-      <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #1a1a1a;">{title}</h1>
-      <div style="color: #666; margin-bottom: 1rem;">
-        <time datetime={pubDate}>{formattedDate}</time>
-        <span style="margin: 0 10px;">•</span>
-        <span>作者: {author}</span>
-      </div>
-      <p style="font-size: 1.1rem; color: #555;">{description}</p>
-      <div style="margin-top: 1rem;">
-        {tags.map((tag) => (
-          <span style="display: inline-block; background: #e3f2fd; color: #1976d2; padding: 4px 12px; border-radius: 16px; font-size: 0.9rem; margin-right: 8px;">
-            #{tag}
-          </span>
-        ))}
-      </div>
+<BaseLayout title={title + ' | Robotail 博客'} description={description} image={cover}>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="面包屑"><a href="/">首页</a><span aria-hidden="true">/</span><a href="/blog/">文章列表</a><span aria-hidden="true">/</span><span>{category}</span></nav>
+    <header class="article-heading">
+      <span class="category-label">{category}</span><h1>{title}</h1><p>{description}</p>
+      <div class="metadata"><span>{author}</span><time datetime={pubDate.toISOString()}>{dateLabel(pubDate)}</time><span>{minutes} 分钟阅读</span></div>
     </header>
-
-    <div class="prose">
-      <slot />
+    <JournalImage class="article-cover" src={cover} alt={coverAlt || '人与宠物共享温馨家居的生活场景'} priority sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) calc(100vw - 80px), 1200px" />
+    <div class="article-layout">
+      <aside class="article-aside" aria-label="文章目录"><div><h2>这篇文章里</h2><ol>{toc.map(heading => <li><a href={'#' + heading.slug}>{heading.text}</a></li>)}</ol><p class="aside-note">选得合适，住得舒服。<br />从实际需要出发，为彼此留一个舒适的家。</p></div></aside>
+      <article class="prose">
+        <slot />
+        <div class="article-tail"><div class="article-tags">{tags.map(tag => <a href={'/blog/?q=' + encodeURIComponent(tag)}>{tag}</a>)}</div><a class="arrow-link" href="/blog/">返回文章列表 <span aria-hidden="true">↗</span></a></div>
+      </article>
     </div>
-  </article>
-
-  <style>
-    .prose {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .prose :global(h2) {
-      font-size: 1.8rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: #1a1a1a;
-    }
-
-    .prose :global(h3) {
-      font-size: 1.4rem;
-      margin-top: 1.5rem;
-      margin-bottom: 0.8rem;
-      color: #333;
-    }
-
-    .prose :global(p) {
-      margin-bottom: 1.2rem;
-    }
-
-    .prose :global(ul), .prose :global(ol) {
-      margin-left: 2rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .prose :global(li) {
-      margin-bottom: 0.5rem;
-    }
-
-    .prose :global(code) {
-      background: #f5f5f5;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-family: 'Courier New', monospace;
-      font-size: 0.9em;
-    }
-
-    .prose :global(pre) {
-      background: #1e1e1e;
-      color: #d4d4d4;
-      padding: 1rem;
-      border-radius: 6px;
-      overflow-x: auto;
-      margin-bottom: 1.2rem;
-    }
-
-    .prose :global(blockquote) {
-      border-left: 4px solid #ddd;
-      padding-left: 1rem;
-      margin-left: 0;
-      margin-bottom: 1.2rem;
-      color: #666;
-      font-style: italic;
-    }
-  </style>
+  </div>
 </BaseLayout>

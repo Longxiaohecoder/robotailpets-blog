@@ -11,6 +11,9 @@ const posts = defineCollection({
     draft: z.boolean().default(true),
     sources: z.array(z.string().url()).default([]),
     reviewNote: z.string().optional(),
+    category: z.enum(['温馨家居', '相处日常', '用品选择']).optional(),
+    cover: z.string().regex(/^\/images\//).optional(),
+    coverAlt: z.string().optional(),
     sourceVerifiedAt: z.union([z.string(), z.date()]).transform(value =>
       typeof value === 'string' ? value : value.toISOString().slice(0, 10)
     ).optional(),
