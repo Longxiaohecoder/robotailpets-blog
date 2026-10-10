@@ -1,0 +1,24 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-10-10",
+  "website": "https://robotailpets.com",
+  "amazon": null,
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "facts": ["官网展示 Robotail C32 和 C42 智能猫砂盆。", "官网展示 UBPet Robotail F20 自动宠物喂食器。", "官网展示 EZSKUUP 猫砂和 C32/C42 猫砂袋、C42 滤网配件。"]
+    },
+    {
+      "url": "https://robotailpets.com/collections/robotail",
+      "facts": ["Robotail 产品集合页面提供品牌产品浏览入口。"]
+    }
+  ],
+  "editorialRules": [
+    "只使用 sources 中的事实，明确这是官网信息而非亲身评测。",
+    "不得编造评分、销量、用户故事、专利、团队背景、研究、优惠、质保或医疗效果。",
+    "不得声称曾使用产品，不得把用户点评当作独立验证的产品效果。",
+    "不得添加未经验证的产品功能、参数、图片或链接。",
+    "amazon 为 null 时不得添加亚马逊链接。",
+    "正文必须包含所用来源的 Markdown 链接。"
+  ]
+}

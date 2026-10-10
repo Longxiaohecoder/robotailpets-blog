@@ -35,17 +35,21 @@ async function setup() {
   // 收集配置信息
   console.log('\n📝 请输入以下配置信息:\n');
 
-  const apiKey = await question('Claude API Key (从 console.anthropic.com 获取): ');
+  const apiKey = await question('Claude API Key（填写项目使用的密钥）: ');
+  const baseURL = await question('API Base URL (默认: https://heyroute.ai): ') || 'https://heyroute.ai';
+  const model = await question('模型 (默认: claude-opus-4-8): ') || 'claude-opus-4-8';
   const blogTitle = await question('博客标题 (默认: 我的自动化博客): ') || '我的自动化博客';
   const blogDescription = await question('博客描述 (默认: AI 驱动的内容营销): ') || 'AI 驱动的内容营销';
   const blogAuthor = await question('作者名称 (默认: AI Content Generator): ') || 'AI Content Generator';
-  const contentTopic = await question('内容主题 (默认: 技术、营销、SEO): ') || '技术、营销、SEO';
+  const contentTopic = await question('内容主题 (默认: Robotail 猫砂盆、喂食器及配件选购): ') || 'Robotail 猫砂盆、喂食器及配件选购';
   const contentLanguage = await question('内容语言 zh/en (默认: zh): ') || 'zh';
   const postsPerRun = await question('每次生成文章数 (默认: 1): ') || '1';
 
   // 生成 .env 文件
   const envContent = `# Claude API 配置
 ANTHROPIC_API_KEY=${apiKey}
+ANTHROPIC_BASE_URL=${baseURL}
+ANTHROPIC_MODEL=${model}
 
 # 博客配置
 BLOG_TITLE=${blogTitle}
@@ -58,14 +62,14 @@ CONTENT_LANGUAGE=${contentLanguage}
 POSTS_PER_RUN=${postsPerRun}
 `;
 
-  fs.writeFileSync(envPath, envContent);
+  fs.writeFileSync(envPath, envContent, { mode: 0o600 });
   console.log('\n✅ 配置文件已创建: .env');
 
   console.log('\n🎉 设置完成！');
   console.log('\n下一步：');
   console.log('1. 运行 "npm install" 安装依赖');
   console.log('2. 运行 "cd blog && npm install" 安装博客依赖');
-  console.log('3. 运行 "npm run generate" 生成第一篇文章');
+  console.log('3. 运行 "npm run generate" 生成第一篇待审核草稿');
   console.log('4. 运行 "npm run dev" 预览博客\n');
 
   rl.close();

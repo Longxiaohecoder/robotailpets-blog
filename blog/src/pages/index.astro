@@ -2,26 +2,19 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('posts')).sort(
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
   (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
 );
 
 const recentPosts = posts.slice(0, 5);
 ---
 
-<BaseLayout title="自动化博客系统">
+<BaseLayout title="Robotail 博客">
   <div>
-    <h1 style="font-size: 2rem; margin-bottom: 1rem;">欢迎来到自动化博客系统</h1>
+    <h1 style="font-size: 2rem; margin-bottom: 1rem;">认识 Robotail，了解日常宠物用品</h1>
 
     <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin-bottom: 2rem;">
-      <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1976d2;">🚀 系统特性</h2>
-      <ul style="margin-left: 20px;">
-        <li>✅ AI 自动生成高质量文章</li>
-        <li>✅ SEO 优化友好</li>
-        <li>✅ 完全自主可控</li>
-        <li>✅ 支持定时自动发布</li>
-        <li>✅ 现代化响应式设计</li>
-      </ul>
+      <p>从猫砂盆、喂食器到配件，依据官方资料整理选购入口与一般使用建议。</p>
     </div>
 
     <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem; margin-top: 2rem;">📚 最新文章</h2>

@@ -4,6 +4,7 @@
   "description": "自动化博客内容生成和发布系统",
   "type": "module",
   "scripts": {
+    "test": "node --test tests/*.test.js",
     "generate": "node scripts/generate-content.js",
     "generate:enhanced": "node scripts/generate-enhanced-content.js",
     "generate:brand": "node scripts/generate-brand-content.js",

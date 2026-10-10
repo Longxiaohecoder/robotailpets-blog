@@ -15,6 +15,7 @@ const { title, description = '使用 AI 驱动的内容营销自动化系统' } 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="generator" content={Astro.generator} />
   <meta name="description" content={description} />
+  <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
   <title>{title}</title>
   <style is:global>
     * {
@@ -81,8 +82,8 @@ const { title, description = '使用 AI 驱动的内容营销自动化系统' } 
 <body>
   <header>
     <div class="container">
-      <h1>🤖 自动化博客系统</h1>
-      <p>AI 驱动的内容营销</p>
+      <h1>Robotail 博客</h1>
+      <p>宠物用品选购与日常照护</p>
       <nav style="margin-top: 20px;">
         <a href="/" style="margin-right: 20px;">首页</a>
         <a href="/blog">文章列表</a>
@@ -97,7 +98,7 @@ const { title, description = '使用 AI 驱动的内容营销自动化系统' } 
   </div>
 
   <footer>
-    <p>© 2024 自动化博客系统 | 由 Claude AI 驱动</p>
+    <p>© {new Date().getFullYear()} Robotail 博客</p>
   </footer>
 </body>
 </html>

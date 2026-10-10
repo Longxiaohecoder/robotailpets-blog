@@ -1,5 +1,12 @@
 name: Auto Generate and Publish Posts
 
+permissions:
+  contents: write
+
+concurrency:
+  group: robotail-content-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   schedule:
     # 每天北京时间 09:00 (UTC 01:00) 自动运行
@@ -23,35 +30,46 @@ jobs:
           cache: 'npm'
 
       - name: Install root dependencies
-        run: npm install
+        run: npm ci
 
       - name: Install blog dependencies
-        run: cd blog && npm install
+        run: cd blog && npm ci
+
+      - name: Validate generator
+        run: npm test
 
       - name: Generate new content
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL || 'https://heyroute.ai' }}
-          CONTENT_TOPIC: ${{ vars.CONTENT_TOPIC || '技术、营销、SEO' }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-8' }}
+          CONTENT_TOPIC: ${{ vars.CONTENT_TOPIC || 'Robotail 猫砂盆、喂食器及配件选购' }}
           CONTENT_LANGUAGE: ${{ vars.CONTENT_LANGUAGE || 'zh' }}
           POSTS_PER_RUN: ${{ vars.POSTS_PER_RUN || '1' }}
           BLOG_AUTHOR: ${{ vars.BLOG_AUTHOR || 'robotailpets 评测团队' }}
         run: npm run generate:enhanced
 
+      - name: Validate site before publishing repository changes
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: npm run build
+
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code blog/src/content/posts/ || echo "changed=true" >> $GITHUB_OUTPUT
+          if [ -n "$(git status --porcelain -- blog/src/content/posts/)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit and push new posts
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add blog/src/content/posts/
+          git add -- blog/src/content/posts/
           git commit -m "🤖 Auto: Generate new blog post(s) [$(date +'%Y-%m-%d %H:%M')]"
           git push
 
       - name: No new content
         if: steps.git-check.outputs.changed != 'true'
-        run: echo "✅ No new content generated or no changes detected"
+        run: echo "No changes detected"
