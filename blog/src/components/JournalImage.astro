@@ -1,11 +1,11 @@
 ---
+import media from '../../../content/journal-media.json';
 interface Props {
-  src: string; alt: string; width?: number; height?: number;
+  src: string; alt?: string; width?: number; height?: number;
   sizes?: string; priority?: boolean; class?: string;
 }
-const { src, alt, width = 1500, height = 1000, sizes = '(max-width: 767px) calc(100vw - 40px), 600px', priority = false, class: className } = Astro.props;
-const builtIn = /^\/images\/journal\/(home-with-cats|window-cat|quiet-cat-moments)\.webp$/.test(src);
-const stem = src.replace(/\.webp$/, '');
-const srcset = builtIn ? `${stem}-640.webp 640w, ${stem}-960.webp 960w, ${src} 1500w` : undefined;
+const { src, alt, width, height, sizes = '(max-width: 767px) calc(100vw - 40px), 600px', priority = false, class: className } = Astro.props;
+const asset = media.assets.find(item => item.publicPath === src);
+const srcset = asset?.variants.map(item => `${item.src} ${item.width}w`).join(', ');
 ---
-<img class={className} src={src} srcset={srcset} sizes={srcset ? sizes : undefined} alt={alt} width={width} height={height} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} />
+<img class={className} src={src} srcset={srcset} sizes={srcset ? sizes : undefined} alt={alt || asset?.alt || 'Robotail Journal'} width={width || asset?.width || 1500} height={height || asset?.height || 1000} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} />

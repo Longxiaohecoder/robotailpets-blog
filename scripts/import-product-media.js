@@ -8,10 +8,12 @@ const project = fileURLToPath(new URL('../', import.meta.url));
 const selections = [
   { model: 'c32', index: 0, name: 'c32-product' },
   { model: 'c32', index: 3, name: 'c32-open-top' },
+  { model: 'c32', index: 1, name: 'c32-details' },
   { model: 'c42', index: 0, name: 'c42-product' },
   { model: 'c42', index: 1, name: 'c42-interior' },
   { model: 'f20', index: 0, name: 'f20-product' },
   { model: 'f20', index: 1, name: 'f20-routine' },
+  { model: 'f20', index: 7, name: 'f20-app' },
 ];
 const products = new Map();
 const records = [];

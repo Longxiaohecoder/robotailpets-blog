@@ -5,8 +5,8 @@ pubDate: 2026-10-10
 tags: ["Robotail", "Life with Cats", "Wet Food", "F20", "Feeding Routine"]
 author: "Robotail Editorial Team"
 category: "Life with Cats"
-cover: "/images/journal/quiet-cat-moments.webp"
-coverAlt: "An orange cat relaxing beside a person's hand in a cozy living room"
+cover: "/images/journal/cat-feeding-routine.webp"
+coverAlt: "A person preparing a meal beside a tabby cat in a bright kitchen"
 draft: true
 sources:
   - "https://robotailpets.com/products/f20"
@@ -51,7 +51,7 @@ Our suggestion is to try the routine while you are home: prepare the food, check
 Leave yourself an uncomplicated refill note. A few clear words about the next meal are more useful than a complicated system that nobody in the household remembers to update.
 
 <figure class="product-figure">
-  <img src="/images/products/f20-routine.jpg" alt="Official F20 product illustration showing the four tray positions and a phone displaying the feeding app" width="1200" height="1200" loading="lazy" decoding="async" />
+  <img src="/images/products/f20-app.jpg" alt="Official F20 product illustration showing its open trays and the feeding app" width="1200" height="1200" loading="lazy" decoding="async" />
   <figcaption>Robotail's tray-and-app illustration. Follow the manual when choosing food, loading the tray, and setting up meals.</figcaption>
 </figure>
 

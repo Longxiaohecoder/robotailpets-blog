@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { chooseCover, chooseProductImages } from './media-selection.js';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import YAML from 'yaml';
@@ -51,15 +52,16 @@ export async function publishNext({ root, now = new Date(), generateArticle }) {
     const sources = readJSON('brand-sources.json');
     // Reuse the saved brand facts and approved images; no recurring source-age approval gate.
     const [model, topic, category] = topics[history.publications.length % topics.length];
-    const titles = fs.readdirSync(postsDir).filter(name => name.endsWith('.md'))
-      .map(name => readPost(path.join(postsDir, name)).metadata.title);
+    const existingPosts = fs.readdirSync(postsDir).filter(name => name.endsWith('.md'))
+      .map(name => readPost(path.join(postsDir, name)));
+    const titles = existingPosts.map(post => post.metadata.title);
     const prompt = buildArticlePrompt(sources, topic) +
       '\nCreate a distinct, practical angle. Do not repeat these existing titles: ' + JSON.stringify(titles);
     const article = await generateArticle(prompt);
     validateArticle(article, sources);
     validateEditorialArticle(article);
-    const assets = readJSON('product-media.json').assets.filter(asset => asset.model === model).slice(0, 2);
-    if (!assets.length) throw new Error('No approved product image for ' + model);
+    const assets = chooseProductImages(readJSON('product-media.json'), model, existingPosts);
+    const cover = chooseCover(readJSON('journal-media.json'), category, existingPosts);
     article.content += '\n\n## A closer look\n\n' + assets.map(asset =>
       `![Official Robotail ${model.toUpperCase()} product image](${asset.publicPath})\n\n` +
       `Product image from the [official Robotail ${model.toUpperCase()} website](${asset.sourcePage}).`
@@ -67,14 +69,17 @@ export async function publishNext({ root, now = new Date(), generateArticle }) {
     target = saveDraft(article, postsDir, sources);
     const post = readPost(target);
     post.metadata.category = category;
-    post.metadata.cover = '/images/journal/home-with-cats.webp';
-    post.metadata.coverAlt = 'People and cats sharing a warm, welcoming home';
+    post.metadata.cover = cover.publicPath;
+    post.metadata.coverAlt = cover.alt;
     fs.writeFileSync(target, `---\n${YAML.stringify(post.metadata)}---\n\n${post.body}\n`);
   }
   const post = readPost(target);
   validateEditorialArticle({ ...post.metadata, content: post.body });
   if (!post.metadata.sources?.length || !post.body.includes('/images/products/')) {
     throw new Error('Scheduled articles require source links and product images');
+  }
+  if (post.metadata.cover && !fs.existsSync(path.join(root, 'blog/public', post.metadata.cover))) {
+    throw new Error('Missing cover image: ' + post.metadata.cover);
   }
   for (const match of post.body.matchAll(/\/images\/[\w/.-]+/g)) {
     if (!fs.existsSync(path.join(root, 'blog/public', match[0]))) throw new Error('Missing image: ' + match[0]);

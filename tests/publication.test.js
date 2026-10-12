@@ -18,6 +18,7 @@ function fixture(t) {
   json('publication-history.json', { publications: [] });
   json('brand-sources.json', { verifiedAt: '2020-01-01', sources: [{ url: 'https://robotailpets.com/products/c32', facts: [] }] });
   json('product-media.json', { assets: [{ model: 'c32', publicPath: '/images/products/product.jpg', sourcePage: 'https://robotailpets.com/products/c32' }] });
+  json('journal-media.json', { assets: [{ publicPath: '/images/products/product.jpg', alt: 'A cat-friendly home', categories: ['Cat-Friendly Homes'] }] });
   fs.writeFileSync(path.join(root, 'blog/src/content/posts/queued.md'), '---\ntitle: A home for cats\ndescription: Cat-friendly home ideas\ntags: [Robotail]\ndraft: true\nsources: [https://robotailpets.com/products/c32]\n---\n\n![Robotail](/images/products/product.jpg)\n');
   // A legacy draft outside the explicit queue must never be selected.
   fs.writeFileSync(path.join(root, 'blog/src/content/posts/legacy.md'), '---\ntitle: Legacy\ndraft: true\n---\n\nOld draft\n');

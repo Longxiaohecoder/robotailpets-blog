@@ -1,0 +1,191 @@
+{
+  "updatedAt": "2026-10-12",
+  "brandColor": {
+    "pantone": "2725 C",
+    "screenApproximation": "#685BC7",
+    "reference": "https://www.colorxs.com/color/pantone-2725-c"
+  },
+  "editing": "Lifestyle images resized to responsive WebP. Official product images retain original composition; no generated hardware.",
+  "assets": [
+    {
+      "publicPath": "/images/journal/home-with-cats.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "Existing generated lifestyle illustration",
+      "categories": [
+        "Cat-Friendly Homes",
+        "Product Guides"
+      ],
+      "alt": "A person and two cats sharing a warm living room",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/home-with-cats-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/home-with-cats-960.webp"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/home-with-cats.webp"
+        }
+      ]
+    },
+    {
+      "publicPath": "/images/journal/window-cat.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "Existing generated lifestyle illustration",
+      "categories": [
+        "Cat-Friendly Homes"
+      ],
+      "alt": "An orange tabby enjoying a sunny window seat",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/window-cat-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/window-cat-960.webp"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/window-cat.webp"
+        }
+      ]
+    },
+    {
+      "publicPath": "/images/journal/quiet-cat-moments.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "Existing generated lifestyle illustration",
+      "categories": [
+        "Life with Cats"
+      ],
+      "alt": "A cat enjoying a gentle scratch beside its person",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/quiet-cat-moments-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/quiet-cat-moments-960.webp"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/quiet-cat-moments.webp"
+        }
+      ]
+    },
+    {
+      "publicPath": "/images/journal/playtime-with-cats.webp",
+      "width": 1500,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/playtime-with-cats-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/playtime-with-cats-960.webp"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/playtime-with-cats.webp"
+        }
+      ],
+      "origin": "AI-generated lifestyle illustration; not a customer photograph or product demonstration",
+      "categories": [
+        "Life with Cats",
+        "Cat-Friendly Homes"
+      ],
+      "alt": "A woman playing with a tuxedo cat on a warm living-room rug",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide editorial photograph for Robotail's English cat-and-home journal, landscape 3:2. A cozy contemporary European apartment, a woman seated on a cream woven rug playing with a single black-and-white tuxedo cat using a simple feather wand; both cat and human naturally posed, full cat visible and safe relaxed interaction. Oak floor, understated violet cushion and small violet details, brand accent near #685BC7, warm white walls. Natural late-afternoon light, candid home photography, realistic fur and hands, lively but gentle. A distinct composition from a person sitting on a sofa with a ginger cat: this is floor-level play and a black-and-white cat. No dog, no other animals, no logos, no text, no fictional Robotail products or pet appliances, no purple color cast over the photograph. Not a collage, one finished photograph."
+    },
+    {
+      "publicPath": "/images/journal/cat-feeding-routine.webp",
+      "width": 1500,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/cat-feeding-routine-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/cat-feeding-routine-960.webp"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/cat-feeding-routine.webp"
+        }
+      ],
+      "origin": "AI-generated lifestyle illustration; not a customer photograph or product demonstration",
+      "categories": [
+        "Life with Cats"
+      ],
+      "alt": "A person preparing a meal beside a tabby cat in a bright kitchen",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial cover for an English article about everyday cat feeding routines. A single silver-gray tabby cat beside a plain ceramic food bowl on a clean kitchen floor; a person kneels nearby preparing the meal, hands natural and realistic, no claim of a specific portion or diet. Sunny contemporary US home kitchen, warm white cabinets, pale oak floor and one subtle violet kitchen towel near #685BC7. Eye-level intimate documentary composition, softly lit, photorealistic texture, calm and welcoming. Make this visually distinct from sofas, reading chairs and window-seat cats: a genuine kitchen routine with clear meal context. No branded device, no invented product, no automatic feeder, no dog, no text, no logo, no infographic, no collage."
+    },
+    {
+      "publicPath": "/images/journal/reading-with-cats.webp",
+      "width": 1500,
+      "height": 1000,
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/reading-with-cats-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/reading-with-cats-960.webp"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/reading-with-cats.webp"
+        }
+      ],
+      "origin": "AI-generated lifestyle illustration; not a customer photograph or product demonstration",
+      "categories": [
+        "Life with Cats",
+        "Cat-Friendly Homes"
+      ],
+      "alt": "A man reading at a wooden desk beside a cream cat resting in a basket",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial lifestyle photograph for the Robotail cat journal. A man in casual neutral clothing reading at a warm wooden desk in a cozy small home office, a single long-haired cream cat stretched comfortably in a separate basket beside the desk, both subjects visible. Warm white plaster walls, books without legible writing, one restrained violet textile detail near #685BC7. Natural morning light, truthful photographic textures, relaxed human-cat companionship, uncluttered but lived-in home. Distinct from an armchair, a sofa and a window-seat close-up: this is a wider home-office setting with a man and a cream long-haired cat. No dog, no other animals, no text, no logos, no invented Robotail products, no product claims, no collage. A single finished editorial photograph."
+    },
+    {
+      "publicPath": "/images/journal/brand-home.webp",
+      "width": 1200,
+      "height": 436,
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/brand-home-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/brand-home-960.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/images/journal/brand-home.webp"
+        }
+      ],
+      "origin": "Official Robotail website image",
+      "categories": [
+        "Product Guides",
+        "Cat-Friendly Homes"
+      ],
+      "alt": "A cat beside a Robotail litter box in a warm living room",
+      "sourcePage": "https://robotailpets.com/",
+      "sourceImage": "https://robotailpets.com/cdn/shop/files/banner01_a98e1a2d-bc51-49b1-bded-cfa38e373990.jpg?v=1783356889&width=1200"
+    }
+  ]
+}

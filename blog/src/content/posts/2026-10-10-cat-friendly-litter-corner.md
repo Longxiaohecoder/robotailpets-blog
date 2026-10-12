@@ -65,8 +65,8 @@ The [official Robotail C32 product page](https://robotailpets.com/products/c32) 
 If an open-top design is on your shortlist, the C32 is worth looking at alongside your layout notes. Check the current dimensions, operating instructions, litter requirements, and suitability for your individual cat before deciding. An automatic cleaning function does not remove the need to plan for maintenance or watch how your cat responds.
 
 <figure class="product-figure">
-  <img src="/images/products/c32-open-top.jpg" alt="Official Robotail C32 size illustration showing a cat in the open-top box and the listed dimensions" width="1200" height="1200" loading="lazy" decoding="async" />
-  <figcaption>Official C32 size illustration. Check suitability and operating clearance in the instructions for your particular cat and model.</figcaption>
+  <img src="/images/products/c32-details.jpg" alt="Official Robotail C32 illustration showing its transparent lid and litter-tray upkeep" width="1200" height="1200" loading="lazy" decoding="async" />
+  <figcaption>Official C32 transparent-lid illustration. Follow the instructions when checking waste and cleaning the tray.</figcaption>
 </figure>
 
 ## Make the everyday checks easy

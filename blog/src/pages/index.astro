@@ -2,9 +2,24 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import JournalImage from '../components/JournalImage.astro';
 import { getCollection } from 'astro:content';
-import { topicOf, dateLabel, readingTime } from '../lib/journal';
+import { topicOf, dateLabel, readingTime, coverOf } from '../lib/journal';
+import media from '../../../content/journal-media.json';
 const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort((a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const featured = posts[0];
+// Reserve the featured cover first so a newly published article never duplicates a homepage scene.
+const usedImages = new Set(featured ? [coverOf(featured)] : []);
+function homeImage(preferred: string, category: string) {
+  const candidates = media.assets.filter(asset => asset.categories.includes(category) && !usedImages.has(asset.publicPath));
+  const asset = candidates.find(asset => asset.publicPath === preferred) || candidates[0];
+  if (!asset) throw new Error('No distinct homepage image for ' + category);
+  usedImages.add(asset.publicPath);
+  return asset.publicPath;
+}
+const heroImage = homeImage('/images/journal/playtime-with-cats.webp', 'Cat-Friendly Homes');
+const cornerImage = homeImage('/images/journal/window-cat.webp', 'Cat-Friendly Homes');
+const feedingImage = homeImage('/images/journal/cat-feeding-routine.webp', 'Life with Cats');
+const productImage = homeImage('/images/journal/brand-home.webp', 'Product Guides');
+const storyImage = homeImage('/images/journal/reading-with-cats.webp', 'Life with Cats');
 ---
 <BaseLayout title="Robotail Journal | A Happier Home with Cats">
   <div class="wrap">
@@ -15,13 +30,13 @@ const featured = posts[0];
         <p>A sunny spot. A soft place to land. A familiar purr. Find little ways to make life at home better, together.</p>
         <div class="hero-actions"><a class="button" href="/blog/">Explore the journal <span aria-hidden="true">↗</span></a><a class="arrow-link" href="#together">Our story <span aria-hidden="true">↗</span></a></div>
       </div>
-      <figure class="hero-photo"><JournalImage src="/images/journal/home-with-cats.webp" alt="A woman relaxing with a gray cat on a linen sofa while an orange tabby rests nearby" priority sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 53vw, 640px" /></figure>
+      <figure class="hero-photo"><JournalImage src={heroImage} priority sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 53vw, 640px" /></figure>
     </section>
     <nav class="topic-strip" aria-label="Journal topics"><span>Little ideas for life together</span><a href="/blog/?topic=Cat-Friendly%20Homes">Cat-Friendly Homes <span aria-hidden="true">↗</span></a><a href="/blog/?topic=Life%20with%20Cats">Life with Cats <span aria-hidden="true">↗</span></a><a href="/blog/?topic=Product%20Guides">Product Guides <span aria-hidden="true">↗</span></a></nav>
     <section class="section" aria-labelledby="latest-title">
       <div class="section-heading row"><h2 id="latest-title">Fresh from the journal</h2><a class="arrow-link" href="/blog/">All articles <span aria-hidden="true">↗</span></a></div>
       {featured ? <article class="featured">
-        <a class="featured-image" href={'/blog/' + featured.slug + '/'} aria-label={'Read: ' + featured.data.title}><JournalImage src="/images/journal/window-cat.webp" alt="An orange tabby enjoying a sunlit window seat at home" /></a>
+        <a class="featured-image" href={'/blog/' + featured.slug + '/'} aria-label={'Read: ' + featured.data.title}><JournalImage src={coverOf(featured)} alt={featured.data.coverAlt} /></a>
         <div class="featured-copy">
           <div class="metadata"><span class="category-label">{topicOf(featured)}</span><time datetime={featured.data.pubDate.toISOString()}>{dateLabel(featured.data.pubDate)}</time><span>{readingTime(featured.body)} min read</span></div>
           <h3><a href={'/blog/' + featured.slug + '/'}>{featured.data.title}</a></h3>
@@ -34,16 +49,16 @@ const featured = posts[0];
     <div class="wrap">
       <div class="section-heading"><h2 id="topics-title">Make room for the good life</h2><p>Thoughtful spaces. Familiar routines. More time together.</p></div>
       <div class="topic-grid">
-        <a class="topic-large" href="/blog/?topic=Cat-Friendly%20Homes"><JournalImage src="/images/journal/window-cat.webp" alt="A tabby cat on a sage cushion beside a sunny oak window seat" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 65vw, 765px" /><div class="topic-content"><div><h3>A little corner of their own</h3><p>Comfortable spaces for you and your cat.</p></div><span aria-hidden="true">↗</span></div></a>
+        <a class="topic-large" href="/blog/?topic=Cat-Friendly%20Homes"><JournalImage src={cornerImage} sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 65vw, 765px" /><div class="topic-content"><div><h3>A little corner of their own</h3><p>Comfortable spaces for you and your cat.</p></div><span aria-hidden="true">↗</span></div></a>
         <div class="topic-side">
-          <a class="topic-small" href="/blog/?topic=Life%20with%20Cats"><div><p class="topic-tag">Life with Cats</p><h3>Small moments. Closer bonds.</h3><p>Everyday routines and the quiet joy of sharing your home.</p></div><span aria-hidden="true">↗</span></a>
-          <a class="topic-small" href="/blog/?topic=Product%20Guides"><div><p class="topic-tag">Product Guides</p><h3>Thoughtful choices for home</h3><p>Start with what your cat needs, then find the right fit.</p></div><span aria-hidden="true">↗</span></a>
+          <a class="topic-small" href="/blog/?topic=Life%20with%20Cats"><JournalImage class="topic-thumbnail" src={feedingImage} sizes="92px" /><div><p class="topic-tag">Life with Cats</p><h3>Small moments. Closer bonds.</h3><p>Everyday routines and the quiet joy of sharing your home.</p></div><span aria-hidden="true">↗</span></a>
+          <a class="topic-small" href="/blog/?topic=Product%20Guides"><JournalImage class="topic-thumbnail" src={productImage} sizes="92px" /><div><p class="topic-tag">Product Guides</p><h3>Thoughtful choices for home</h3><p>Start with what your cat needs, then find the right fit.</p></div><span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </div>
   </section>
   <section class="wrap section home-note" id="together" aria-labelledby="together-title">
-    <JournalImage src="/images/journal/quiet-cat-moments.webp" alt="A cat enjoying a gentle scratch beside its person in a cozy armchair" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 36vw, 430px" />
+    <JournalImage src={storyImage} sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1280px) 36vw, 430px" />
     <div><h2 id="together-title">Home feels better<br />when we share it.</h2><p>We love a well-kept room. We also love the little signs that a cat lives here. The Robotail Journal explores the balance: welcoming spaces, everyday companionship, and thoughtful choices for a home you both enjoy.</p><p style="margin-top:16px">Here's to familiar footsteps, favorite sunny spots, and a purr that says you're home.</p><a class="arrow-link" href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">Discover Robotail <span aria-hidden="true">↗</span></a></div>
   </section>
 </BaseLayout>

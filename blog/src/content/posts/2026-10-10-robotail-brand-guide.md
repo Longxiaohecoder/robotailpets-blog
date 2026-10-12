@@ -8,6 +8,8 @@ category: "Product Guides"
 draft: false
 sources: ["https://robotailpets.com/", "https://robotailpets.com/collections/robotail"]
 sourceVerifiedAt: "2026-10-10"
+cover: "/images/journal/brand-home.webp"
+coverAlt: "A cat beside a Robotail litter box in a warm living room"
 ---
 
 A comfortable life with your cat starts with the everyday details. Before comparing product features, think about the part of your routine you would like to improve: maintaining the litter area, planning meals, or finding replacement accessories for equipment you already own.

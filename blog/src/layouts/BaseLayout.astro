@@ -12,7 +12,7 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
   {noindex && <meta name="robots" content="noindex, nofollow" />}
-  <meta name="theme-color" content="#6b5b95" />
+  <meta name="theme-color" content="#685bc7" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href={canonical} />
   <meta property="og:title" content={title} />
@@ -27,14 +27,14 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
       const saved = localStorage.getItem('robotail-theme');
       document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     } catch { document.documentElement.dataset.theme = 'light'; }
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', document.documentElement.dataset.theme === 'dark' ? '#211c2a' : '#6b5b95');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', document.documentElement.dataset.theme === 'dark' ? '#211c2a' : '#685bc7');
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="wrap nav-row">
-      <a class="brand" href="/" aria-label="Robotail Journal home">
+      <a class="brand" href="/" aria-label="Robotail — A journal for life with cats. Home">
         <span class="wordmark">Robotail</span><span class="brand-caption">A journal for<br />life with cats.</span>
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Main navigation">
@@ -78,7 +78,7 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
     const theme = document.querySelector<HTMLButtonElement>('#theme-toggle');
     const label = () => {
       const dark = document.documentElement.dataset.theme === 'dark';
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#211c2a' : '#6b5b95');
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#211c2a' : '#685bc7');
       if (theme) { theme.textContent = dark ? 'Light' : 'Dark'; theme.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode'); }
     };
     label();

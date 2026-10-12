@@ -1,18 +1,19 @@
 /* Editorial pet-home journal. Variance 6 / motion 3 / density 3.
-   Official Robotail purple (#6b5b95), warm-white reading surfaces.
+   Owner-specified PANTONE 2725 C screen approximation (#685bc7), warm-white reading surfaces.
    Preserve photography and editorial layout; 20px images, pill controls. Native Astro + CSS.
    Layer scale: content 0, navigation 10, mobile menu 11. */
 :root {
   color-scheme: light;
   --paper: #fcfaf7;
-  --surface: #f3eef7;
-  --surface-strong: #e8dff1;
+  --surface: #f1eefb;
+  --surface-strong: #eeeafa;
   --ink: #302939;
   --muted: #6b6271;
-  --accent: #6b5b95;
-  --accent-hover: #594a7f;
+  --brand-purple: #685bc7;
+  --accent: var(--brand-purple);
+  --accent-hover: #5146ab;
   --accent-ink: #fcfaf7;
-  --line: #dfd7e5;
+  --line: #dcd7ef;
   --radius: 20px;
   --display: Georgia, "Songti SC", "STSong", serif;
   --body: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -24,8 +25,8 @@
   --surface-strong: #3b3049;
   --ink: #f4eff8;
   --muted: #c1b6cd;
-  --accent: #cbb9e5;
-  --accent-hover: #dbcbee;
+  --accent: #bdb3f3;
+  --accent-hover: #d0c8ff;
   --accent-ink: #241c31;
   --line: #51445f;
 }
@@ -402,6 +403,7 @@ button {
 .topic-large img {
   width: 100%;
   height: 300px;
+  flex: 1;
   object-fit: cover;
   object-position: 50% 60%;
 }
@@ -1117,3 +1119,8 @@ button {
     animation: none !important;
   }
 }
+
+/* Distinct topic imagery without displacing the editorial hierarchy. */
+.topic-small { display: grid; grid-template-columns: 92px minmax(0, 1fr); column-gap: 18px; }
+.topic-small .topic-thumbnail { width: 92px; height: 120px; object-fit: cover; border-radius: 12px; align-self: center; }
+.topic-small > span { grid-column: 2; }

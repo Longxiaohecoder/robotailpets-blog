@@ -62,6 +62,26 @@
       "bytes": 160038,
       "sha256": "8df8659e9e55d9f9c1c46b6b8df64e6fa61006d1851f52e4b66d320df2e1743e",
       "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    },
+    {
+      "model": "c32",
+      "sourcePage": "https://robotailpets.com/products/c32",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6_07c3c93c-86c9-457a-8c72-5a75f3a88643.jpg?v=1785219387",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6_07c3c93c-86c9-457a-8c72-5a75f3a88643.jpg?v=1785219387&width=1200",
+      "publicPath": "/images/products/c32-details.jpg",
+      "bytes": 193536,
+      "sha256": "19094a4dd9f2bbcba86203f778c722455bff93d89103c14eba59c10b6eda58dc",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, C32 transparent-lid detail"
+    },
+    {
+      "model": "f20",
+      "sourcePage": "https://robotailpets.com/products/f20",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_2_be9dce1b-4258-4c63-8b4d-ad729ceda6ab.jpg?v=1785135985",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_2_be9dce1b-4258-4c63-8b4d-ad729ceda6ab.jpg?v=1785135985&width=1200",
+      "publicPath": "/images/products/f20-app.jpg",
+      "bytes": 284577,
+      "sha256": "235aa367da2e999af9f220bbfbd757547a1d5a5e3da54ce1ab98bb55bfd37bc7",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, F20 app and tray view"
     }
   ]
 }
