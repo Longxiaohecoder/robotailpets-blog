@@ -1,30 +1,33 @@
 /* Editorial pet-home journal. Variance 6 / motion 3 / density 3.
-   One sage accent; 20px image radius, pill controls. Native Astro + CSS.
+   Official Robotail purple (#6b5b95), warm-white reading surfaces.
+   Preserve photography and editorial layout; 20px images, pill controls. Native Astro + CSS.
    Layer scale: content 0, navigation 10, mobile menu 11. */
 :root {
   color-scheme: light;
-  --paper: #fbfcf8;
-  --surface: #f0f3eb;
-  --surface-strong: #e6ece1;
-  --ink: #263b30;
-  --muted: #5d6c60;
-  --accent: #3d624d;
-  --accent-ink: #fbfcf8;
-  --line: #d7dfd2;
+  --paper: #fcfaf7;
+  --surface: #f3eef7;
+  --surface-strong: #e8dff1;
+  --ink: #302939;
+  --muted: #6b6271;
+  --accent: #6b5b95;
+  --accent-hover: #594a7f;
+  --accent-ink: #fcfaf7;
+  --line: #dfd7e5;
   --radius: 20px;
   --display: Georgia, "Songti SC", "STSong", serif;
   --body: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #1d2822;
-  --surface: #26362b;
-  --surface-strong: #314636;
-  --ink: #eaf0e6;
-  --muted: #b1c3b3;
-  --accent: #b8d2ad;
-  --accent-ink: #1d2822;
-  --line: #46564a;
+  --paper: #211c2a;
+  --surface: #2c2536;
+  --surface-strong: #3b3049;
+  --ink: #f4eff8;
+  --muted: #c1b6cd;
+  --accent: #cbb9e5;
+  --accent-hover: #dbcbee;
+  --accent-ink: #241c31;
+  --line: #51445f;
 }
 * {
   box-sizing: border-box;
@@ -130,6 +133,7 @@ button {
   gap: 14px;
 }
 .wordmark {
+  color: var(--accent);
   font-weight: 650;
   font-size: 28px;
   letter-spacing: -1.3px;
@@ -151,6 +155,10 @@ button {
 .main-nav a {
   padding-block: 10px;
 }
+.main-nav a:hover,
+.footer-links a:hover {
+  color: var(--accent);
+}
 .main-nav a[aria-current="page"] {
   color: var(--accent);
   box-shadow: 0 2px 0 var(--accent);
@@ -168,11 +176,17 @@ button {
   font-size: 12px;
 }
 .shop-link {
-  border: 1px solid var(--line);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
   padding: 8px 18px;
   border-radius: 999px;
   font-size: 13px;
   white-space: nowrap;
+}
+.shop-link:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
 }
 .menu-toggle {
   display: none;
@@ -196,7 +210,8 @@ button {
     opacity 0.2s;
 }
 .button:hover {
-  opacity: 0.9;
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
   transform: translateY(-2px);
 }
 .button:active {
@@ -205,6 +220,9 @@ button {
 .button.secondary {
   background: transparent;
   color: var(--accent);
+}
+.button.secondary:hover {
+  background: var(--surface);
 }
 .arrow-link {
   display: inline-flex;
@@ -238,6 +256,9 @@ button {
   font-size: clamp(38px, 4.4vw, 60px);
   line-height: 1.45;
   letter-spacing: -0.025em;
+}
+.hero-title-accent {
+  color: var(--accent);
 }
 .hero-copy > p:not(.eyebrow) {
   font-size: 16px;
@@ -280,6 +301,7 @@ button {
   margin-right: auto;
 }
 .topic-strip a {
+  color: var(--accent);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -339,6 +361,12 @@ button {
 }
 .category-label {
   color: var(--accent);
+  background: var(--surface);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.5;
 }
 .featured h3 {
   font-size: 30px;
@@ -423,6 +451,9 @@ button {
   color: var(--accent);
   margin-bottom: 12px;
 }
+.topic-small:last-child {
+  background: var(--surface-strong);
+}
 .home-note {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -452,6 +483,7 @@ button {
 }
 .site-footer {
   border-top: 1px solid var(--line);
+  background: var(--surface);
   padding-top: 44px;
 }
 .footer-top {
@@ -516,6 +548,11 @@ button {
 .filter[aria-pressed="true"] {
   background: var(--accent);
   color: var(--accent-ink);
+  border-color: var(--accent);
+}
+.filter:hover:not([aria-pressed="true"]) {
+  color: var(--accent);
+  background: var(--surface);
   border-color: var(--accent);
 }
 .search-label {
@@ -779,6 +816,9 @@ button {
   border-radius: 999px;
   background: var(--surface);
   text-decoration: none;
+}
+.article-tags a:hover {
+  background: var(--surface-strong);
 }
 .more-posts {
   display: grid;
