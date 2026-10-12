@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.js",
+    "publish:next": "node scripts/publish-next.js",
     "generate": "node scripts/generate-content.js",
     "generate:enhanced": "node scripts/generate-enhanced-content.js",
     "generate:brand": "node scripts/generate-brand-content.js",

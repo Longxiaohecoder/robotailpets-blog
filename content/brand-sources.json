@@ -1,8 +1,12 @@
 {
   "brand": "Robotail",
-  "verifiedAt": "2026-10-10",
+  "verifiedAt": "2026-10-12",
   "website": "https://robotailpets.com",
-  "amazon": null,
+  "amazon": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D",
+  "salesScope": {
+    "confirmedByUserAt": "2026-10-12",
+    "note": "用户确认 Robotail 品牌在 Amazon 有多个店铺及销售链接，均为其品牌销售渠道。来源范围不限于单一店铺；仍须逐个核对商品型号、图片和规格。"
+  },
   "sources": [
     {
       "url": "https://robotailpets.com/",
@@ -11,6 +15,46 @@
     {
       "url": "https://robotailpets.com/collections/robotail",
       "facts": ["Robotail 产品集合页面提供品牌产品浏览入口。"]
+    },
+    {
+      "url": "https://robotailpets.com/products/c32",
+      "facts": ["官网正文称 C32 为开放式顶部的自动猫砂盆，采用双耙清理设计。", "官网正文列出四个重量传感器及 App 控制、体重和如厕记录功能。", "官网正文提及透明废物盖，以及可拆卸的金属耙和猫砂托盘。", "上述功能来自厂商描述，不代表编辑团队实测，也不构成无风险保证。"]
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "facts": ["官网正文称 C42 为 106L 容量、半开放入口的自动猫砂盆，采用滚筒结构。", "官网正文列出四个传感器和 App 如厕频率、使用时长及体重记录功能。", "106L 是厂商容量标注，不能当作实际可用猫砂量、地面占用尺寸或保证适合所有猫的结论。"]
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "facts": ["官网正文将 F20 描述为支持湿粮、制冷和餐前回温的自动喂食器。", "官网正文提及 App 喂食计划；功能细节以官网所链接的 F20 说明书为准，不能从图片替代文字推断摄像头、6L 粮仓或语音功能。"]
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "facts": ["官网 F20 User Guide 页面提供可下载的 PDF 说明书链接。"]
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856",
+      "facts": ["F20 说明书英文部分：只支持 2.4GHz Wi-Fi；App 有餐盘 1 至 4 的对应设置、喂食计划、三档制冷及餐前回温。", "说明书要求平整表面、两侧通风口不遮挡、室内使用并避开直射日光和地毯。", "说明书要求更换食物后清洗餐盘；主机不可水冲。", "说明书称备用电池为三节 AAA（不随附）；断电时预设喂食计划仍执行，但制冷、回温停止，App 显示离线。", "说明书规定鲜食存储不超过 24 小时，这不是在所有食物和环境下均能安全保存 24 小时的保证。"]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "facts": ["美国 Amazon 此商品页面的品牌导航标注 Visit the Robotail Store，链接到 SafeSmartRobotail 店铺，店铺 ID 为 02F4D9D4-25BA-42B5-B8AC-524E49F49D3D。", "商品详情列出型号 C32RO，尺寸 28 x 19 x 7.7 inches；功能正文列出开放式结构、四个重量传感器、双耙和 App 控制。", "这是 C32 系列的 Amazon 型号标注，不得默认与独立站配置、包装和售后完全相同。"]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "facts": ["商品详情列出 Robotail 品牌、型号 C42C，尺寸 26 x 21.2 x 24.8 inches。", "功能正文列出 106L 容量、滚筒结构、四个传感器和 App 控制。", "这是 C42 系列的 Amazon 型号标注；不能默认与其他链接的包装附件及购买条件相同。"]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "facts": ["商品详情列出 Robotail 品牌及型号 F20。", "功能正文描述湿粮喂食、三档制冷、餐前回温、App 定时和即时喂食。", "此 Amazon 正文回温温度与官网正文不同，文章不写统一回温温度，也不把标题中的四天计划当作湿粮可存四天的依据。"]
+    },
+    {
+      "url": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D",
+      "facts": ["此店铺入口已从 Amazon 商品品牌导航验证；店铺正文未能抓取，不能声称已核对完整店铺或欧洲站点。"]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+      "facts": ["Cats Protection 建议猫砂盆放在安静处，远离食物、水和休息区域；猫砂盆需要足够转身空间，不同猫偏好不同。"]
     }
   ],
   "editorialRules": [
@@ -19,6 +63,9 @@
     "不得声称曾使用产品，不得把用户点评当作独立验证的产品效果。",
     "不得添加未经验证的产品功能、参数、图片或链接。",
     "amazon 为 null 时不得添加亚马逊链接。",
+    "用户已确认品牌销售渠道有多店铺多链接，不应以单一店铺或另一个店铺名称为排除依据；品牌渠道确认与具体商品功能核对分开记录。",
+    "Amazon 品牌入口的验证不等于验证店铺全部内容；不同站点和 ASIN 的型号后缀、附件及购买条件不得默认等同。",
+    "说明书优先于 SEO 标题、图片替代文字和宣传语；不一致的信息必须省略或说明待核对。",
     "正文必须包含所用来源的 Markdown 链接。"
   ]
 }

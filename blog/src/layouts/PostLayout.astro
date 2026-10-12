@@ -5,13 +5,15 @@ import JournalImage from '../components/JournalImage.astro';
 interface Props {
   title: string; description: string; pubDate: Date; tags: string[]; author: string;
   category: string; cover: string; coverAlt?: string; minutes: number;
+  preview?: boolean;
   headings: { depth: number; slug: string; text: string }[];
 }
-const { title, description, pubDate, tags, author, category, cover, coverAlt, minutes, headings } = Astro.props;
+const { title, description, pubDate, tags, author, category, cover, coverAlt, minutes, headings, preview = false } = Astro.props;
 const toc = headings.filter(heading => heading.depth === 2);
 ---
-<BaseLayout title={title + ' | Robotail Journal'} description={description} image={cover}>
+<BaseLayout title={title + ' | Robotail Journal'} description={description} image={cover} noindex={preview}>
   <div class="wrap">
+    {preview && <p class="draft-preview-note" role="status">Editorial preview · Unpublished draft · Product information checked October 12, 2026</p>}
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Journal</a><span aria-hidden="true">/</span><span>{category}</span></nav>
     <header class="article-heading">
       <span class="category-label">{category}</span><h1>{title}</h1><p>{description}</p>
@@ -27,3 +29,7 @@ const toc = headings.filter(heading => heading.depth === 2);
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .draft-preview-note { margin-top: 24px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); font-size: 14px; }
+</style>

@@ -1,0 +1,11 @@
+{
+  "timezone": "Asia/Shanghai",
+  "weekdays": ["Mon", "Tue", "Thu"],
+  "hour": 9,
+  "queue": [
+    "2026-10-10-cat-friendly-litter-corner.md",
+    "2026-10-10-robotail-f20-feeding-routine.md",
+    "2026-10-10-robotail-c32-vs-c42.md"
+  ],
+  "approval": "User authorized automatic publication without further source re-verification or individual approval on 2026-10-12."
+}

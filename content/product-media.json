@@ -1,0 +1,67 @@
+{
+  "retrievedAt": "2026-10-12T03:51:05.441Z",
+  "permission": "User authorized reuse of brand website and Amazon product images on 2026-10-12.",
+  "editing": "Shopify width rendition only; no retouching, added text, or product alteration.",
+  "assets": [
+    {
+      "model": "c32",
+      "sourcePage": "https://robotailpets.com/products/c32",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_be3faaa4-923c-45e6-a3fb-d72727c2bfcf.jpg?v=1783405121",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_be3faaa4-923c-45e6-a3fb-d72727c2bfcf.jpg?v=1783405121&width=1200",
+      "publicPath": "/images/products/c32-product.jpg",
+      "bytes": 147993,
+      "sha256": "3e7adce6867e1984f3073ab3a78d3244f44e1d789a0eb60013f85cc1a4c627e0",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    },
+    {
+      "model": "c32",
+      "sourcePage": "https://robotailpets.com/products/c32",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/2_00099dc3-eb9a-4bd6-8ffa-3a1a6e164dc2.jpg?v=1785219388",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/2_00099dc3-eb9a-4bd6-8ffa-3a1a6e164dc2.jpg?v=1785219388&width=1200",
+      "publicPath": "/images/products/c32-open-top.jpg",
+      "bytes": 208466,
+      "sha256": "53f800fb2567c36f39fef24f810cd744a6899d4e62b8ab31a1612d36320163f6",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    },
+    {
+      "model": "c42",
+      "sourcePage": "https://robotailpets.com/products/c42",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_4411b9b4-4511-4dfd-8c3a-32b3594f341f.jpg?v=1783405123",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_4411b9b4-4511-4dfd-8c3a-32b3594f341f.jpg?v=1783405123&width=1200",
+      "publicPath": "/images/products/c42-product.jpg",
+      "bytes": 116549,
+      "sha256": "c1f9ceeb1bcdbe0f544dea84a05ecf5785ce97c5b23f5744970eb55534e209dd",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    },
+    {
+      "model": "c42",
+      "sourcePage": "https://robotailpets.com/products/c42",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_2790e3c0-167d-46a1-ba94-b00cc93199da.webp?v=1768132031",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_2790e3c0-167d-46a1-ba94-b00cc93199da.webp?v=1768132031&width=1200",
+      "publicPath": "/images/products/c42-interior.webp",
+      "bytes": 131808,
+      "sha256": "bd783d032151bd6f410521de6bc044a0cee2606a62e297162219c8b17ea2e547",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    },
+    {
+      "model": "f20",
+      "sourcePage": "https://robotailpets.com/products/f20",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_2.jpg?v=1783398594",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_2.jpg?v=1783398594&width=1200",
+      "publicPath": "/images/products/f20-product.jpg",
+      "bytes": 211559,
+      "sha256": "9206611c3d9d0fdd0c39bed25cfd8cf97260548e9602626f44f37b74e905355a",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    },
+    {
+      "model": "f20",
+      "sourcePage": "https://robotailpets.com/products/f20",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_eec0b70f-229e-4824-b9cb-01a3da0c3df8.jpg?v=1785135981",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_eec0b70f-229e-4824-b9cb-01a3da0c3df8.jpg?v=1785135981&width=1200",
+      "publicPath": "/images/products/f20-routine.jpg",
+      "bytes": 160038,
+      "sha256": "8df8659e9e55d9f9c1c46b6b8df64e6fa61006d1851f52e4b66d320df2e1743e",
+      "review": "Visually approved 2026-10-12: original brand image, English copy, products or cats only"
+    }
+  ]
+}

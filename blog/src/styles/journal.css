@@ -702,6 +702,41 @@ button {
   border-radius: 12px;
   margin-block: 28px;
 }
+.prose .product-figure {
+  margin-block: 32px;
+}
+.prose .product-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+}
+.prose .product-figure figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin-block: 24px;
+  font-size: 15px;
+}
+.prose th,
+.prose td {
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.prose th {
+  background: var(--surface);
+  font-weight: 600;
+}
 .prose blockquote {
   border-left: 3px solid var(--accent);
   padding: 18px 24px;

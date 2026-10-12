@@ -32,8 +32,16 @@ try {
     const deployments = await github('deployments?per_page=3');
     const head = await github('commits/main');
     const statuses = await github(`commits/${head.sha}/status`);
+    const workflow = await github('actions/workflows/auto-publish.yml');
+    const historyFile = await github('contents/content/publication-history.json?ref=main').catch(error => {
+      if (error.message.endsWith('HTTP 404')) return null;
+      throw error;
+    });
+    const publicationHistory = historyFile ? JSON.parse(Buffer.from(historyFile.content, 'base64').toString('utf8')) : null;
     console.log(JSON.stringify({
       head: head.sha,
+      workflowState: workflow.state,
+      publicationHistory,
       runs: runs.workflow_runs.map(run => ({ id: run.id, event: run.event, sha: run.head_sha, status: run.status, conclusion: run.conclusion, url: run.html_url })),
       commitStatuses: statuses.statuses.map(status => ({ context: status.context, state: status.state, url: status.target_url })),
       deployments: await Promise.all(deployments.map(async deployment => ({

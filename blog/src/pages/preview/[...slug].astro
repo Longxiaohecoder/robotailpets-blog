@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import PostLayout from '../../layouts/PostLayout.astro';
+import { topicOf, coverOf, readingTime } from '../../lib/journal';
+
+// Review only this editorial batch on the local dev server. No production routes.
+export async function getStaticPaths() {
+  if (!import.meta.env.DEV) return [];
+  const selected = new Set([
+    '2026-10-10-cat-friendly-litter-corner',
+    '2026-10-10-robotail-f20-feeding-routine',
+    '2026-10-10-robotail-c32-vs-c42',
+  ]);
+  const posts = await getCollection('posts', ({ slug, data }) => data.draft && selected.has(slug));
+  return posts.map(post => ({ params: { slug: post.slug }, props: post }));
+}
+const post = Astro.props;
+const { Content, headings } = await post.render();
+---
+<PostLayout {...post.data} category={topicOf(post)} cover={coverOf(post)} minutes={readingTime(post.body)} headings={headings} preview>
+  <Content />
+</PostLayout>
