@@ -1,19 +1,26 @@
 ---
-title: "How to Create a Cat-Friendly Litter Corner at Home"
-description: "Make room for your cat without losing the warmth of your home: thoughtful litter box placement, simple styling, and a practical look at Robotail C32."
-pubDate: 2026-10-10
-tags: ["Robotail", "Cat-Friendly Homes", "Litter Box Placement", "C32"]
-author: "Robotail Editorial Team"
-category: "Cat-Friendly Homes"
-cover: "/images/journal/home-with-cats.webp"
-coverAlt: "A person and two cats sharing a warm, softly lit living room"
-draft: true
+title: How to Create a Cat-Friendly Litter Corner at Home
+description: "Make room for your cat without losing the warmth of your home:
+  thoughtful litter box placement, simple styling, and a practical look at
+  Robotail C32."
+pubDate: 2026-10-12T04:42:40.628Z
+tags:
+  - Robotail
+  - Cat-Friendly Homes
+  - Litter Box Placement
+  - C32
+author: Robotail Editorial Team
+category: Cat-Friendly Homes
+cover: /images/journal/home-with-cats.webp
+coverAlt: A person and two cats sharing a warm, softly lit living room
+draft: false
 sources:
-  - "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting"
-  - "https://robotailpets.com/products/c32"
-  - "https://www.amazon.com/dp/B0G648Z6YL"
-sourceVerifiedAt: "2026-10-12"
-reviewNote: "Updated with official product images and Amazon C32RO listing details. Manufacturer descriptions, not hands-on testing. Lifestyle cover remains illustrative. Prepared for review, not scheduled or published."
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting
+  - https://robotailpets.com/products/c32
+  - https://www.amazon.com/dp/B0G648Z6YL
+sourceVerifiedAt: 2026-10-12
+reviewNote: Automatically published under the owner authorization of October 12,
+  2026. Product information uses saved brand sources; not hands-on testing.
 ---
 
 The nicest homes with cats do not make you choose between comfort and practicality. There is room for the reading chair, the soft afternoon light, and the everyday things your cat needs—including a litter box that belongs somewhere in the plan.
