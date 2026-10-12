@@ -7,5 +7,6 @@
     "2026-10-10-robotail-f20-feeding-routine.md",
     "2026-10-10-robotail-c32-vs-c42.md"
   ],
-  "approval": "User authorized automatic publication without further source re-verification or individual approval on 2026-10-12."
+  "requireApproval": true,
+  "approval": "Owner updated the workflow on 2026-10-12: prepare three illustrated English drafts every Monday, require explicit human confirmation of the reviewed batch before deployment and scheduled publication. Previous blanket authorization is superseded."
 }

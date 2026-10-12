@@ -1,4 +1,4 @@
-name: Auto Generate and Publish Posts
+name: Publish Approved Robotail Articles
 
 permissions:
   contents: write
@@ -11,6 +11,8 @@ on:
   schedule:
     # 每周一、二、四北京时间 09:00 (UTC 01:00)，每次一篇
     - cron: '0 1 * * 1,2,4'
+    # 云端补跑；同日发布记录防止重复，不再依靠本地免确认补发任务。
+    - cron: '30 2 * * 1,2,4'
   workflow_dispatch: # 允许手动触发
 
 jobs:
@@ -39,16 +41,10 @@ jobs:
       - name: Validate generator
         run: npm test
 
-      - name: Publish one queued or newly generated English cat article
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL || 'https://heyroute.ai' }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-8' }}
-          CONTENT_TOPIC: ${{ vars.CONTENT_TOPIC || 'Robotail litter boxes, feeding routines, and accessories for a cat-friendly home' }}
-          CONTENT_LANGUAGE: en
-          POSTS_PER_RUN: '1'
-          BLOG_AUTHOR: Robotail Editorial Team
-        run: npm run publish:next
+      - name: Require human approval; never generate during publication
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const plan = JSON.parse(fs.readFileSync('content/publication-plan.json')); if (plan.requireApproval !== true) throw new Error('Human approval must be enabled');"
+          npm run publish:next
 
       - name: Validate site before publishing repository changes
         env:

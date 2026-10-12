@@ -36,6 +36,7 @@ case "$action" in
     exec "$runtime_node" scripts/generate-content.js "$@"
     ;;
   test) exec "$runtime_node" --test tests/*.test.js ;;
+  editorial) exec "$runtime_node" scripts/weekly-editorial.js "$@" ;;
   import-media) exec "$runtime_node" scripts/import-product-media.js "$@" ;;
-  *) echo "Usage: bash scripts/blog.sh {install|dev|build|preview|generate|test|import-media}" >&2; exit 1 ;;
+  *) echo "Usage: bash scripts/blog.sh {install|dev|build|preview|generate|test|editorial|import-media}" >&2; exit 1 ;;
 esac
