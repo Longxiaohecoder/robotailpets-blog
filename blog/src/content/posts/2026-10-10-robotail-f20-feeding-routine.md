@@ -1,20 +1,28 @@
 ---
-title: "A Thoughtful Wet-Food Routine with the Robotail F20"
-description: "Explore Robotail F20 feeding plans, placement, and everyday upkeep, with practical setup details drawn from the official user manual."
-pubDate: 2026-10-10
-tags: ["Robotail", "Life with Cats", "Wet Food", "F20", "Feeding Routine"]
-author: "Robotail Editorial Team"
-category: "Life with Cats"
-cover: "/images/journal/cat-feeding-routine.webp"
-coverAlt: "A person preparing a meal beside a tabby cat in a bright kitchen"
-draft: true
+title: A Thoughtful Wet-Food Routine with the Robotail F20
+description: Explore Robotail F20 feeding plans, placement, and everyday upkeep,
+  with practical setup details drawn from the official user manual.
+pubDate: 2026-10-13T08:22:59.757Z
+tags:
+  - Robotail
+  - Life with Cats
+  - Wet Food
+  - F20
+  - Feeding Routine
+author: Robotail Editorial Team
+category: Life with Cats
+cover: /images/journal/cat-feeding-routine.webp
+coverAlt: A person preparing a meal beside a tabby cat in a bright kitchen
+draft: false
 sources:
-  - "https://robotailpets.com/products/f20"
-  - "https://robotailpets.com/pages/f20-user-guide"
-  - "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856"
-  - "https://www.amazon.com/dp/B0FRZZ12QV"
-sourceVerifiedAt: "2026-10-12"
-reviewNote: "Updated with official product images and Amazon model F20 verification. Manual governs operating details; no unified temperature or four-day wet-food storage claim. Manufacturer descriptions, not testing. Prepared for review, not scheduled or published."
+  - https://robotailpets.com/products/f20
+  - https://robotailpets.com/pages/f20-user-guide
+  - https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856
+  - https://www.amazon.com/dp/B0FRZZ12QV
+sourceVerifiedAt: 2026-10-12
+reviewNote: Approved batch transition-2026-10-13, confirmed
+  2026-10-13T08:21:31Z. Product information is source-backed; not hands-on
+  testing.
 ---
 
 Some mornings leave plenty of time for breakfast with your cat. Others involve a ringing phone, a missing set of keys, and one more thing to do before leaving the house. A useful feeding routine should have a place in both kinds of morning.
