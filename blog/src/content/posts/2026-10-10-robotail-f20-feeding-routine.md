@@ -11,8 +11,8 @@ tags:
   - Feeding Routine
 author: Robotail Editorial Team
 category: Life with Cats
-cover: /images/journal/cat-feeding-routine.webp
-coverAlt: A person preparing a meal beside a tabby cat in a bright kitchen
+cover: /images/journal/cat-and-person-with-f20.webp
+coverAlt: A woman and a tabby cat looking at a Robotail F20 feeder in a bright kitchen
 draft: false
 sources:
   - https://robotailpets.com/products/f20

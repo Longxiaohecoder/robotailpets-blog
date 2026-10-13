@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-13",
   "brandColor": {
     "pantone": "2725 C",
     "screenApproximation": "#685BC7",
     "reference": "https://www.colorxs.com/color/pantone-2725-c"
   },
-  "editing": "Lifestyle images resized to responsive WebP. Official product images retain original composition; no generated hardware.",
+  "editing": "Lifestyle illustrations resized to responsive WebP. Official product photographs remain unaltered. The F20 companion scene is an owner-approved AI composite based on official product references, not an original product photograph.",
   "assets": [
     {
       "publicPath": "/images/journal/home-with-cats.webp",
@@ -108,30 +108,38 @@
       "prompt": "Use case: photorealistic-natural. Asset type: wide editorial photograph for Robotail's English cat-and-home journal, landscape 3:2. A cozy contemporary European apartment, a woman seated on a cream woven rug playing with a single black-and-white tuxedo cat using a simple feather wand; both cat and human naturally posed, full cat visible and safe relaxed interaction. Oak floor, understated violet cushion and small violet details, brand accent near #685BC7, warm white walls. Natural late-afternoon light, candid home photography, realistic fur and hands, lively but gentle. A distinct composition from a person sitting on a sofa with a ginger cat: this is floor-level play and a black-and-white cat. No dog, no other animals, no logos, no text, no fictional Robotail products or pet appliances, no purple color cast over the photograph. Not a collage, one finished photograph."
     },
     {
-      "publicPath": "/images/journal/cat-feeding-routine.webp",
+      "publicPath": "/images/journal/cat-and-person-with-f20.webp",
       "width": 1500,
       "height": 1000,
       "variants": [
         {
           "width": 640,
-          "src": "/images/journal/cat-feeding-routine-640.webp"
+          "src": "/images/journal/cat-and-person-with-f20-640.webp"
         },
         {
           "width": 960,
-          "src": "/images/journal/cat-feeding-routine-960.webp"
+          "src": "/images/journal/cat-and-person-with-f20-960.webp"
         },
         {
           "width": 1500,
-          "src": "/images/journal/cat-feeding-routine.webp"
+          "src": "/images/journal/cat-and-person-with-f20.webp"
         }
       ],
-      "origin": "AI-generated lifestyle illustration; not a customer photograph or product demonstration",
+      "origin": "Owner-approved AI-composite lifestyle illustration with reference-based F20 appearance; not an original product or customer photograph",
       "categories": [
         "Life with Cats"
       ],
-      "alt": "A person preparing a meal beside a tabby cat in a bright kitchen",
+      "alt": "A woman and a tabby cat looking at a Robotail F20 feeder in a bright kitchen",
       "generationMode": "Built-in image_gen",
-      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial cover for an English article about everyday cat feeding routines. A single silver-gray tabby cat beside a plain ceramic food bowl on a clean kitchen floor; a person kneels nearby preparing the meal, hands natural and realistic, no claim of a specific portion or diet. Sunny contemporary US home kitchen, warm white cabinets, pale oak floor and one subtle violet kitchen towel near #685BC7. Eye-level intimate documentary composition, softly lit, photorealistic texture, calm and welcoming. Make this visually distinct from sofas, reading chairs and window-seat cats: a genuine kitchen routine with clear meal context. No branded device, no invented product, no automatic feeder, no dog, no text, no logo, no infographic, no collage."
+      "prompt": "Use case: precise-object-edit. Edit ONLY the person and handheld objects in this supplied image. The user has accepted the F20 feeder in this exact image: lock the entire feeder and its contents, preserve its current shape, position, size, lid angle, hinge, four food compartments, central hub, white housing, front button and black oval window. Do not regenerate, redesign, move or alter any part of the feeder. Remove the bowl from the woman's hands, the spoon, and the lifted spoonful of food above the feeder, completely. Remove the feeding/serving action. Repose the woman's forearms and empty hands naturally relaxed on her knees or lap, away from the product; anatomically correct hands, no utensils or vessels. Have the same brown-haired woman in the same beige knit sweater and blue jeans lean gently forward with her head and face visible in the upper-right portion of the frame, looking down at the F20 with a calm interested expression. The original gray tabby remains sitting in the same left-hand position, peacefully looking at the feeder. Only a slight gaze adjustment to the cat is allowed; keep its identity, fur, face, body and paws unchanged. This is a quiet moment of the person and cat observing the product, no filling, pouring, touching or eating. Retain the exact kitchen, purple towel, wood floor, lighting, contact shadows and warm photorealistic atmosphere. Retain the original full-bleed 3:2 composition and product foreground position; fit the woman's lowered face into the existing upper-right area rather than changing the camera or crop. No extra bowl, spoon, phone, animals, props, text or borders. The accepted product MUST remain exactly as it is in the input image; modify the upper-right person and remove the spoon only.",
+      "referenceProduct": "f20",
+      "sourceImages": [
+        "/images/products/f20-product.jpg"
+      ],
+      "ownerApproval": {
+        "date": "2026-10-13",
+        "confirmation": "这个图可以 直接换掉"
+      }
     },
     {
       "publicPath": "/images/journal/reading-with-cats.webp",
