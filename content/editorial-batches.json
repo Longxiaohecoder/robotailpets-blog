@@ -1,4 +1,30 @@
 {
   "version": 1,
-  "batches": []
+  "batches": [
+    {
+      "id": "transition-2026-10-13",
+      "kind": "owner-authorized-transition",
+      "status": "approved",
+      "preparedAt": "2026-10-13T08:21:31Z",
+      "approvedAt": "2026-10-13T08:21:31Z",
+      "confirmation": "确认这篇 F20，今天补发，周四的就自动发不需要确认，以后就周一我一次性确认好三篇文章后面就自动执行了 不用二次确认",
+      "researchFile": "content/research/transition-2026-10-13.json",
+      "researchSha256": "3e6938871572dd2079b2eb3d40f07e62330c70aae86c09dfd341ab4bc9f912b9",
+      "authorizationScope": "Existing F20: publish 2026-10-13. Existing C32 vs C42: automatically publish 2026-10-15. No second confirmation. Future weekly batches need one approval covering all three articles.",
+      "items": [
+        {
+          "file": "2026-10-10-robotail-f20-feeding-routine.md",
+          "title": "A Thoughtful Wet-Food Routine with the Robotail F20",
+          "sha256": "1f7d257cab594bbede3f5fc33901ba9403f5b7a7f0e6c5ab549494a1bd9dae40",
+          "scheduledFor": "2026-10-13"
+        },
+        {
+          "file": "2026-10-10-robotail-c32-vs-c42.md",
+          "title": "Robotail C32 vs C42: Which Design Fits Your Cat and Home?",
+          "sha256": "dbe303f16d08a7cb327b9e7e8faedb4937314c87f9ba68c5ce4e141e9acd56b6",
+          "scheduledFor": "2026-10-15"
+        }
+      ]
+    }
+  ]
 }
