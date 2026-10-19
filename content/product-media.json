@@ -4,6 +4,28 @@
   "editing": "Shopify width rendition only; no retouching, added text, or product alteration.",
   "assets": [
     {
+      "model": "c32-c42-accessories",
+      "sourcePage": "https://robotailpets.com/products/garbage-bags",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6361784557408_.pic.jpg?v=1784616344",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6361784557408_.pic.jpg?v=1784616344&width=1200",
+      "publicPath": "/images/products/c32-c42-bags.jpg",
+      "bytes": 73052,
+      "sha256": "b2d521ae7539ab73d43cd91815c9dbf4e406a869dc317990af14a91f5f18d535",
+      "retrievedAt": "2026-10-19",
+      "review": "Visually inspected 2026-10-19: original official drawstring bag photograph, no product alteration. Pending article owner review."
+    },
+    {
+      "model": "c42-accessories",
+      "sourcePage": "https://robotailpets.com/products/c42-holefilter-accessory",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_4.jpg?v=1783755340",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_4.jpg?v=1783755340&width=1200",
+      "publicPath": "/images/products/c42-filter.jpg",
+      "bytes": 68850,
+      "sha256": "ba9bc528730fb2693032c868a3711c30ab766a3d532c950f31fc4c089c7c278c",
+      "retrievedAt": "2026-10-19",
+      "review": "Visually inspected 2026-10-19: original official small-hole litter-separation part photograph, no product alteration. Pending article owner review."
+    },
+    {
       "model": "c32",
       "sourcePage": "https://robotailpets.com/products/c32",
       "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_be3faaa4-923c-45e6-a3fb-d72727c2bfcf.jpg?v=1783405121",

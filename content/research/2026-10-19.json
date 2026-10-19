@@ -1,0 +1,133 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-10-19",
+  "weekOf": "2026-10-19",
+  "website": "https://robotailpets.com",
+  "method": "Current-run web reading and direct HTTP requests. Date indicates access on 2026-10-19, not source publication date. Historical brand-sources.json was used only to locate URLs; its facts were not silently re-dated.",
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "title": "Robotail official website",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader",
+      "facts": ["Official site links to Robotail litter boxes, the F20 feeder and accessories. Currency selectors do not establish delivery availability for every country."]
+    },
+    {
+      "url": "https://robotailpets.com/collections/robotail",
+      "title": "Robotail collection",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader",
+      "facts": ["Provides the official collection navigation for Robotail products."]
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "Robotail C42 Smart Cat Litter Box",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader and current Shopify product JSON",
+      "facts": ["Manufacturer describes a semi-open entry and removable roller.", "These descriptions are not independent hands-on test results; omit universal safety, acceptance, capacity suitability and noise promises."]
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "title": "Robotail F20 official product information",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader and current Shopify product JSON",
+      "facts": ["Manufacturer describes app-based scheduled and immediate feeding, a detachable food tray, cooling, and warming before meals.", "SEO title and image alt text conflict with body details; do not infer camera, 6L storage or voice functions.", "Do not infer a safe food-storage duration or universal warming temperature, nor repeat medical or all-day freshness promises."]
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "title": "F20 User Guide download page",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Direct HTTP 200 and page HTML inspection; web reader failed",
+      "facts": ["Download landing page links to https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856. This run verified the link, not the PDF contents."]
+    },
+    {
+      "url": "https://robotailpets.com/products/garbage-bags",
+      "title": "60-Pack Cat Litter Bags for Robotail C32/C42 Automatic Litter Boxes",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader and current Shopify product JSON",
+      "facts": ["Listing explicitly identifies C32 and C42 compatibility, drawstring closure and a 60-bag pack, described as three rolls of twenty.", "Conflicting load ratings (10KG versus 15lbs) are excluded, as are environmental claims, replacement intervals and promised supply duration."]
+    },
+    {
+      "url": "https://robotailpets.com/products/c42-holefilter-accessory",
+      "title": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
+      "type": "official",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader and current Shopify product JSON",
+      "facts": ["Specifically described for C42, with small holes to separate clumps from clean litter.", "This is a litter-separation part, not an air filter. No C32 compatibility is established by this listing. Do not assume model-suffix compatibility or incompatibility.", "Destination-specific delivery and stock must be checked at purchase time; no universal delivery promise is repeated."]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "title": "Robotail C32-series Amazon US listing",
+      "type": "amazon",
+      "checkedAt": "2026-10-19",
+      "method": "Direct HTTP 200; read listing brand and item model number",
+      "facts": ["Brand is Robotail and item model number is C32RO.", "Listing identity is not proof that all C32-labelled accessories fit every suffix, nor proof of a shared bundle or European availability."]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "title": "Robotail C42-series Amazon US listing",
+      "type": "amazon",
+      "checkedAt": "2026-10-19",
+      "method": "Direct HTTP 200; read listing brand and item model number",
+      "facts": ["Brand is Robotail and item model number is C42C.", "Listing identity is not independent accessory-fit verification; ask the brand if a suffix makes the match unclear."]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "title": "Robotail F20 Amazon US listing",
+      "type": "amazon",
+      "checkedAt": "2026-10-19",
+      "method": "Direct HTTP 200; read listing brand and item model number",
+      "facts": ["Brand is Robotail and item model number is F20. No specifications beyond this identity are used from this listing in the current batch."]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/other-cats",
+      "title": "Cats Protection: Other cats",
+      "type": "independent-care",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader; relevant page sections read",
+      "facts": ["Not every resident cat welcomes a companion; introductions should be gradual.", "Provide opportunities for separation and height, and essential resources for each cat plus a spare distributed around the home.", "A single large litter box does not replace separately distributed resources."]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/getting-a-cat/preparing-for-a-cat",
+      "title": "Cats Protection: Preparing for a cat",
+      "type": "independent-care",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader; page read",
+      "facts": ["Provide an initial separate room and a place to hide and rest while a new cat settles.", "Keep the litter tray away from food and water."]
+    },
+    {
+      "url": "https://www.cats.org.uk/media/1393/catsitter-checklist.pdf",
+      "title": "Cats Protection: Cat sitter checklist",
+      "type": "independent-care",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader PDF text, one-page checklist",
+      "facts": ["Checklist covers supply locations, feeding instructions, water, litter and disposal, medication, owner and veterinary contacts, and companionship or play preferences."]
+    },
+    {
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/tips-safe-handling-pet-food-and-treats",
+      "title": "FDA: Tips for Safe Handling of Pet Food and Treats",
+      "type": "independent-care",
+      "checkedAt": "2026-10-19",
+      "method": "Web reader; complete guidance read",
+      "facts": ["Wash hands before and after handling pet food, and wash bowls and utensils after use.", "Promptly refrigerate or discard unused canned or pouched pet food. This does not validate a particular feeder's storage temperature or duration."]
+    }
+  ],
+  "unavailable": [
+    {"url": "https://robotailpets.com/products/c32", "checkedAt": "2026-10-19", "status": "Direct HTTP 404; web reader failed", "impact": "Old product route not cited in this batch; no historical C32 specifications relabelled as current."},
+    {"url": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D", "checkedAt": "2026-10-19", "status": "Direct HTTP 503; web reader failed", "impact": "Cannot claim to have reviewed the whole storefront; three individual listings were accessible."},
+    {"url": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856", "checkedAt": "2026-10-19", "status": "Web reader could not retrieve PDF content", "impact": "Landing-page link verified only; no manual-specific claims used or old manual facts re-dated."},
+    {"url": "https://www.cats.org.uk/cats-blog/care-for-cat-when-going-on-holiday", "checkedAt": "2026-10-19", "status": "Web reader failed after discovery", "impact": "Not used; sitter checklist provides the cited handover source."}
+  ],
+  "media": {
+    "newOriginalPhotos": ["/images/products/c32-c42-bags.jpg", "/images/products/c42-filter.jpg"],
+    "provenance": "Source pages, original CDN URLs, renditions and SHA256 recorded in content/product-media.json. New photos visually inspected this run; no product appearance edits.",
+    "reused": "Three different existing cover assets and existing C42/F20 illustrations retain their original provenance dates in the media catalogues; they are not described as newly photographed."
+  },
+  "editorialRules": ["English only, cats only, US/Europe audience; warm practical voice.", "Manufacturer descriptions are not hands-on test results.", "No prices, universal delivery promises, unverified suffix compatibility, medical effects or fabricated product appearances.", "Pending owner review only; no approval, push, publication or deployment during preparation."]
+}

@@ -43,6 +43,15 @@ export function weekOf(now) {
   local.setUTCDate(local.getUTCDate() - (local.getUTCDay() + 6) % 7);
   return local.toISOString().slice(0, 10);
 }
+// Friday preparation belongs to the following publication week, not the week ending.
+export function editorialWeekOf(now) {
+  const local = new Date(beijingDate(now) + 'T00:00:00Z');
+  if ([5, 6, 0].includes(local.getUTCDay())) {
+    local.setUTCDate(local.getUTCDate() + (8 - local.getUTCDay()) % 7);
+    return local.toISOString().slice(0, 10);
+  }
+  return weekOf(now);
+}
 export function releaseDates(now, plan, history, reserved = [], count = 3) {
   const occupied = new Set([...history.publications.map(p => p.date), ...reserved]);
   const start = new Date(beijingDate(now) + 'T00:00:00Z');
@@ -73,7 +82,7 @@ export function prepareBatch({ root, researchFile, files, summaries = [], now = 
     return { file, title: post.metadata.title, summary: summaries[i] || post.metadata.description, sha256: articleDigest(root, file) };
   });
   const state = readBatches(root);
-  const id = weekOf(now);
+  const id = editorialWeekOf(now);
   const existing = state.batches.find(batch => batch.id === id);
   const researchSha256 = hash(researchRaw);
   if (existing && existing.researchSha256 === researchSha256 && JSON.stringify(existing.items.map(item => item.sha256)) === JSON.stringify(items.map(item => item.sha256))) {

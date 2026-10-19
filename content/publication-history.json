@@ -23,6 +23,15 @@
       "batchId": "transition-2026-10-13",
       "approvedAt": "2026-10-13T08:21:31Z",
       "scheduledFor": "2026-10-15"
+    },
+    {
+      "date": "2026-10-19",
+      "publishedAt": "2026-10-19T04:28:59.602Z",
+      "file": "2026-10-19-second-cat-home.md",
+      "title": "Before a Second Cat Moves In: Planning Space for Two",
+      "batchId": "2026-10-19",
+      "approvedAt": "2026-10-19T04:28:34.972Z",
+      "scheduledFor": "2026-10-19"
     }
   ]
 }

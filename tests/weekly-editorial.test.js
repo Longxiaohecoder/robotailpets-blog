@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { prepareBatch, approveBatch, releaseDates, weekOf } from '../scripts/weekly-editorial.js';
+import { prepareBatch, approveBatch, releaseDates, weekOf, editorialWeekOf } from '../scripts/weekly-editorial.js';
 import { publishNext } from '../scripts/publish-next.js';
 
 const plan = { timezone: 'Asia/Shanghai', weekdays: ['Mon', 'Tue', 'Thu'], hour: 9, requireApproval: true, queue: ['one.md', 'two.md', 'three.md'] };
@@ -26,6 +26,19 @@ const monday8 = new Date('2026-10-19T00:00:00Z');
 const monday9 = new Date('2026-10-19T01:00:00Z');
 const prepare = root => prepareBatch({ root, researchFile: 'content/research/2026-10-19.json', files: plan.queue, now: monday8 });
 const approve = root => approveBatch({ root, id: '2026-10-19', confirmation: '确认 2026-10-19 这三篇', now: monday8 });
+
+test('Friday preparation registers next Monday; Friday approval schedules Mon Tue Thu', t => {
+  const root = fixture(t);
+  const friday = new Date('2026-10-23T07:00:00Z');
+  assert.equal(editorialWeekOf(friday), '2026-10-26');
+  assert.equal(editorialWeekOf(new Date('2026-10-24T07:00:00Z')), '2026-10-26');
+  assert.equal(editorialWeekOf(new Date('2026-10-25T07:00:00Z')), '2026-10-26');
+  assert.equal(editorialWeekOf(monday8), '2026-10-19');
+  const args = {root, researchFile: 'content/research/2026-10-19.json', files: plan.queue, now: friday};
+  assert.equal(prepareBatch(args).batch.id, '2026-10-26');
+  assert.equal(prepareBatch(args).status, 'existing');
+  assert.deepEqual(approveBatch({root, id:'2026-10-26', confirmation:'Confirm all three', now:friday}).batch.items.map(i => i.scheduledFor), ['2026-10-26','2026-10-27','2026-10-29']);
+});
 
 test('Monday batch preparation creates exactly three reviewable drafts, never publication', t => {
   const root = fixture(t);
