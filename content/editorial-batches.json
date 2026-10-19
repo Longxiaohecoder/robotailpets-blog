@@ -46,18 +46,27 @@
           "title": "A Cat-Sitter Handover That Keeps Home Feeling Familiar",
           "summary": "用交接清单和现场演练安排喂食、饮水、清洁、陪伴与紧急联系人，说明 F20 是照护工具而非替代照护者。",
           "sha256": "03f9541024959f8c12ef8fd7aa80212fcdb9008a8a76318a5a4c353295291251",
-        "scheduledFor": "2026-10-20"
+        "scheduledFor": "2026-10-20",
+        "scheduledTimezone": "America/New_York",
+        "scheduledAt": "2026-10-20T14:43:37.000Z"
         },
         {
           "file": "2026-10-19-accessory-matching.md",
           "title": "Before You Order: Matching Robotail Bags and Filters to Your Model",
           "summary": "购买猫砂袋与 C42 小孔滤网前，核对完整型号和配件用途；附官网实物图，区分亚马逊型号标识与适配证明。",
           "sha256": "07df8ad023449a35a268b02a74fd24f77dfa2a435630ce9a0b5e8d5b5749058d",
-        "scheduledFor": "2026-10-22"
+        "scheduledFor": "2026-10-22",
+        "scheduledTimezone": "America/New_York",
+        "scheduledAt": "2026-10-22T16:26:41.000Z"
         }
       ],
       "approvedAt": "2026-10-19T04:28:34.972Z",
       "scheduleAuthorization": "Owner explicitly requested immediate publication of item 1 on 2026-10-19, item 2 on Tuesday 2026-10-20 and item 3 on Thursday 2026-10-22. Override only the dates allocated by late-approval rollover; preserve reviewed content hashes and actual approval time. Standard future batches remain Friday review then Mon/Tue/Thu release.",
+      "scheduleRevision": {
+        "date": "2026-10-19",
+        "ownerInstruction": "按照美国的作息时间提前发布；每周三篇发布时间不同，不选择整点，有分有秒。",
+        "effect": "Already published item unchanged. Remaining items retain reviewed content and publication dates in US Eastern time, with exact UTC targets recorded per item. Friday preparation remains 15:00 Asia/Shanghai."
+      },
       "confirmation": "确认这三篇，现在马上部署 ，第一篇可以马上发布出去，第二篇周二发 第三篇周四发，然后你更改一下那个文章草稿生成的时间：1. 每周五下午 15 点开始生成 2. 每周五我就会确认好，你部署出去 3. 周一自动发，周二自动发，周四自动发"
     }
   ]

@@ -5,6 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import YAML from 'yaml';
 import { validateArticle } from './content-core.js';
 import { validateEditorialArticle } from './content-policy.js';
+import { localDate, publicationTime, publicationDates } from './publication-schedule.js';
 
 const hash = value => createHash('sha256').update(value).digest('hex');
 const jsonPath = root => path.join(root, 'content/editorial-batches.json');
@@ -53,16 +54,15 @@ export function editorialWeekOf(now) {
   return weekOf(now);
 }
 export function releaseDates(now, plan, history, reserved = [], count = 3) {
-  const occupied = new Set([...history.publications.map(p => p.date), ...reserved]);
-  const start = new Date(beijingDate(now) + 'T00:00:00Z');
+  const occupied = new Set([...publicationDates(history, plan.timezone), ...reserved]);
+  const start = new Date(localDate(now, plan.timezone) + 'T00:00:00Z');
   const dates = [];
   for (let i = 0; i < 366 && dates.length < count; i++) {
     const date = new Date(start);
     date.setUTCDate(date.getUTCDate() + i);
     const day = date.toISOString().slice(0, 10);
-    const weekday = date.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' });
-    const releaseAt = new Date(`${day}T${String(plan.hour).padStart(2, '0')}:00:00+08:00`);
-    if (plan.weekdays.includes(weekday) && releaseAt >= now && !occupied.has(day)) dates.push(day);
+    const releaseAt = publicationTime(day, plan);
+    if (releaseAt && releaseAt >= now && !occupied.has(day)) dates.push(day);
   }
   if (dates.length !== count) throw new Error('Unable to allocate publication dates');
   return dates;
@@ -117,11 +117,15 @@ export function approveBatch({ root, id, confirmation, now = new Date() }) {
     if (readEditorialPost(root, item.file).metadata.draft !== true || articleDigest(root, item.file) !== item.sha256) throw new Error('Article or image changed after review: ' + item.file);
   }
   const plan = JSON.parse(fs.readFileSync(path.join(root, 'content/publication-plan.json'), 'utf8'));
-  if (plan.timezone !== 'Asia/Shanghai' || plan.requireApproval !== true) throw new Error('Approval-based Beijing publishing must be enabled');
+  if (!['Asia/Shanghai', 'America/New_York'].includes(plan.timezone) || plan.requireApproval !== true) throw new Error('Approval-based supported timezone publishing must be enabled');
   const history = JSON.parse(fs.readFileSync(path.join(root, 'content/publication-history.json'), 'utf8'));
   const reserved = state.batches.filter(b => b.status === 'approved').flatMap(b => b.items.filter(item => readEditorialPost(root, item.file).metadata.draft === true).map(item => item.scheduledFor));
   const dates = releaseDates(now, plan, history, reserved, batch.items.length);
-  batch.items.forEach((item, i) => { item.scheduledFor = dates[i]; });
+  batch.items.forEach((item, i) => {
+    item.scheduledFor = dates[i];
+    item.scheduledTimezone = plan.timezone;
+    item.scheduledAt = publicationTime(dates[i], plan).toISOString();
+  });
   batch.status = 'approved';
   batch.approvedAt = now.toISOString();
   batch.confirmation = confirmation.trim();

@@ -1,12 +1,13 @@
 {
-  "timezone": "Asia/Shanghai",
+  "timezone": "America/New_York",
   "weekdays": ["Mon", "Tue", "Thu"],
-  "hour": 9,
+  "times": {"Mon": "13:17:23", "Tue": "10:43:37", "Thu": "12:26:41"},
   "queue": [
     "2026-10-10-cat-friendly-litter-corner.md",
     "2026-10-10-robotail-f20-feeding-routine.md",
     "2026-10-10-robotail-c32-vs-c42.md"
   ],
   "requireApproval": true,
-  "approval": "Owner updated the workflow on 2026-10-19: prepare next week's three illustrated English drafts every Friday at 15:00 Asia/Shanghai. After one explicit batch confirmation, deploy approved drafts and publish Mon/Tue/Thu at 09:00 Asia/Shanghai without further confirmation. Unconfirmed or changed content must not publish. The 2026-10-19 batch has a separately recorded owner-authorized immediate first publication."
+  "approval": "Owner updated 2026-10-19: prepare next week's three English drafts Friday 15:00 Asia/Shanghai; once confirmed, deploy and publish Mon/Tue/Thu at distinct off-hour US Eastern times in this plan, with DST automatic. Never publish unconfirmed or changed content. Existing first article remains published; remaining approved articles use the new US schedule.",
+  "timingRationale": "Initial test windows: Monday early afternoon, Tuesday mid-morning, Thursday before the lunch window. Email engagement research is a directional proxy, not verified blog-reader behavior or site analytics. Non-round timestamps are a preference, not proof of human authorship. Actual GitHub queueing and Vercel build may delay public availability."
 }

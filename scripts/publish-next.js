@@ -4,16 +4,12 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import YAML from 'yaml';
 import { validateEditorialArticle } from './content-policy.js';
 import { approvedCandidate } from './weekly-editorial.js';
+import { localDate, publicationTime, publicationDates } from './publication-schedule.js';
 
 export function publicationSlot(now, plan) {
-  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {
-    timeZone: plan.timezone, year: 'numeric', month: '2-digit', day: '2-digit',
-    weekday: 'short', hour: '2-digit', hourCycle: 'h23'
-  }).formatToParts(now).map(part => [part.type, part.value]));
-  return {
-    date: `${parts.year}-${parts.month}-${parts.day}`,
-    due: plan.weekdays.includes(parts.weekday) && Number(parts.hour) >= plan.hour
-  };
+  const date = localDate(now, plan.timezone);
+  const target = publicationTime(date, plan);
+  return { date, due: target !== null && now >= target };
 }
 
 function readPost(target) {
@@ -29,11 +25,12 @@ export async function publishNext({ root, now = new Date() }) {
   const history = readJSON('publication-history.json');
   const slot = publicationSlot(now, plan);
   if (!slot.due) return { status: 'skipped', reason: 'Outside scheduled publishing window' };
-  if (history.publications.some(entry => entry.date === slot.date)) {
+  if (publicationDates(history, plan.timezone).includes(slot.date)) {
     return { status: 'skipped', reason: 'Already published for ' + slot.date };
   }
   const approval = approvedCandidate(root, slot.date);
   if (!approval) return { status: 'skipped', reason: 'Waiting for human approval or scheduled publication date' };
+  if (approval.item.scheduledAt && now < new Date(approval.item.scheduledAt)) return {status:'skipped', reason:'Waiting for approved publication instant'};
   const target = path.join(root, 'blog/src/content/posts', approval.item.file);
   const post = readPost(target);
   validateEditorialArticle({ ...post.metadata, content: post.body });
@@ -52,7 +49,8 @@ export async function publishNext({ root, now = new Date() }) {
   fs.writeFileSync(target, `---\n${YAML.stringify(post.metadata)}---\n\n${post.body}\n`);
   const entry = {
     date: slot.date, publishedAt: now.toISOString(), file: path.basename(target), title: post.metadata.title,
-    batchId: approval.batch.id, approvedAt: approval.batch.approvedAt, scheduledFor: approval.item.scheduledFor
+    batchId: approval.batch.id, approvedAt: approval.batch.approvedAt, scheduledFor: approval.item.scheduledFor,
+    timezone: plan.timezone, scheduledAt: approval.item.scheduledAt || publicationTime(approval.item.scheduledFor, plan)?.toISOString()
   };
   history.publications.push(entry);
   fs.writeFileSync(path.join(root, 'content/publication-history.json'), JSON.stringify(history, null, 2) + '\n');
@@ -61,6 +59,14 @@ export async function publishNext({ root, now = new Date() }) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   const root = fileURLToPath(new URL('../', import.meta.url));
-  try { console.log(JSON.stringify(await publishNext({ root }), null, 2)); }
+  try {
+    const plan = JSON.parse(fs.readFileSync(path.join(root, 'content/publication-plan.json'), 'utf8'));
+    const now = new Date();
+    const target = publicationTime(localDate(now, plan.timezone), plan);
+    const delay = target ? target - now : 0;
+    // Cron has minute precision; wait only for the remainder of the target minute.
+    if (delay > 0 && delay < 60000) await new Promise(resolve => setTimeout(resolve, delay));
+    console.log(JSON.stringify(await publishNext({ root }), null, 2));
+  }
   catch (error) { console.error('Publication failed: ' + error.message); process.exitCode = 1; }
 }

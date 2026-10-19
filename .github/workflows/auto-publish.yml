@@ -9,10 +9,20 @@ concurrency:
 
 on:
   schedule:
-    # 每周一、二、四北京时间 09:00 (UTC 01:00)，每次一篇
-    - cron: '0 1 * * 1,2,4'
-    # 云端补跑；同日发布记录防止重复，不再依靠本地免确认补发任务。
-    - cron: '30 2 * * 1,2,4'
+    # US Eastern wall clock; GitHub handles DST. Publisher enforces HH:mm:ss.
+    - cron: '17 13 * * 1'
+      timezone: 'America/New_York'
+    - cron: '43 10 * * 2'
+      timezone: 'America/New_York'
+    - cron: '26 12 * * 4'
+      timezone: 'America/New_York'
+    # Same-day retries 35 minutes later; publication history prevents duplicates.
+    - cron: '52 13 * * 1'
+      timezone: 'America/New_York'
+    - cron: '18 11 * * 2'
+      timezone: 'America/New_York'
+    - cron: '1 13 * * 4'
+      timezone: 'America/New_York'
   workflow_dispatch: # 允许手动触发
 
 jobs:

@@ -27,6 +27,25 @@ const monday9 = new Date('2026-10-19T01:00:00Z');
 const prepare = root => prepareBatch({ root, researchFile: 'content/research/2026-10-19.json', files: plan.queue, now: monday8 });
 const approve = root => approveBatch({ root, id: '2026-10-19', confirmation: '确认 2026-10-19 这三篇', now: monday8 });
 
+test('Approved US batch publishes at second boundaries, retries once and retains future drafts', async t => {
+  const root=fixture(t);
+  const usPlan=JSON.parse(fs.readFileSync(new URL('../content/publication-plan.json',import.meta.url),'utf8'));
+  fs.writeFileSync(path.join(root,'content/publication-plan.json'),JSON.stringify(usPlan));
+  const friday=new Date('2026-10-23T07:00:00Z');
+  prepareBatch({root,researchFile:'content/research/2026-10-19.json',files:plan.queue,now:friday});
+  const batch=approveBatch({root,id:'2026-10-26',confirmation:'Confirm the three reviewed versions',now:friday}).batch;
+  assert.deepEqual(batch.items.map(i=>i.scheduledAt),['2026-10-26T17:17:23.000Z','2026-10-27T14:43:37.000Z','2026-10-29T16:26:41.000Z']);
+  for(const [i,item] of batch.items.entries()) {
+    const at=new Date(item.scheduledAt);
+    assert.equal((await publishNext({root,now:new Date(+at-1)})).status,'skipped');
+    const result=await publishNext({root,now:at});
+    assert.equal(result.file,plan.queue[i]);
+    assert.equal(result.timezone,'America/New_York');
+    assert.equal((await publishNext({root,now:new Date(+at+35*60*1000)})).status,'skipped');
+    for(const future of plan.queue.slice(i+1))assert.match(fs.readFileSync(path.join(root,'blog/src/content/posts',future),'utf8'),/draft: true/);
+  }
+});
+
 test('Friday preparation registers next Monday; Friday approval schedules Mon Tue Thu', t => {
   const root = fixture(t);
   const friday = new Date('2026-10-23T07:00:00Z');
