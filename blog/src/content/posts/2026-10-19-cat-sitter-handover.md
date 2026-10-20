@@ -1,19 +1,24 @@
 ---
-title: "A Cat-Sitter Handover That Keeps Home Feeling Familiar"
-description: "Create a clear, welcoming cat-sitter handover with familiar routines, a shared dry run, and practical notes for everyday care."
-pubDate: 2026-10-19
-tags: [cat sitting, cat care routines, home preparation]
+title: A Cat-Sitter Handover That Keeps Home Feeling Familiar
+description: Create a clear, welcoming cat-sitter handover with familiar
+  routines, a shared dry run, and practical notes for everyday care.
+pubDate: 2026-10-20T18:43:33.932Z
+tags:
+  - cat sitting
+  - cat care routines
+  - home preparation
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Life with Cats
 cover: /images/journal/reading-with-cats.webp
-coverAlt: "A man reading at a wooden desk beside a cream cat resting in a basket"
+coverAlt: A man reading at a wooden desk beside a cream cat resting in a basket
 sources:
   - https://www.cats.org.uk/media/1393/catsitter-checklist.pdf
   - https://robotailpets.com/products/f20
   - https://www.fda.gov/animal-veterinary/animal-health-literacy/tips-safe-handling-pet-food-and-treats
-sourceVerifiedAt: '2026-10-19'
-reviewNote: "Weekly draft awaiting owner approval; manufacturer descriptions, not hands-on testing."
+sourceVerifiedAt: 2026-10-19
+reviewNote: Approved batch 2026-10-19, confirmed 2026-10-19T04:28:34.972Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Leaving your cat at home while you travel comes with a surprisingly detailed packing list—even when your cat isn’t going anywhere. Where are the spare bowls? Which cupboard holds the litter bags? What does an ordinary evening together look like?

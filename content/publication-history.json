@@ -32,6 +32,17 @@
       "batchId": "2026-10-19",
       "approvedAt": "2026-10-19T04:28:34.972Z",
       "scheduledFor": "2026-10-19"
+    },
+    {
+      "date": "2026-10-20",
+      "publishedAt": "2026-10-20T18:43:33.932Z",
+      "file": "2026-10-19-cat-sitter-handover.md",
+      "title": "A Cat-Sitter Handover That Keeps Home Feeling Familiar",
+      "batchId": "2026-10-19",
+      "approvedAt": "2026-10-19T04:28:34.972Z",
+      "scheduledFor": "2026-10-20",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-10-20T14:43:37.000Z"
     }
   ]
 }
