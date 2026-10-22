@@ -1,20 +1,26 @@
 ---
 title: "Before You Order: Matching Robotail Bags and Filters to Your Model"
-description: "A practical guide to matching Robotail waste bags and the C42 small-hole filter to your cat’s litter box before ordering."
-pubDate: 2026-10-19
-draft: true
+description: A practical guide to matching Robotail waste bags and the C42
+  small-hole filter to your cat’s litter box before ordering.
+pubDate: 2026-10-22T20:14:41.747Z
+draft: false
 author: Robotail Editorial Team
 category: Product Guides
-tags: [Robotail, Accessory Compatibility, Waste Bags, C42 Filter]
+tags:
+  - Robotail
+  - Accessory Compatibility
+  - Waste Bags
+  - C42 Filter
 cover: /images/journal/brand-home.webp
-coverAlt: "A cat beside a Robotail litter box in a warm living room"
+coverAlt: A cat beside a Robotail litter box in a warm living room
 sources:
   - https://robotailpets.com/products/garbage-bags
   - https://robotailpets.com/products/c42-holefilter-accessory
   - https://www.amazon.com/dp/B0G648Z6YL
   - https://www.amazon.com/dp/B0H2YPTF68
-sourceVerifiedAt: '2026-10-19'
-reviewNote: "Awaiting owner approval. Based on manufacturer descriptions and listing identities, not hands-on testing."
+sourceVerifiedAt: 2026-10-19
+reviewNote: Approved batch 2026-10-19, confirmed 2026-10-19T04:28:34.972Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Ordering an accessory for your cat’s litter box should feel straightforward. Yet a familiar product photo or a slightly different model name can leave you wondering whether you have found the right part. A few checks before checkout can help you make a clearer choice.
