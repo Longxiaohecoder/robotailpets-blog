@@ -1,0 +1,189 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-10-23",
+  "publicationWeek": "2026-10-26",
+  "website": "https://robotailpets.com",
+  "method": "Current-run page reading plus direct HTTP checks. Access date is not source publication date. Existing product images retain the retrieval dates in their media catalogues; no old facts have been relabelled as newly verified.",
+  "editorialBrief": {
+    "ownerRequest": "下周三篇先生成给我确认，再部署；文章有深度有观点，不是简单介绍产品。",
+    "language": "en",
+    "audience": [
+      "United States",
+      "Europe"
+    ],
+    "animal": "cats",
+    "approach": "Approximately 800-950 words per draft; original editorial thesis, a clearly hypothetical everyday situation, reasoning, counterpoint, decision framework and a restrained product connection. Practical suggestions are distinguished from source evidence.",
+    "topics": [
+      {
+        "category": "Cat-Friendly Homes",
+        "file": "2026-10-23-cat-refuge-choice.md",
+        "cover": "/images/journal/2026-10-22-window-retreat.webp"
+      },
+      {
+        "category": "Life with Cats",
+        "file": "2026-10-23-work-from-home-cat-attention.md",
+        "cover": "/images/journal/2026-10-22-workday-companion.webp"
+      },
+      {
+        "category": "Product Guides",
+        "file": "2026-10-23-self-cleaning-maintenance.md",
+        "cover": "/images/journal/2026-10-22-care-supply-shelf.webp"
+      }
+    ],
+    "status": "Preparation only; no approval, push, publication or deployment."
+  },
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "title": "Robotail official site",
+      "type": "official",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader",
+      "facts": [
+        "Official navigation links to F20 and C42 products, model manuals and accessories. Regional currency menus do not establish product availability for every destination."
+      ]
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "Robotail C42 manufacturer product information",
+      "type": "official",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader and direct Shopify product JSON HTTP 200",
+      "facts": [
+        "Manufacturer describes a semi-open entry and a removable roller.",
+        "Use only those structural descriptions here, not absolute safety, guaranteed cat acceptance, noise, medical effects, universal fit, capacity-as-suitability or bundled-accessory promises."
+      ]
+    },
+    {
+      "url": "https://robotailpets.com/pages/c42m",
+      "title": "Robotail UCAT C42 User Manual",
+      "type": "official-manual",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader plus direct HTTP 200; read section 6 Care and Cleaning and section 4 waste-bag replacement",
+      "facts": [
+        "Care and Cleaning says to clear the waste bin, then unplug before removing the drum.",
+        "Drum washing/draining and thorough air-drying before reassembly are described.",
+        "The base is wiped with a soft damp cloth; do not rinse or immerse the base.",
+        "Waste-bag replacement remains a separate maintenance task.",
+        "Use the complete manual for the exact unit, not a blog as a replacement procedure. Do not assume that this UCAT C42 manual applies to every Amazon model suffix or configuration.",
+        "Unclear or contradictory weight, capacity, package and safety claims are excluded."
+      ]
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "title": "Robotail F20 manufacturer product information",
+      "type": "official",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader and direct Shopify product JSON HTTP 200",
+      "facts": [
+        "Manufacturer describes scheduled/immediate app feeding and a detachable tray; those are the only features needed in this batch.",
+        "No inference of camera, 6L storage, voice recording or diagnostic capability from image alt text.",
+        "No universal wet-food storage duration, medical benefit, warming temperature or independent performance claim."
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "title": "Robotail C32-series Amazon US product listing",
+      "type": "amazon",
+      "checkedAt": "2026-10-23",
+      "method": "Direct HTTP 200; item model text read",
+      "facts": [
+        "Robotail brand and item model C32RO verified. No C32 feature claims used in these drafts, and no assumed bundle or cross-channel equivalence."
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "title": "Robotail C42-series Amazon US product listing",
+      "type": "amazon",
+      "checkedAt": "2026-10-23",
+      "method": "Direct HTTP 200; item model text read",
+      "facts": [
+        "Robotail brand and item model C42C verified.",
+        "That identifies a listing, not proof that all UCAT C42 manual instructions or accessories match every suffix. Confirm the corresponding manual for the actual unit; suffix difference alone is not proof of incompatibility either."
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "title": "Robotail F20 Amazon US product listing",
+      "type": "amazon",
+      "checkedAt": "2026-10-23",
+      "method": "Direct HTTP 200; item model text read",
+      "facts": [
+        "Robotail brand and item model F20 verified. No performance, safety, freshness-duration or medical claims accepted from the title."
+      ]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-hiding",
+      "title": "Cats Protection: Cats hiding",
+      "type": "independent-care",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader; main hiding and refuge sections read",
+      "facts": [
+        "Hiding can be part of ordinary cat behaviour, including sleep, security and play.",
+        "Provide quiet, undisturbed, covered retreats, raised when suitable, away from food, water and litter.",
+        "Respect the cat's choice to stay hidden rather than coaxing a stressed cat out.",
+        "Hiding more than usual warrants veterinary advice; a retreat is not a diagnosis or substitute for checking a change."
+      ]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats",
+      "title": "Cats Protection: Shy cats",
+      "type": "independent-care",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader; sections on hiding, routine and interaction read",
+      "facts": [
+        "Do not force interaction; let a shy cat approach.",
+        "Friends and family should not seek the cat out inside its hiding place.",
+        "Maintaining routines and quietly sharing space without forcing attention are recommended in the specific context of shy cats; not evidence for a universal workday schedule."
+      ]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play",
+      "title": "Cats Protection: Cats and play",
+      "type": "independent-care",
+      "checkedAt": "2026-10-23",
+      "method": "Web reader; main play, toy supervision and routine sections read",
+      "facts": [
+        "Play may include stalking, pouncing, chasing and batting.",
+        "Wand toys can imitate prey; allow occasional catches.",
+        "Short games can be appropriate, rotate toys, supervise entangling or shreddable toys and inspect wear.",
+        "Do not use fingers or toes as play targets.",
+        "No universal play-duration prescription or diagnosis of a laptop interruption is inferred."
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://robotailpets.com/products/c32",
+      "checkedAt": "2026-10-23",
+      "status": "Direct HTTP 404",
+      "impact": "Historical C32 route not used as current feature evidence."
+    },
+    {
+      "url": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D",
+      "checkedAt": "2026-10-23",
+      "status": "Web reader HTTP 503",
+      "impact": "Individual product listings checked successfully; no claim of a full storefront review."
+    }
+  ],
+  "media": {
+    "catalogues": [
+      "content/journal-media.json",
+      "content/product-media.json"
+    ],
+    "strategy": "Three different 2026-10-22 lifestyle covers chosen from least-used topic-appropriate candidates, plus authentic model-specific manufacturer illustrations. No new product appearance generation or modification.",
+    "covers": [
+      "/images/journal/2026-10-22-window-retreat.webp",
+      "/images/journal/2026-10-22-workday-companion.webp",
+      "/images/journal/2026-10-22-care-supply-shelf.webp"
+    ],
+    "sourceDates": "2026-10-22 covers/C42 entry scene and older manufacturer originals retain original retrieval dates; visual assets are not relabelled as new photography."
+  },
+  "editorialRules": [
+    "English-only public text; cats-only audience; warm and practical, not hype.",
+    "No fictional customer anecdotes or hands-on testing; opening scenarios labelled hypothetical.",
+    "Original opinion must not be presented as clinical evidence, a measured saving or a proven behaviour outcome.",
+    "Do not reuse last week's article as a renamed product introduction.",
+    "No publication until this specific batch/version and images are confirmed."
+  ]
+}

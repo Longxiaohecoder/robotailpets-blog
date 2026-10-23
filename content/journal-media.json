@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-22",
   "brandColor": {
     "pantone": "2725 C",
     "screenApproximation": "#685BC7",
@@ -7,6 +7,275 @@
   },
   "editing": "Lifestyle illustrations resized to responsive WebP. Official product photographs remain unaltered. The F20 companion scene is an owner-approved AI composite based on official product references, not an original product photograph.",
   "assets": [
+    {
+      "publicPath": "/images/journal/2026-10-22-window-retreat.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle illustration; not a customer photograph, product demonstration or safety evidence",
+      "generatedAt": "2026-10-22",
+      "categories": [
+        "Cat-Friendly Homes",
+        "Life with Cats"
+      ],
+      "topics": [
+        "window nook",
+        "quiet routine",
+        "small home"
+      ],
+      "alt": "A silver tabby resting on a sunny window bench while a person opens the curtain",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: one landscape 3:2 editorial lifestyle image for the Robotail English cat-and-home journal. A sunlit contemporary apartment window nook, a short-haired silver tabby resting stretched out on a broad low bench, one adult person in neutral linen clothes nearby quietly opening a curtain, both fully plausible and relaxed. Wide side-on composition showing the whole cat and generous uncluttered home context; soft morning backlight, warm oak, cream linen, authentic fur and fabric texture, one small violet cushion near #685BC7. Natural lived-in home, not a showroom, no exaggerated interaction. Cats only. No pet appliances or feeders or litter boxes, no logos, no writing, no watermarks, no collage, no typography. This is an editorial illustration, not a customer testimonial.",
+      "masterFile": "output/imagegen/library-2026-10-22/window-retreat.png",
+      "masterSha256": "568fe48c1d2433a00a473519bc1a3d55c9315320c12a1461eef80e1b9729444f",
+      "bytes": 186026,
+      "sha256": "fe0ca01c76b2902ffda3c366263f0933d91215f0b75de167a2ef1a3cabbcf05d",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-10-22-window-retreat-640.webp",
+          "bytes": 49862,
+          "sha256": "b688bb0631fb11a77d11aad3147cfde724d3da9d8d24c0aedc222c2e413b1381"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-10-22-window-retreat-960.webp",
+          "bytes": 94864,
+          "sha256": "f56aa513e35c2454a9a939f03a1b5858527a8d2f8880f3ec72d23d5507031b78"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-10-22-window-retreat.webp",
+          "bytes": 186026,
+          "sha256": "fe0ca01c76b2902ffda3c366263f0933d91215f0b75de167a2ef1a3cabbcf05d"
+        }
+      ],
+      "review": "Visually reviewed 2026-10-22: cats only, no visible logos or readable text, no generated branded product. Ready for inclusion in future owner-reviewed drafts.",
+      "useNote": "Generic lifestyle scene. Product guides must pair with the correct original model-specific product image. Do not describe as an actual customer home, botanical-safety guide or product demonstration."
+    },
+    {
+      "publicPath": "/images/journal/2026-10-22-two-cat-zones.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle illustration; not a customer photograph, product demonstration or safety evidence",
+      "generatedAt": "2026-10-22",
+      "categories": [
+        "Cat-Friendly Homes",
+        "Life with Cats"
+      ],
+      "topics": [
+        "multi-cat home",
+        "separate resting spaces",
+        "room planning"
+      ],
+      "alt": "Two cats resting in separate raised and floor-level spaces while a person reads nearby",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: one wide 3:2 editorial photograph-style illustration for Robotail's cat-friendly-home blog. Thoughtful small European living room viewed diagonally through an open doorway, one black-and-white short-haired cat resting on a raised stable cat shelf on one side, a separate ginger short-haired cat curled in a low woven basket across the room, clearly separated comfortable resource zones and unobstructed walking route. A casually dressed adult reading on a sofa in the background, not handling either cat. Calm overcast daylight, textured cream plaster, natural wood, a restrained violet throw near #685BC7, realistic scale and anatomy, warm harmonious home rather than posed luxury showroom. No food or litter placed together, no pet appliances, no invented products, no logos or readable text, no other animals, no collage.",
+      "masterFile": "output/imagegen/library-2026-10-22/two-cat-zones.png",
+      "masterSha256": "5caa616fbb12f9f09ec5d02e6f6216c45bfb3394e97edb20bc60b09c019a30de",
+      "bytes": 175200,
+      "sha256": "2045c69b99f3739699f2201f3d995d68a15aa5351a09c2b9f556c2b0517c59b4",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-10-22-two-cat-zones-640.webp",
+          "bytes": 52074,
+          "sha256": "106308ce67edefaec7130edc86daa18259a8a41e7684d46f730740ca8031bb0b"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-10-22-two-cat-zones-960.webp",
+          "bytes": 95894,
+          "sha256": "66053c10dde06c7b584df8e221a99268d12299cd3eaa5ef87a1273ea8406d1ac"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-10-22-two-cat-zones.webp",
+          "bytes": 175200,
+          "sha256": "2045c69b99f3739699f2201f3d995d68a15aa5351a09c2b9f556c2b0517c59b4"
+        }
+      ],
+      "review": "Visually reviewed 2026-10-22: cats only, no visible logos or readable text, no generated branded product. Ready for inclusion in future owner-reviewed drafts.",
+      "useNote": "Generic lifestyle scene. Product guides must pair with the correct original model-specific product image. Do not describe as an actual customer home, botanical-safety guide or product demonstration."
+    },
+    {
+      "publicPath": "/images/journal/2026-10-22-workday-companion.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle illustration; not a customer photograph, product demonstration or safety evidence",
+      "generatedAt": "2026-10-22",
+      "categories": [
+        "Life with Cats",
+        "Cat-Friendly Homes"
+      ],
+      "topics": [
+        "home office",
+        "companionship",
+        "workday routine"
+      ],
+      "alt": "A woman working at a desk beside a gray cat resting on its own chair",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: a single 3:2 landscape editorial lifestyle photo-style image for Robotail Journal. Candid mid-afternoon home-working scene: a woman with curly hair wearing a muted blue cotton shirt seated at a modest wooden work table, a relaxed dark gray short-haired cat on a separate low upholstered chair next to her, with a little distance from keyboard and cables. Camera from behind and slightly to the side for a fresh environmental angle; laptop display turned away, no legible UI. Soft daylight, realistic skin and fur, natural unstyled apartment, cream walls, one small violet desk textile near #685BC7, thoughtful human-cat companionship. No branded products, no pet appliances, no text, no watermarks, no dogs or other animals, no collage; do not repeat a man reading beside a cat basket.",
+      "masterFile": "output/imagegen/library-2026-10-22/workday-companion.png",
+      "masterSha256": "25b2ae83d8e1d6c6680ce8627ab7227bde800993e1bda9ff1f2ec91a8c002727",
+      "bytes": 150756,
+      "sha256": "27b1c2fdbb9610c0a4163035a65429ce86af6161454a1e8a7b5ceec72a88b152",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-10-22-workday-companion-640.webp",
+          "bytes": 45960,
+          "sha256": "ee1a5bb88f820420dece5984ecbaa991925f527ce618d417648e6ddf0862af6f"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-10-22-workday-companion-960.webp",
+          "bytes": 82792,
+          "sha256": "5f2fd340d293a53c70064465ce2773d984b2777be4593b2cb2c3a690135e6194"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-10-22-workday-companion.webp",
+          "bytes": 150756,
+          "sha256": "27b1c2fdbb9610c0a4163035a65429ce86af6161454a1e8a7b5ceec72a88b152"
+        }
+      ],
+      "review": "Visually reviewed 2026-10-22: cats only, no visible logos or readable text, no generated branded product. Ready for inclusion in future owner-reviewed drafts.",
+      "useNote": "Generic lifestyle scene. Product guides must pair with the correct original model-specific product image. Do not describe as an actual customer home, botanical-safety guide or product demonstration."
+    },
+    {
+      "publicPath": "/images/journal/2026-10-22-sitter-welcome.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle illustration; not a customer photograph, product demonstration or safety evidence",
+      "generatedAt": "2026-10-22",
+      "categories": [
+        "Life with Cats"
+      ],
+      "topics": [
+        "cat sitter",
+        "handover",
+        "travel preparation"
+      ],
+      "alt": "A cat approaching a seated sitter with its owner waiting in the doorway",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: single 3:2 editorial cover image for an English cat-sitter handover blog, Robotail warm-home brand. A relaxed adult cat sitter sitting on a rug at a respectful distance from a single cream-and-ginger short-haired cat in the foreground, allowing the cat to approach voluntarily. Another adult owner stands softly out of focus in the open doorway holding a closed plain notebook. A welcoming compact home, low eye-level cat-centered composition, gentle early evening window light, neutral furniture and one lavender knitted throw near #685BC7, real varied textures, natural anatomy and subtle expressions. No forced petting, no feeding action, no text, no readable notebook, no logos, no pet devices, no other animals, no collage.",
+      "masterFile": "output/imagegen/library-2026-10-22/sitter-welcome.png",
+      "masterSha256": "dd71eb6acc7b375e2018ebf010ae8006675c86a38ec7464140c3734356f0d966",
+      "bytes": 141170,
+      "sha256": "2723c4f9db9289a3aae60abd42cd53b67ed7be42b7d1b6bfb426e407a14b3a94",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-10-22-sitter-welcome-640.webp",
+          "bytes": 47014,
+          "sha256": "55ab9f52084e390db9de0a29adfe00f6a9969a8629a2139c25f9494066a09285"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-10-22-sitter-welcome-960.webp",
+          "bytes": 82662,
+          "sha256": "c76c092a3ad8f0f386e1c30e760856eb092de795f13faaa0bc11f33c86ebc96a"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-10-22-sitter-welcome.webp",
+          "bytes": 141170,
+          "sha256": "2723c4f9db9289a3aae60abd42cd53b67ed7be42b7d1b6bfb426e407a14b3a94"
+        }
+      ],
+      "review": "Visually reviewed 2026-10-22: cats only, no visible logos or readable text, no generated branded product. Ready for inclusion in future owner-reviewed drafts.",
+      "useNote": "Generic lifestyle scene. Product guides must pair with the correct original model-specific product image. Do not describe as an actual customer home, botanical-safety guide or product demonstration."
+    },
+    {
+      "publicPath": "/images/journal/2026-10-22-mealtime-preparation.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle illustration; not a customer photograph, product demonstration or safety evidence",
+      "generatedAt": "2026-10-22",
+      "categories": [
+        "Life with Cats",
+        "Product Guides"
+      ],
+      "topics": [
+        "mealtime preparation",
+        "F20 editorial context",
+        "routine"
+      ],
+      "alt": "A person arranging a clean towel in a kitchen while a cat waits near the doorway",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: a single wide landscape 3:2 editorial lifestyle image for Robotail F20-related mealtime routine articles, not a product demonstration. Cozy apartment kitchen, an adult in a soft sage-green sweater seen in three-quarter profile placing a plain clean tea towel on the counter before the daily routine, a silver-and-white short-haired cat seated calmly on the floor near the doorway at a natural distance. Broad environmental composition, include whole cat and person's upper body, soft late morning daylight, white cabinetry with warm oak details, one restrained violet hanging towel near #685BC7, realistic unretouched photographic texture. Crucially show NO feeder, NO appliance meant to resemble F20, NO food, NO bowls, NO pouring or serving action. The real F20 photograph will be placed separately in article layout. No logos, lettering, other animals, watermarks, collage.",
+      "masterFile": "output/imagegen/library-2026-10-22/mealtime-preparation.png",
+      "masterSha256": "b56edf568c848d9a6a0e94fe2c70bcbf69f1085f2c972cace06354af17da8b1c",
+      "bytes": 142270,
+      "sha256": "723a04e9871d420025532691813880b7014b449cf61200366cd62934d4d23c56",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-10-22-mealtime-preparation-640.webp",
+          "bytes": 40716,
+          "sha256": "50ef47d192e73099266a1ec9eac671dcc3591fbcbebbb03f1b4179c193397e06"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-10-22-mealtime-preparation-960.webp",
+          "bytes": 74336,
+          "sha256": "2f6a172b12892c9652f20a15378c32e37c94356384d29f3c089c2f045a87c892"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-10-22-mealtime-preparation.webp",
+          "bytes": 142270,
+          "sha256": "723a04e9871d420025532691813880b7014b449cf61200366cd62934d4d23c56"
+        }
+      ],
+      "review": "Visually reviewed 2026-10-22: cats only, no visible logos or readable text, no generated branded product. Ready for inclusion in future owner-reviewed drafts.",
+      "useNote": "Generic lifestyle scene. Product guides must pair with the correct original model-specific product image. Do not describe as an actual customer home, botanical-safety guide or product demonstration."
+    },
+    {
+      "publicPath": "/images/journal/2026-10-22-care-supply-shelf.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle illustration; not a customer photograph, product demonstration or safety evidence",
+      "generatedAt": "2026-10-22",
+      "categories": [
+        "Cat-Friendly Homes",
+        "Product Guides"
+      ],
+      "topics": [
+        "accessory storage",
+        "tidy home",
+        "care supplies"
+      ],
+      "alt": "A person organizing baskets in a low cabinet while a tabby watches from a doorway",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Use case: photorealistic-natural. Asset type: one 3:2 landscape editorial lifestyle photograph-style illustration for Robotail litter-care accessory and home-organization blog topics. A human adult kneeling beside a low closed-door utility cabinet in a warm home, arranging a folded neutral cloth and a plain unmarked storage basket on a shelf; a brown short-haired tabby watching calmly from the open doorway in the background. Mid-wide camera angle from hallway, whole cat visible, closed opaque cabinet bins, no brands or readable labels. Warm diffused daylight, tactile oak, woven baskets, one small violet fabric liner near #685BC7, understated practical welcoming home, natural human hands. No litter box, no invented appliance, no exposed cleaning chemicals, no food, no fabricated Robotail packaging or product parts; actual accessory originals will be used separately in articles. No other animals, no text, no collage.",
+      "masterFile": "output/imagegen/library-2026-10-22/care-supply-shelf.png",
+      "masterSha256": "48190d5da81434d042b64a279572b56d3e26d6d6ee246f29c09f16ff04d7155b",
+      "bytes": 211568,
+      "sha256": "22d28deec7e1bb583f033e78bed56a9c2fc291e96e543a777f146bbac2147185",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-10-22-care-supply-shelf-640.webp",
+          "bytes": 53970,
+          "sha256": "a819f27bc213de23aacc9b60fe2384391d02b9b6a5ead70217098b0c06704b75"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-10-22-care-supply-shelf-960.webp",
+          "bytes": 106572,
+          "sha256": "68aeacff588e74c1c59ab74f09ab1b5a8cd47f19cf1a0a501f2db3e1977a732e"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-10-22-care-supply-shelf.webp",
+          "bytes": 211568,
+          "sha256": "22d28deec7e1bb583f033e78bed56a9c2fc291e96e543a777f146bbac2147185"
+        }
+      ],
+      "review": "Visually reviewed 2026-10-22: cats only, no visible logos or readable text, no generated branded product. Ready for inclusion in future owner-reviewed drafts.",
+      "useNote": "Generic lifestyle scene. Product guides must pair with the correct original model-specific product image. Do not describe as an actual customer home, botanical-safety guide or product demonstration."
+    },
     {
       "publicPath": "/images/journal/home-with-cats.webp",
       "width": 1500,

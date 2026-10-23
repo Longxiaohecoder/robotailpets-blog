@@ -39,25 +39,25 @@
           "title": "Before a Second Cat Moves In: Planning Space for Two",
           "summary": "为第二只猫规划独立起居区、分散资源与维护空间，介绍 C42 时不将一台大猫砂盆当作多处资源的替代。",
           "sha256": "734f78554454ebd568000c77e83892c320c78e5eef1a30c68e1dac38e64cd402",
-        "scheduledFor": "2026-10-19"
+          "scheduledFor": "2026-10-19"
         },
         {
           "file": "2026-10-19-cat-sitter-handover.md",
           "title": "A Cat-Sitter Handover That Keeps Home Feeling Familiar",
           "summary": "用交接清单和现场演练安排喂食、饮水、清洁、陪伴与紧急联系人，说明 F20 是照护工具而非替代照护者。",
           "sha256": "03f9541024959f8c12ef8fd7aa80212fcdb9008a8a76318a5a4c353295291251",
-        "scheduledFor": "2026-10-20",
-        "scheduledTimezone": "America/New_York",
-        "scheduledAt": "2026-10-20T14:43:37.000Z"
+          "scheduledFor": "2026-10-20",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-10-20T14:43:37.000Z"
         },
         {
           "file": "2026-10-19-accessory-matching.md",
           "title": "Before You Order: Matching Robotail Bags and Filters to Your Model",
           "summary": "购买猫砂袋与 C42 小孔滤网前，核对完整型号和配件用途；附官网实物图，区分亚马逊型号标识与适配证明。",
           "sha256": "07df8ad023449a35a268b02a74fd24f77dfa2a435630ce9a0b5e8d5b5749058d",
-        "scheduledFor": "2026-10-22",
-        "scheduledTimezone": "America/New_York",
-        "scheduledAt": "2026-10-22T16:26:41.000Z"
+          "scheduledFor": "2026-10-22",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-10-22T16:26:41.000Z"
         }
       ],
       "approvedAt": "2026-10-19T04:28:34.972Z",
@@ -68,6 +68,45 @@
         "effect": "Already published item unchanged. Remaining items retain reviewed content and publication dates in US Eastern time, with exact UTC targets recorded per item. Friday preparation remains 15:00 Asia/Shanghai."
       },
       "confirmation": "确认这三篇，现在马上部署 ，第一篇可以马上发布出去，第二篇周二发 第三篇周四发，然后你更改一下那个文章草稿生成的时间：1. 每周五下午 15 点开始生成 2. 每周五我就会确认好，你部署出去 3. 周一自动发，周二自动发，周四自动发"
+    },
+    {
+      "id": "2026-10-26",
+      "status": "approved",
+      "preparedAt": "2026-10-23T04:36:12.158Z",
+      "researchFile": "content/research/2026-10-23.json",
+      "researchSha256": "bd52d73a0100196078c2aaf034649a12b7d9ee8f7fc7f6f86fbf412744e77047",
+      "reviewFile": "content/reviews/2026-10-26.md",
+      "items": [
+        {
+          "file": "2026-10-23-cat-refuge-choice.md",
+          "title": "Your Cat Needs a Place to Say No",
+          "summary": "好看的猫窝不等于真正的隐私。讨论访客礼仪与日常动线，通过“接近—退开—不被打扰”三项检查，把尊重猫的选择落实为家庭约定。",
+          "sha256": "89b0ab034648fd40479ac4850a6df00194e8df21653b8aa51268ca838347cf74",
+          "scheduledFor": "2026-10-26",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-10-26T17:17:23.000Z"
+        },
+        {
+          "file": "2026-10-23-work-from-home-cat-attention.md",
+          "title": "Being Home Isn't the Same as Being Available to Your Cat",
+          "summary": "人在家不等于给予了专注陪伴。用开工、会议间隙与下班等转换时刻安排有边界的互动，同时保护猫的独处，避免把每次打扰都解释为无聊。",
+          "sha256": "d3f47d64a45ae05f1a2b220f69225a3195d5fcc27b12c731875c418b7d9677b9",
+          "scheduledFor": "2026-10-27",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-10-27T14:43:37.000Z"
+        },
+        {
+          "file": "2026-10-23-self-cleaning-maintenance.md",
+          "title": "Self-Cleaning Is Not Self-Maintaining: The Question to Ask Before You Buy",
+          "summary": "自动清理不等于无需维护。买之前先检查拆卸、清洗、晾干、垃圾交接及责任分工；用完整维护流程，而不只用功能列表判断是否适合家庭。",
+          "sha256": "526a334bd53618672bb40941e107c241eea75731b4c4c7ff790028462a8461a6",
+          "scheduledFor": "2026-10-29",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-10-29T16:26:41.000Z"
+        }
+      ],
+      "approvedAt": "2026-10-23T04:40:17.128Z",
+      "confirmation": "确认下周这三篇"
     }
   ]
 }

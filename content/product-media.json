@@ -4,6 +4,30 @@
   "editing": "Shopify width rendition only; no retouching, added text, or product alteration.",
   "assets": [
     {
+      "model": "c42",
+      "sourcePage": "https://robotailpets.com/products/c42",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6_b4148c48-7cbf-4072-bad6-9976ce2f33b1.webp?v=1768132032",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6_b4148c48-7cbf-4072-bad6-9976ce2f33b1.webp?v=1768132032&width=1200",
+      "publicPath": "/images/products/c42-entry-scene.webp",
+      "bytes": 155141,
+      "sha256": "086e1628b92f1bdf893c3a6e9973340ad97a0d8828bad09d11fe0987d27615b8",
+      "retrievedAt": "2026-10-22",
+      "review": "Visually reviewed: original manufacturer C42 semi-open-entry scene, English image copy and cat only; appearance unaltered.",
+      "useNote": "Inline original product illustration. Manufacturer image copy is not an independently tested comfort or safety guarantee; do not crop model geometry."
+    },
+    {
+      "model": "f20",
+      "sourcePage": "https://robotailpets.com/products/f20",
+      "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_8_196e4950-99d2-4c6d-a1ce-0dc5fccbce40.jpg?v=1785135981",
+      "requestedRendition": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/1_8_196e4950-99d2-4c6d-a1ce-0dc5fccbce40.jpg?v=1785135981&width=1200",
+      "publicPath": "/images/products/f20-tray-cleaning.jpg",
+      "bytes": 162165,
+      "sha256": "dcf9bed7d0f6c525afe71961f4ec9282dc0391852365ef191cf059c16c0ad1fb",
+      "retrievedAt": "2026-10-22",
+      "review": "Visually reviewed: original manufacturer removable F20 tray-cleaning illustration, English image copy, appearance unaltered.",
+      "useNote": "Inline tray-cleaning illustration only; it explicitly excludes washing the main unit. Not proof of hands-on testing."
+    },
+    {
       "model": "c32-c42-accessories",
       "sourcePage": "https://robotailpets.com/products/garbage-bags",
       "sourceImage": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/6361784557408_.pic.jpg?v=1784616344",

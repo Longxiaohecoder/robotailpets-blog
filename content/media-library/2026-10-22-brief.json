@@ -1,0 +1,99 @@
+{
+  "preparedAt": "2026-10-22",
+  "brand": "Robotail",
+  "purpose": "备用博客图库；仅本地备料，不发布文章或替换现有图片",
+  "generationMode": "Built-in image_gen via Desktop native-image workers",
+  "boardId": "747b5ae0-d821-4e28-96ef-5600a7ab8054",
+  "brandAccent": {
+    "pantone": "2725 C",
+    "screen": "#685BC7",
+    "application": "Small textile accents only; neutral warm homes, not a purple color cast."
+  },
+  "rules": [
+    "English journal; cats only, US/Europe homes.",
+    "Six separate lifestyle compositions, not collages.",
+    "No generated Robotail products, packaging or invented features. Product appearance remains in original official images.",
+    "Generated scenes are editorial illustrations, not customer photographs or evidence of product performance.",
+    "Future article use requires review of that article and its actual chosen images."
+  ],
+  "directions": [
+    {
+      "id": "window-retreat",
+      "title": "窗边慢生活",
+      "prompt": "Use case: photorealistic-natural. Asset type: one landscape 3:2 editorial lifestyle image for the Robotail English cat-and-home journal. A sunlit contemporary apartment window nook, a short-haired silver tabby resting stretched out on a broad low bench, one adult person in neutral linen clothes nearby quietly opening a curtain, both fully plausible and relaxed. Wide side-on composition showing the whole cat and generous uncluttered home context; soft morning backlight, warm oak, cream linen, authentic fur and fabric texture, one small violet cushion near #685BC7. Natural lived-in home, not a showroom, no exaggerated interaction. Cats only. No pet appliances or feeders or litter boxes, no logos, no writing, no watermarks, no collage, no typography. This is an editorial illustration, not a customer testimonial."
+    },
+    {
+      "id": "two-cat-zones",
+      "title": "双猫各有空间",
+      "prompt": "Use case: photorealistic-natural. Asset type: one wide 3:2 editorial photograph-style illustration for Robotail's cat-friendly-home blog. Thoughtful small European living room viewed diagonally through an open doorway, one black-and-white short-haired cat resting on a raised stable cat shelf on one side, a separate ginger short-haired cat curled in a low woven basket across the room, clearly separated comfortable resource zones and unobstructed walking route. A casually dressed adult reading on a sofa in the background, not handling either cat. Calm overcast daylight, textured cream plaster, natural wood, a restrained violet throw near #685BC7, realistic scale and anatomy, warm harmonious home rather than posed luxury showroom. No food or litter placed together, no pet appliances, no invented products, no logos or readable text, no other animals, no collage."
+    },
+    {
+      "id": "workday-companion",
+      "title": "居家办公陪伴",
+      "prompt": "Use case: photorealistic-natural. Asset type: a single 3:2 landscape editorial lifestyle photo-style image for Robotail Journal. Candid mid-afternoon home-working scene: a woman with curly hair wearing a muted blue cotton shirt seated at a modest wooden work table, a relaxed dark gray short-haired cat on a separate low upholstered chair next to her, with a little distance from keyboard and cables. Camera from behind and slightly to the side for a fresh environmental angle; laptop display turned away, no legible UI. Soft daylight, realistic skin and fur, natural unstyled apartment, cream walls, one small violet desk textile near #685BC7, thoughtful human-cat companionship. No branded products, no pet appliances, no text, no watermarks, no dogs or other animals, no collage; do not repeat a man reading beside a cat basket."
+    },
+    {
+      "id": "sitter-welcome",
+      "title": "照护交接与陪伴",
+      "prompt": "Use case: photorealistic-natural. Asset type: single 3:2 editorial cover image for an English cat-sitter handover blog, Robotail warm-home brand. A relaxed adult cat sitter sitting on a rug at a respectful distance from a single cream-and-ginger short-haired cat in the foreground, allowing the cat to approach voluntarily. Another adult owner stands softly out of focus in the open doorway holding a closed plain notebook. A welcoming compact home, low eye-level cat-centered composition, gentle early evening window light, neutral furniture and one lavender knitted throw near #685BC7, real varied textures, natural anatomy and subtle expressions. No forced petting, no feeding action, no text, no readable notebook, no logos, no pet devices, no other animals, no collage."
+    },
+    {
+      "id": "mealtime-preparation",
+      "title": "温馨餐前准备",
+      "prompt": "Use case: photorealistic-natural. Asset type: a single wide landscape 3:2 editorial lifestyle image for Robotail F20-related mealtime routine articles, not a product demonstration. Cozy apartment kitchen, an adult in a soft sage-green sweater seen in three-quarter profile placing a plain clean tea towel on the counter before the daily routine, a silver-and-white short-haired cat seated calmly on the floor near the doorway at a natural distance. Broad environmental composition, include whole cat and person's upper body, soft late morning daylight, white cabinetry with warm oak details, one restrained violet hanging towel near #685BC7, realistic unretouched photographic texture. Crucially show NO feeder, NO appliance meant to resemble F20, NO food, NO bowls, NO pouring or serving action. The real F20 photograph will be placed separately in article layout. No logos, lettering, other animals, watermarks, collage."
+    },
+    {
+      "id": "care-supply-shelf",
+      "title": "日常用品收纳",
+      "prompt": "Use case: photorealistic-natural. Asset type: one 3:2 landscape editorial lifestyle photograph-style illustration for Robotail litter-care accessory and home-organization blog topics. A human adult kneeling beside a low closed-door utility cabinet in a warm home, arranging a folded neutral cloth and a plain unmarked storage basket on a shelf; a brown short-haired tabby watching calmly from the open doorway in the background. Mid-wide camera angle from hallway, whole cat visible, closed opaque cabinet bins, no brands or readable labels. Warm diffused daylight, tactile oak, woven baskets, one small violet fabric liner near #685BC7, understated practical welcoming home, natural human hands. No litter box, no invented appliance, no exposed cleaning chemicals, no food, no fabricated Robotail packaging or product parts; actual accessory originals will be used separately in articles. No other animals, no text, no collage."
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://robotailpets.com/",
+      "checkedAt": "2026-10-22",
+      "method": "Web page reader",
+      "scope": "Brand and product navigation only"
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "checkedAt": "2026-10-22",
+      "method": "Live Shopify product JSON, HTTP 200",
+      "scope": "Actual C42 source-image gallery; litter-care/home-placement topic"
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "checkedAt": "2026-10-22",
+      "method": "Live Shopify product JSON, HTTP 200",
+      "scope": "Actual F20 source-image gallery; mealtime and tray-cleaning topic, no camera inference"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "checkedAt": "2026-10-22",
+      "method": "Direct HTTP 200; Robotail branding and expected model identifiers present",
+      "scope": "Product identity/topic reference; no new Amazon marketing claims accepted; official-site originals used for product files"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "checkedAt": "2026-10-22",
+      "method": "Direct HTTP 200; Robotail branding and expected model identifiers present",
+      "scope": "Product identity/topic reference; no new Amazon marketing claims accepted; official-site originals used for product files"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "checkedAt": "2026-10-22",
+      "method": "Direct HTTP 200; Robotail branding and expected model identifiers present",
+      "scope": "Product identity/topic reference; no new Amazon marketing claims accepted; official-site originals used for product files"
+    }
+  ],
+  "rejectedOriginalCandidates": [
+    {
+      "name": "c42-cleaning-detail",
+      "reason": "Image contains an absolute '100% Cat Safety Guaranteed' claim; not added to the reusable catalogue."
+    },
+    {
+      "name": "f20-care-detail",
+      "reason": "Safety-feature marketing scene not needed for the selected neutral cleaning/placement topics; not added."
+    }
+  ]
+}
