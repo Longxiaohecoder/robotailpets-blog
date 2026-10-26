@@ -1,16 +1,25 @@
 ---
-title: "Your Cat Needs a Place to Say No"
-description: "A private resting place works when the household respects it. A practical argument for giving your cat control over attention, visitors, and everyday interruptions."
-pubDate: "2026-10-26"
-tags: ["Cat Behaviour","Cat-Friendly Homes","Everyday Cat Care"]
-author: "Robotail Editorial Team"
-draft: true
-category: "Cat-Friendly Homes"
-cover: "/images/journal/2026-10-22-window-retreat.webp"
-coverAlt: "A silver tabby resting on a sunny window bench while a person opens the curtain"
-sources: ["https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-hiding","https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats","https://robotailpets.com/products/c42"]
-sourceVerifiedAt: "2026-10-23"
-reviewNote: "Weekly opinion-led draft awaiting owner approval. Publication date provisional; manufacturer descriptions and editorial suggestions, not hands-on testing."
+title: Your Cat Needs a Place to Say No
+description: A private resting place works when the household respects it. A
+  practical argument for giving your cat control over attention, visitors, and
+  everyday interruptions.
+pubDate: 2026-10-26T21:39:07.005Z
+tags:
+  - Cat Behaviour
+  - Cat-Friendly Homes
+  - Everyday Cat Care
+author: Robotail Editorial Team
+draft: false
+category: Cat-Friendly Homes
+cover: /images/journal/2026-10-22-window-retreat.webp
+coverAlt: A silver tabby resting on a sunny window bench while a person opens the curtain
+sources:
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-hiding
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats
+  - https://robotailpets.com/products/c42
+sourceVerifiedAt: 2026-10-23
+reviewNote: Approved batch 2026-10-26, confirmed 2026-10-23T04:40:17.128Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine a friend visiting for coffee. Your cat has settled inside a covered bed, and your guest crouches down: “Can I just say hello?” A hand moves toward the opening. You hesitate because everyone means well, and asking someone to stop can feel less hospitable than letting the moment happen.
@@ -74,4 +83,3 @@ Respectful observation does not mean ignoring a change in behaviour. Cats Protec
 Keep both responsibilities in view: honour an ordinary withdrawal, and notice when the pattern changes. A refuge is not permission to stop paying attention.
 
 The most meaningful improvement may be a sentence everyone agrees to follow. When your cat retreats, the invitation to interact closes. Your home can remain lively, welcoming, and recognisably yours while making room for that answer.
-

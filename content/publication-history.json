@@ -54,6 +54,17 @@
       "scheduledFor": "2026-10-22",
       "timezone": "America/New_York",
       "scheduledAt": "2026-10-22T16:26:41.000Z"
+    },
+    {
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T21:39:07.005Z",
+      "file": "2026-10-23-cat-refuge-choice.md",
+      "title": "Your Cat Needs a Place to Say No",
+      "batchId": "2026-10-26",
+      "approvedAt": "2026-10-23T04:40:17.128Z",
+      "scheduledFor": "2026-10-26",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-10-26T17:17:23.000Z"
     }
   ]
 }
