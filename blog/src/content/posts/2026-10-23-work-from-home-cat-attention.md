@@ -1,16 +1,26 @@
 ---
-title: "Being Home Isn't the Same as Being Available to Your Cat"
-description: "Working beside your cat doesn't make every moment shared time. A practical framework for clear work boundaries, responsive play, and undisturbed rest."
-pubDate: "2026-10-26"
-tags: ["Life with Cats","Working from Home","Cat Play","Daily Routines"]
-author: "Robotail Editorial Team"
-draft: true
-category: "Life with Cats"
-cover: "/images/journal/2026-10-22-workday-companion.webp"
-coverAlt: "A woman working at a desk beside a gray cat resting on its own chair"
-sources: ["https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play","https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats","https://robotailpets.com/products/f20"]
-sourceVerifiedAt: "2026-10-23"
-reviewNote: "Weekly opinion-led draft awaiting owner approval. Publication date provisional; manufacturer descriptions and editorial suggestions, not hands-on testing."
+title: Being Home Isn't the Same as Being Available to Your Cat
+description: Working beside your cat doesn't make every moment shared time. A
+  practical framework for clear work boundaries, responsive play, and
+  undisturbed rest.
+pubDate: 2026-10-27T19:38:24.802Z
+tags:
+  - Life with Cats
+  - Working from Home
+  - Cat Play
+  - Daily Routines
+author: Robotail Editorial Team
+draft: false
+category: Life with Cats
+cover: /images/journal/2026-10-22-workday-companion.webp
+coverAlt: A woman working at a desk beside a gray cat resting on its own chair
+sources:
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats
+  - https://robotailpets.com/products/f20
+sourceVerifiedAt: 2026-10-23
+reviewNote: Approved batch 2026-10-26, confirmed 2026-10-23T04:40:17.128Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine this: you are halfway through a video meeting when your cat steps between the keyboard and your coffee. You move a hand across their back while reading a message, then reach around them to unmute. Later, you realize you have been beside your cat all morning without quite choosing a moment to be together.
@@ -62,4 +72,3 @@ If your cat is resting, leaving them undisturbed is a valid choice. If you canno
 Finally, give finishing work its own ritual: close the laptop, put work materials aside, and become available for an invitation you can genuinely follow. Success need not mean constant access or dramatic play. It can mean small, finished moments of attention alongside ordinary quiet.
 
 Before buying more toys, audit your workday. Look for the transitions where attention is possible, the boundaries that need clarity, and the rest that needs protecting.
-

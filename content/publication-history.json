@@ -65,6 +65,17 @@
       "scheduledFor": "2026-10-26",
       "timezone": "America/New_York",
       "scheduledAt": "2026-10-26T17:17:23.000Z"
+    },
+    {
+      "date": "2026-10-27",
+      "publishedAt": "2026-10-27T19:38:24.802Z",
+      "file": "2026-10-23-work-from-home-cat-attention.md",
+      "title": "Being Home Isn't the Same as Being Available to Your Cat",
+      "batchId": "2026-10-26",
+      "approvedAt": "2026-10-23T04:40:17.128Z",
+      "scheduledFor": "2026-10-27",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-10-27T14:43:37.000Z"
     }
   ]
 }
