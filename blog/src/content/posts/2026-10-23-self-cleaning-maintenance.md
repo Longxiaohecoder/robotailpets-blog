@@ -1,16 +1,26 @@
 ---
 title: "Self-Cleaning Is Not Self-Maintaining: The Question to Ask Before You Buy"
-description: "Automatic sifting is one part of litter care. Before buying, consider whether the full maintenance routine fits your space, responsibilities, and preferences."
-pubDate: "2026-10-26"
-tags: ["Cat Care","Litter Box Maintenance","Thoughtful Buying"]
-author: "Robotail Editorial Team"
-draft: true
-category: "Product Guides"
-cover: "/images/journal/2026-10-22-care-supply-shelf.webp"
-coverAlt: "A person organizing baskets in a low cabinet while a tabby watches from a doorway"
-sources: ["https://robotailpets.com/pages/c42m","https://robotailpets.com/products/c42","https://www.amazon.com/dp/B0H2YPTF68"]
-sourceVerifiedAt: "2026-10-23"
-reviewNote: "Weekly opinion-led draft awaiting owner approval. Publication date provisional; manufacturer descriptions and editorial suggestions, not hands-on testing."
+description: Automatic sifting is one part of litter care. Before buying,
+  consider whether the full maintenance routine fits your space,
+  responsibilities, and preferences.
+pubDate: 2026-10-29T21:17:39.394Z
+tags:
+  - Cat Care
+  - Litter Box Maintenance
+  - Thoughtful Buying
+author: Robotail Editorial Team
+draft: false
+category: Product Guides
+cover: /images/journal/2026-10-22-care-supply-shelf.webp
+coverAlt: A person organizing baskets in a low cabinet while a tabby watches
+  from a doorway
+sources:
+  - https://robotailpets.com/pages/c42m
+  - https://robotailpets.com/products/c42
+  - https://www.amazon.com/dp/B0H2YPTF68
+sourceVerifiedAt: 2026-10-23
+reviewNote: Approved batch 2026-10-26, confirmed 2026-10-23T04:40:17.128Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine a cleaning day at home. The litter box fits neatly beneath a cabinet, exactly where you hoped it would go. Then you discover that the drum cannot come out beneath that low shelf. The sink is across the apartment, the drying spot is occupied, and nobody has decided who handles the waste bag.
@@ -70,4 +80,3 @@ Use these questions to turn that imagined cleaning day into a decision:
 A simple manual tray may suit someone who prefers fewer components and a more direct routine. That is a legitimate preference. Automation can also be valuable when its remaining chores fit the household; acknowledging those chores makes the decision stronger.
 
 Before you buy, evaluate the maintenance page before the feature list. Choose the routine you are willing to maintain, including the moments when the automatic part is not doing the work.
-
