@@ -1,0 +1,166 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-10-30",
+  "publicationWeek": "2026-11-02",
+  "editorialRules": [
+    "English only, cats only, warm practical voice with a reasoned opinion, not a feature list.",
+    "800-900 words requested editorial depth; product claims are manufacturer-attributed, not hands-on tests.",
+    "Three distinct existing covers plus genuine manufacturer product illustrations; no invented product appearance.",
+    "Preparation only: no approval, push, publication or deployment."
+  ],
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "title": "Official brand site",
+      "type": "official",
+      "facts": [
+        "Product and manual navigation reviewed; not evidence of all-country delivery."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader; relevant source sections read"
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "C42 manufacturer information",
+      "type": "official",
+      "facts": [
+        "Semi-open entry and removable roller described by manufacturer.",
+        "Manufacturer lists app usage frequency, usage duration and weight-change records; not validated clinical measurements or diagnostic results."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader and direct Shopify JSON HTTP 200"
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "title": "F20 manufacturer information",
+      "type": "official",
+      "facts": [
+        "Manufacturer describes app-scheduled/immediate feeding and removable tray.",
+        "Automatic daylight-saving or time-zone rescheduling was not verified. No camera, storage-volume or voice feature inferred from alt text."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader and direct Shopify JSON HTTP 200"
+    },
+    {
+      "url": "https://robotailpets.com/pages/c42m",
+      "title": "UCAT C42 official HTML manual",
+      "type": "official-manual",
+      "facts": [
+        "Basic operation is possible without downloading the app; the app adjusts cleaning timing and shows toilet usage.",
+        "This manual is for UCAT C42; do not assume every sales suffix has identical configuration."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader and direct HTTP 200"
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "title": "F20 manual landing page",
+      "type": "official",
+      "facts": [
+        "Landing page returned HTTP 200; PDF contents not newly read, no specific manual claims used."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Direct HTTP 200 and landing-page title check; PDF contents not read"
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching",
+      "title": "Cats Protection: Scratching",
+      "type": "independent-care",
+      "facts": [
+        "Place scratching surface near the preferred area; stable base and room for full stretch; offer horizontal scratchers when preferred.",
+        "Gradually relocate an accepted scratcher; consider its location near waking/resting areas."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader; relevant source sections read"
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats",
+      "title": "Cats Protection: Shy cats",
+      "type": "independent-care",
+      "facts": [
+        "Consistent daily routine is advised in the specific context of shy cats; not evidence for a universal daylight-saving adjustment protocol."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader; relevant source sections read"
+    },
+    {
+      "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+      "title": "NIST: Daylight Saving Time Rules",
+      "type": "official-time",
+      "facts": [
+        "In US locations observing DST, the 2026 end is November 1 at 02:00 local daylight time, returning the clock to 01:00. Not all US locations observe DST."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader; relevant source sections read"
+    },
+    {
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/cats/health",
+      "title": "RSPCA: Cat health",
+      "type": "independent-care",
+      "facts": [
+        "Observe changes in behaviour and seek veterinary advice promptly when something is unusual; do not substitute app data for veterinary assessment."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Web reader; relevant source sections read"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "title": "Amazon US C32RO",
+      "type": "amazon",
+      "facts": [
+        "Direct HTTP 200; Robotail brand and model C32RO read from listing. Identity does not prove cross-channel manual or accessory equivalence."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Direct HTTP 200; brand and model text read"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "title": "Amazon US C42C",
+      "type": "amazon",
+      "facts": [
+        "Direct HTTP 200; Robotail brand and model C42C read from listing. Identity does not prove cross-channel manual or accessory equivalence."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Direct HTTP 200; brand and model text read"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "title": "Amazon US F20",
+      "type": "amazon",
+      "facts": [
+        "Direct HTTP 200; Robotail brand and model F20 read from listing. Identity does not prove cross-channel manual or accessory equivalence."
+      ],
+      "checkedAt": "2026-10-30",
+      "method": "Direct HTTP 200; brand and model text read"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://robotailpets.com/products/c32",
+      "checkedAt": "2026-10-30",
+      "status": "Direct HTTP 404",
+      "impact": "No fresh C32 feature claims."
+    },
+    {
+      "url": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D",
+      "checkedAt": "2026-10-30",
+      "status": "Web reader HTTP 503",
+      "impact": "Individual listings were readable, not the full storefront."
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/health/signs-of-pain-in-cats",
+      "checkedAt": "2026-10-30",
+      "status": "Web reader inaccessible",
+      "impact": "Not cited; RSPCA guidance used for the narrow advice to contact a vet."
+    }
+  ],
+  "media": {
+    "date": "Existing catalogue dates retained; not described as new photography",
+    "covers": [
+      "/images/journal/2026-10-22-two-cat-zones.webp",
+      "/images/journal/2026-10-22-mealtime-preparation.webp",
+      "/images/journal/brand-home.webp"
+    ],
+    "origin": "Lifestyle covers are explicitly editorial illustrations; brand-home is an original official image. Product photos unaltered."
+  }
+}

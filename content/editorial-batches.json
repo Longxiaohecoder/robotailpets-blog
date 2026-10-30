@@ -107,6 +107,45 @@
       ],
       "approvedAt": "2026-10-23T04:40:17.128Z",
       "confirmation": "确认下周这三篇"
+    },
+    {
+      "id": "2026-11-02",
+      "status": "approved",
+      "preparedAt": "2026-10-30T08:02:35.905Z",
+      "researchFile": "content/research/2026-10-30.json",
+      "researchSha256": "c5aa2509980873ec380f8f4959fb1206605e0f7713e1e93bdf85ad001d169c7e",
+      "reviewFile": "content/reviews/2026-11-02.md",
+      "items": [
+        {
+          "file": "2026-10-30-scratching-design.md",
+          "title": "Scratching Is a Design Brief, Not a Habit to Hide",
+          "summary": "从猫实际使用房间的方式出发，分别观察位置、表面、抓挠方向和日常通行路线，再确定购买条件。审美与空间限制应纳入设计，但空角落或更大的抓柱并不自动意味着更合适。文章结合 Cats Protection 的有限建议，并以 C42 官方产品照片作简短设计类比，明确其不能替代抓挠区域。",
+          "sha256": "6d55e98aec7b02cf3f24601f81aef7416e77d761d7eaa86829a7fe738e970037",
+          "scheduledFor": "2026-11-02",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-02T18:17:23.000Z"
+        },
+        {
+          "file": "2026-10-30-clock-change-routine.md",
+          "title": "The Clocks Changed. Your Cat's Whole Day Doesn't Have To.",
+          "summary": "面向美国夏令时结束后的家庭安排，建议先区分时钟显示与实际照护流程，再核对进食、工作、灯光和玩耍的计划是否一致。文章提供双列表格，并明确 F20 的托盘清洁照片不能证明时间设置，自动夏令时重排尚未核实。",
+          "sha256": "09a897533cfa7fa73f18912848a0f54718e32b988f1487bde790d377c85cad57",
+          "scheduledFor": "2026-11-03",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-03T15:43:37.000Z"
+        },
+        {
+          "file": "2026-10-30-app-context.md",
+          "title": "Your Cat's App Is a Notebook, Not a Verdict",
+          "summary": "把猫咪 App 当作帮助记忆和提问的笔记本：区分系统记录、自己的推断与亲眼观察，再决定向厂家询问记录含义，还是就猫咪的异常情况及时咨询兽医。",
+          "sha256": "f5e249a646f99ad03282eea0d8aa109fcf88f1158911f81c82920a9e2ba55524",
+          "scheduledFor": "2026-11-05",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-05T17:26:41.000Z"
+        }
+      ],
+      "approvedAt": "2026-10-30T08:42:21.319Z",
+      "confirmation": "确认 2026-11-02 这三篇"
     }
   ]
 }
