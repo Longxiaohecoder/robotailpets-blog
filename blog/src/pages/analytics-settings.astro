@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Privacy & analytics — Robotail Journal" description="Choose whether to allow optional audience measurement on Robotail Journal." noindex={true}>
+  <article class="wrap analytics-settings">
+    <h1>Privacy &amp; analytics</h1>
+    <p>Optional Google Analytics cookies help us understand page views, reading engagement and how visitors find this journal. We load analytics only after you choose to allow it. Advertising personalization is off. Declining does not change your access to any story.</p>
+    <p>Measurements describe consenting browsers, not every reader or a verified count of people. A browser identifier, page path and interaction information may be sent to Google after consent. We strip query strings and fragments from the initial page location and referrer we supply.</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> · <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics opt-out</a></p>
+    <p data-analytics-status aria-live="polite">Optional analytics is off until allowed.</p>
+    <div class="analytics-actions"><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>Decline analytics</button></div>
+    <h2>Exclude your own visits</h2>
+    <p>If you manage this journal, exclude this browser before reviewing pages. This affects only this browser on this site. Use the same setting separately on your other browsers and devices; it cannot remove past visits.</p>
+    <div class="analytics-actions"><button type="button" data-analytics-exclude>Exclude this browser</button><button type="button" data-analytics-include>Remove browser exclusion</button></div>
+    <p>You can change these choices here at any time. Choices are saved in this browser. We also respect Do Not Track and Global Privacy Control signals.</p>
+  </article>
+</BaseLayout>

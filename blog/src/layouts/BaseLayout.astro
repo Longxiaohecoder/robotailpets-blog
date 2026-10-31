@@ -1,5 +1,6 @@
 ---
 import '../styles/journal.css';
+import analytics from '../../../content/analytics-config.json';
 interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
 const { title, description = 'A warmer home, a happier life with cats. Explore cat-friendly spaces, everyday companionship, and thoughtful product guides with Robotail.', image = '/images/journal/home-with-cats.webp', noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -59,7 +60,7 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
           <a href="/blog/">Journal</a><a href="/#together">Our Story</a><a href="https://robotailpets.com" target="_blank" rel="noopener noreferrer">Shop Robotail ↗</a>
         </nav>
       </div>
-      <div class="footer-bottom"><span>© {new Date().getFullYear()} Robotail Journal</span><span>A good life, shared with cats.</span></div>
+      <div class="footer-bottom"><span>© {new Date().getFullYear()} Robotail Journal</span><a href="/analytics-settings/">Privacy &amp; analytics</a><span>A good life, shared with cats.</span></div>
     </div>
   </footer>
   <script>
@@ -89,5 +90,6 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
       label();
     });
   </script>
+  <script is:inline defer src="/analytics.js" data-measurement-id={analytics.measurementId}></script>
 </body>
 </html>
