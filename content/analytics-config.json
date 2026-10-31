@@ -5,7 +5,9 @@
   "hostname": "auto-blog-system-omega.vercel.app",
   "timezone": "America/New_York",
   "createdOn": "2026-10-31",
-  "collectionVerifiedAt": null,
+  "collectionVerifiedAt": "2026-10-31T04:44:34.175Z",
+  "verificationMethod": "Google page_view collection endpoint returned HTTP 204 for an explicitly internal debug session; this is not proof of real readership or processed daily reports.",
+  "internalFilterActive": true,
   "consentMode": "basic",
   "scope": "Consenting browsers only; excludes explicitly marked internal browsers and local/preview origins. Not a count of verified humans."
 }
