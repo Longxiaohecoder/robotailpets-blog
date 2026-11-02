@@ -27,15 +27,20 @@ if(auth?.token){
  const today=checkedAt.slice(0,10),day=86400000;
  for(const [period,days] of [['30d',30],['7d',7],['yesterday',1],['all',30]]){
   // Hobby exposes 30 days. "all" is all available cookieless history, not site lifetime.
-  const since=period==='all'?config.cookielessSwitchedOn:new Date(Date.now()-days*day).toISOString().slice(0,10);
-  const until=period==='yesterday'?today+'T00:00:00Z':checkedAt;
+  const requestedSince=period==='all'?config.cookielessSwitchedOn:new Date(Date.now()-(days-1)*day).toISOString().slice(0,10);
+  const until=period==='yesterday'?new Date(Date.now()-day).toISOString().slice(0,10):today;
+  const since=period==='yesterday'?until:[requestedSince,config.cookielessSwitchedOn].sort().at(-1);
+  if(until<config.cookielessSwitchedOn){
+    for(const kind of ['summary','daily','pages','channels'])queries[kind+'_'+period]={rows:[],source:{...source,description:'Selected period predates cookieless activation; historical counts are unavailable, not zero.'},status:'outside-coverage'};
+    continue;
+  }
   const daily=await api('daily_'+period,{since,until,by:'day'});
   const pages=await api('pages_'+period,{since,until,by:'requestPath',limit:'100'});
   const channels=await api('channels_'+period,{since,until,by:'referrerHostname',limit:'100'});
   if(!Array.isArray(daily)||!Array.isArray(pages)||!Array.isArray(channels))throw Error('Unexpected Vercel aggregate response');
   const make=(rows)=>({rows,source:{...source,executedAt:checkedAt,description:'Vercel official API; UTC period '+since+' — '+until},status:'observed'});
   queries['summary_'+period]=make([{screenPageViews:daily.reduce((n,r)=>n+Number(r.pageviews||0),0),totalUsers:null,averageEngagementPerSession:null}]);
-  queries['daily_'+period]=make(daily.map(r=>({date:r.timestamp.slice(0,10),screenPageViews:r.pageviews})));
+  queries['daily_'+period]=make(daily.filter(r=>r.timestamp.slice(0,10)>=since&&r.timestamp.slice(0,10)<=until).map(r=>({date:r.timestamp.slice(0,10),screenPageViews:r.pageviews})));
   queries['pages_'+period]=make(pages.map(r=>({pagePath:r.requestPath,screenPageViews:r.pageviews})));
   queries['channels_'+period]=make(channels.map(r=>({sessionDefaultChannelGroup:r.referrerHostname||'Direct / unknown',screenPageViews:r.pageviews})));
  }

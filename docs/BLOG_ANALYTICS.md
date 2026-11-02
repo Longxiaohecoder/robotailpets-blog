@@ -1,5 +1,21 @@
 # Blog audience measurement
 
+## Current contract — 2026-11-02 cookieless page views
+
+The owner explicitly requested direct page-view measurement without requiring a consent click. Production now uses official `@vercel/analytics` (2.x), enabled on the existing free Hobby project. The GA4 tag and consent banner have been removed. Legacy GA4 details below are historical and must not be used as the current page-view source.
+
+Source: Vercel project `prj_QsIovdNRLwXiX6Zt7L0WqOGMLNQD`, team `team_wyBBG6cAf8OiJrmDJxWEvRsY`. Count production pages automatically, excluding settings pages, owner-marked browsers, explicit opt-outs, DNT/GPC, and preview/local hosts. Page URL queries/fragments are stripped. No analytics cookies or advertising tags are used; Vercel processes request metadata and uses a short-lived hash. Do not call this proof of real humans or zero data processing. This source does not supply the previous GA4 engagement-time metric.
+
+An isolated first-time browser with no consent preference, no banner and no Google tag sent `/_vercel/insights/view` with HTTP 200. This is a known installation test, not an external reader. The official Vercel report API returned one page view and one estimated visitor for `/` during verification. Keep test context visible; do not subtract an unproven constant from future totals.
+
+Token creation was initially rejected by automatic approval review because of control permissions. The owner then explicitly authorized a Robotail-scoped 90-day token and completed Vercel reauthentication. The actual selected scope was narrowed further to **auto-blog-system only**. It is stored solely in ignored `.local/vercel-analytics-token.json`, mode 600, expiring 2027-01-31. Never print, commit, copy into a dashboard, export or expose that file. It is used only for official report GETs. No paid plan upgrade or credit-card addition occurred.
+
+`scripts/blog-analytics.js` now dispatches to `scripts/blog-analytics-vercel.js` for the new provider. Daily/page/referrer aggregates come from the official API. Requested ranges are clamped to the activation date; pre-activation periods are unavailable, not zero. Reporting uses UTC and can include partial current-day data. Do not sum daily unique visitors. PV is additive and is the primary headline. API errors preserve the previous valid cloud bundle; missing API authorization is explicit, never substituted with GA4 values.
+
+The unified cloud page remains https://longxiaohecoder.github.io/robotail-shopify-dashboard/#blog. Its existing daily update/publish pipeline refreshes this source. Hobby history is limited to 30 days and capped at 50,000 events/month. Official references: https://vercel.com/docs/analytics/privacy-policy and https://vercel.com/docs/analytics/web-analytics-api.
+
+## Historical GA4 setup (superseded)
+
 Configured on 2026-10-31, with explicit owner authorization to create blog-specific analytics. Existing Shopify/site analytics are separate.
 
 - GA account: Robotail, `411765814`.
