@@ -8,6 +8,11 @@
   "collectionVerifiedAt": "2026-10-31T04:44:34.175Z",
   "verificationMethod": "Google page_view collection endpoint returned HTTP 204 for an explicitly internal debug session; this is not proof of real readership or processed daily reports.",
   "internalFilterActive": true,
-  "consentMode": "basic",
-  "scope": "Consenting browsers only; excludes explicitly marked internal browsers and local/preview origins. Not a count of verified humans."
+  "provider": "vercel",
+  "vercelProjectId": "prj_QsIovdNRLwXiX6Zt7L0WqOGMLNQD",
+  "vercelTeamId": "team_wyBBG6cAf8OiJrmDJxWEvRsY",
+  "cookielessSwitchedOn": "2026-11-02",
+  "cookielessVerifiedAt": null,
+  "consentMode": "cookieless-with-optout",
+  "scope": "Automatic cookieless page views; excludes owner browsers, explicit opt-outs, privacy signals, local and preview origins. Legacy GA4 identifiers above are retained only as historical references."
 }

@@ -6,6 +6,10 @@ import dotenv from 'dotenv';
 // Read-only reporting. Credentials stay local; this never changes Google settings.
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config=JSON.parse(await fs.readFile(path.join(root,'content/analytics-config.json'),'utf8'));
+if (config.provider === 'vercel') {
+  await import('./blog-analytics-vercel.js');
+  process.exit(0);
+}
 const authRoot=path.resolve(root, '../shopify-seo-automation');
 dotenv.config({path:path.join(authRoot,'.env'),quiet:true});
 dotenv.config({path:path.join(root,'.env.local'),override:true,quiet:true});

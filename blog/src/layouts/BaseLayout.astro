@@ -1,6 +1,5 @@
 ---
 import '../styles/journal.css';
-import analytics from '../../../content/analytics-config.json';
 interface Props { title: string; description?: string; image?: string; noindex?: boolean; }
 const { title, description = 'A warmer home, a happier life with cats. Explore cat-friendly spaces, everyday companionship, and thoughtful product guides with Robotail.', image = '/images/journal/home-with-cats.webp', noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -90,6 +89,10 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
       label();
     });
   </script>
-  <script is:inline defer src="/analytics.js" data-measurement-id={analytics.measurementId}></script>
+  <script>
+    import { inject } from '@vercel/analytics';
+    import { startAudience } from '../scripts/audience.js';
+    startAudience(inject);
+  </script>
 </body>
 </html>
