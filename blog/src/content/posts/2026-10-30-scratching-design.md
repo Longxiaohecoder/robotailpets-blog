@@ -1,16 +1,27 @@
 ---
-title: "Scratching Is a Design Brief, Not a Habit to Hide"
-description: "A practical way to plan scratching space around your cat’s routes, preferred surfaces and room layout, while taking your own design preferences seriously."
-pubDate: "2026-11-02"
-tags: ["Cat Behavior","Scratching","Cat-Friendly Homes","Interior Design","Everyday Cat Care"]
-author: "Robotail Editorial Team"
-draft: true
-category: "Cat-Friendly Homes"
-cover: "/images/journal/2026-10-22-two-cat-zones.webp"
-coverAlt: "Two cats resting in separate raised and floor-level spaces while a person reads nearby"
-sources: ["https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching","https://robotailpets.com/products/c42"]
-sourceVerifiedAt: "2026-10-30"
-reviewNote: "Opinion-led weekly draft awaiting owner approval; provisional publication date, manufacturer descriptions and editorial suggestions, not hands-on testing."
+title: Scratching Is a Design Brief, Not a Habit to Hide
+description: A practical way to plan scratching space around your cat’s routes,
+  preferred surfaces and room layout, while taking your own design preferences
+  seriously.
+pubDate: 2026-11-03T00:59:48.460Z
+tags:
+  - Cat Behavior
+  - Scratching
+  - Cat-Friendly Homes
+  - Interior Design
+  - Everyday Cat Care
+author: Robotail Editorial Team
+draft: false
+category: Cat-Friendly Homes
+cover: /images/journal/2026-10-22-two-cat-zones.webp
+coverAlt: Two cats resting in separate raised and floor-level spaces while a
+  person reads nearby
+sources:
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching
+  - https://robotailpets.com/products/c42
+sourceVerifiedAt: 2026-10-30
+reviewNote: Approved batch 2026-11-02, confirmed 2026-10-30T08:42:21.319Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine you have just rearranged the living room. The sofa finally fits, the lamp has a sensible home, and the scratching post looks wonderfully discreet behind an armchair. Then your cat walks past that hidden corner and scratches the sofa again.
