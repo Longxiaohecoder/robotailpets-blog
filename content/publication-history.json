@@ -98,6 +98,17 @@
       "scheduledFor": "2026-11-02",
       "timezone": "America/New_York",
       "scheduledAt": "2026-11-02T18:17:23.000Z"
+    },
+    {
+      "date": "2026-11-03",
+      "publishedAt": "2026-11-03T21:15:30.530Z",
+      "file": "2026-10-30-clock-change-routine.md",
+      "title": "The Clocks Changed. Your Cat's Whole Day Doesn't Have To.",
+      "batchId": "2026-11-02",
+      "approvedAt": "2026-10-30T08:42:21.319Z",
+      "scheduledFor": "2026-11-03",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-11-03T15:43:37.000Z"
     }
   ]
 }

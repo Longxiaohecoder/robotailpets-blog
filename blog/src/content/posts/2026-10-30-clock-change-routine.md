@@ -1,16 +1,27 @@
 ---
-title: "The Clocks Changed. Your Cat's Whole Day Doesn't Have To."
-description: "After the clock change, preserve the familiar sequence of your cat's care while checking what household routines and scheduled devices actually do."
-pubDate: "2026-11-02"
-tags: ["Cat Care","Daylight Saving Time","Daily Routines","Household Planning"]
-author: "Robotail Editorial Team"
-draft: true
-category: "Life with Cats"
-cover: "/images/journal/2026-10-22-mealtime-preparation.webp"
-coverAlt: "A person arranging a clean towel in a kitchen while a cat waits near the doorway"
-sources: ["https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst","https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats","https://robotailpets.com/products/f20"]
-sourceVerifiedAt: "2026-10-30"
-reviewNote: "Opinion-led weekly draft awaiting owner approval; provisional publication date, manufacturer descriptions and editorial suggestions, not hands-on testing."
+title: The Clocks Changed. Your Cat's Whole Day Doesn't Have To.
+description: After the clock change, preserve the familiar sequence of your
+  cat's care while checking what household routines and scheduled devices
+  actually do.
+pubDate: 2026-11-03T21:15:30.530Z
+tags:
+  - Cat Care
+  - Daylight Saving Time
+  - Daily Routines
+  - Household Planning
+author: Robotail Editorial Team
+draft: false
+category: Life with Cats
+cover: /images/journal/2026-10-22-mealtime-preparation.webp
+coverAlt: A person arranging a clean towel in a kitchen while a cat waits near
+  the doorway
+sources:
+  - https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst
+  - https://www.cats.org.uk/help-and-advice/cat-behaviour/shy-cats
+  - https://robotailpets.com/products/f20
+sourceVerifiedAt: 2026-10-30
+reviewNote: Approved batch 2026-11-02, confirmed 2026-10-30T08:42:21.319Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine it is Tuesday, November 3. You have reset the kitchen clock, your first meeting starts at its usual displayed time, and your cat is waiting beside the breakfast spot while you are still looking for a mug. Perhaps nothing seems different. Perhaps your familiar morning feels slightly out of step.
