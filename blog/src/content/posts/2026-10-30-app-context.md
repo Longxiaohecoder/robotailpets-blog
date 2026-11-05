@@ -1,16 +1,27 @@
 ---
-title: "Your Cat's App Is a Notebook, Not a Verdict"
-description: "A practical way to read your cat’s app records: separate recorded numbers, your assumptions, and what you observe before deciding what to do."
-pubDate: "2026-11-02"
-tags: ["Cat Care","Cat Behavior","App Records","Everyday Observation","Robotail"]
-author: "Robotail Editorial Team"
-draft: true
-category: "Product Guides"
-cover: "/images/journal/brand-home.webp"
-coverAlt: "A cat beside a Robotail litter box in a warm living room"
-sources: ["https://robotailpets.com/products/c42","https://robotailpets.com/pages/c42m","https://www.amazon.com/dp/B0H2YPTF68","https://www.rspca.org.uk/adviceandwelfare/pets/cats/health"]
-sourceVerifiedAt: "2026-10-30"
-reviewNote: "Opinion-led weekly draft awaiting owner approval; provisional publication date, manufacturer descriptions and editorial suggestions, not hands-on testing."
+title: Your Cat's App Is a Notebook, Not a Verdict
+description: "A practical way to read your cat’s app records: separate recorded
+  numbers, your assumptions, and what you observe before deciding what to do."
+pubDate: 2026-11-05T22:45:39.028Z
+tags:
+  - Cat Care
+  - Cat Behavior
+  - App Records
+  - Everyday Observation
+  - Robotail
+author: Robotail Editorial Team
+draft: false
+category: Product Guides
+cover: /images/journal/brand-home.webp
+coverAlt: A cat beside a Robotail litter box in a warm living room
+sources:
+  - https://robotailpets.com/products/c42
+  - https://robotailpets.com/pages/c42m
+  - https://www.amazon.com/dp/B0H2YPTF68
+  - https://www.rspca.org.uk/adviceandwelfare/pets/cats/health
+sourceVerifiedAt: 2026-10-30
+reviewNote: Approved batch 2026-11-02, confirmed 2026-10-30T08:42:21.319Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine opening your cat’s app after a busy afternoon. The graph looks reassuringly ordinary, but your cat’s routine feels different. Or imagine the reverse: a number catches your eye while the cat beside you appears to be carrying on as usual. These are hypothetical situations, yet they expose the same temptation: letting a tidy screen settle a question that still needs context.
