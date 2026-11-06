@@ -1,0 +1,151 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-11-06",
+  "publicationWeek": "2026-11-09",
+  "editorialRules": [
+    "Three English, cats-only drafts with distinct arguments, hypothetical examples and practical decision frameworks; no fabricated customer experience.",
+    "Product functions are manufacturer claims; manuals take precedence over sales copy. No runtime, food safety guarantee or Wi-Fi-only fallback inferred.",
+    "Existing reviewed lifestyle illustrations and unaltered official product images; no generated product appearance.",
+    "Preparation only; pending until explicit approval of this version. No push, deployment or publication."
+  ],
+  "freshnessNote": "All listed sources were consulted on 2026-11-06, not on publication-week Monday. Direct retrieval timestamps and hashes are in output/editorial-2026-11-09/retrievals.json. Web-reader snapshots may be cached: their consultation today is not a claim of a fresh origin response. No live prices, stock, ratings or shipping promises are used.",
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "title": "Robotail official home and navigation",
+      "type": "official",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, snapshot marked crawled today",
+      "facts": ["Official navigation links product collections, model-specific user guides and Journal. No sales or traffic conclusions inferred."]
+    },
+    {
+      "url": "https://robotailpets.com/pages/about-us",
+      "title": "Robotail About Us",
+      "type": "official-brand",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, snapshot marked crawled today",
+      "facts": ["The brand describes a range of automatic litter boxes, feeders and care accessories. Company details are not independently audited or used as product-performance evidence."]
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "Robotail C42 manufacturer product page",
+      "type": "official-product",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, snapshot marked crawled four days ago; direct JSON alternative returned 429",
+      "facts": ["Manufacturer describes semi-open entry and automatic cleaning. These do not prove unimpeded access in a particular home or replace distributed litter resources."]
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "title": "Robotail F20 manufacturer product page",
+      "type": "official-product",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, snapshot marked crawled today; direct JSON alternative returned 429",
+      "facts": ["Manufacturer describes scheduled and immediate app feeding, cooling and warming. Image alt text is inconsistent with the manual and is not used as evidence of hopper volume, voice, camera or kibble dispensing."]
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "title": "F20 official user-guide landing page",
+      "type": "official-manual",
+      "checkedAt": "2026-11-06T06:58:29.724795+00:00",
+      "method": "Direct origin retrieval HTTP 200; PDF href checked against downloaded manual",
+      "facts": ["The download link points to f20_521.pdf?v=1785140856."]
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856",
+      "title": "F20 official PDF manual, English printed pages 02, 03, 07 and 08",
+      "type": "official-manual",
+      "checkedAt": "2026-11-06T06:58:29.725180+00:00",
+      "method": "Direct HTTP 200, SHA256 e85de3d6be80659ea27e8079af125124806877ba3a414522b647b6fe04368919; English extracted text read; physical PDF pages 5 and 9 rendered and visually checked",
+      "facts": [
+        "Three AAA backup batteries are not included. With backup battery power after mains loss, pre-set feeding continues; cooling and warming pause; app indicates offline (printed page 03).",
+        "Only 2.4GHz Wi-Fi supported, not 5GHz. No verified battery runtime, Wi-Fi-only outage behavior or remote-operation guarantee is supplied here.",
+        "Flat surface and unobstructed side ventilation are required. Manual warns against carpets, especially shag carpets.",
+        "Fresh food should not be stored beyond 24 hours per manual; this upper limit is not a guaranteed safe period for all foods or after loss of cooling.",
+        "Cleaning requires disconnecting mains and removing backup batteries; tray can be rinsed and dried, main unit must not be rinsed."
+      ]
+    },
+    {
+      "url": "https://robotailpets.com/pages/product-manual",
+      "title": "C32 user-guide landing page",
+      "type": "official-manual",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, four-day-old snapshot",
+      "facts": ["Landing page readable; its linked manual contents were not freshly read and no new C32 feature claims are used."]
+    },
+    {
+      "url": "https://robotailpets.com/pages/c42m",
+      "title": "UCAT C42 HTML manual",
+      "type": "official-manual",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, six-day-old snapshot",
+      "facts": ["Manual page accessible in reader. This batch does not generalize its model-specific configuration to every sales suffix."]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "title": "Robotail C32 Amazon listing",
+      "type": "amazon-product",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader product-details HTML, cached approximately three weeks; not a fresh live-commerce check",
+      "facts": ["Visible details identify model C32RO and Robotail; listing identity only, not proof of identical configurations across channels."]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "title": "Robotail C42 Amazon listing",
+      "type": "amazon-product",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader product-details HTML, cached approximately two months; not a fresh live-commerce check",
+      "facts": ["Product details identify C42C and Robotail. Article uses only the listing as an alternative channel and advises checking the exact version."]
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "title": "Robotail F20 Amazon listing",
+      "type": "amazon-product",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader HTML, snapshot marked crawled yesterday; relevant Power Outage Protection feature label read",
+      "facts": ["Listing advertises Power Outage Protection; that label is not a specification that cooling continues on batteries. Exact fallback behavior is taken from the official manual."]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/introducing-cats",
+      "title": "Cats Protection: Introducing cats and managing competition",
+      "type": "independent-care",
+      "checkedAt": "2026-11-06T06:58:32.411622+00:00",
+      "method": "Direct HTTP 200 and relevant text read, also web reader",
+      "facts": ["Access to hallways, doorways and litter trays can be blocked. Separate locations for essential resources and one per cat plus an extra are advised to reduce competition."]
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play",
+      "title": "Cats Protection: Cats and play",
+      "type": "independent-care",
+      "checkedAt": "2026-11-06T06:58:31.453525+00:00",
+      "method": "Direct HTTP 200, relevant text read, also web reader",
+      "facts": ["Short play sessions can be useful. Allow periodic catches; rotate toys, inspect wear and do not leave entanglement or ingestion hazards unattended. Avoid using hands or feet as toys."]
+    },
+    {
+      "url": "https://www.battersea.org.uk/pet-advice/cat-advice/playing-your-cat",
+      "title": "Battersea: Playing with your cat",
+      "type": "independent-care",
+      "checkedAt": "2026-11-06T06:58:32.882028+00:00",
+      "method": "Direct HTTP 200, relevant text read, also web reader",
+      "facts": ["Wand toys can permit stalking, chasing and catching at a distance from hands. Suggests prey-like movement with pauses, different toy preferences and supervised use of string toys."]
+    },
+    {
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/tips-safe-handling-pet-food-and-treats",
+      "title": "FDA: Tips for safe handling of pet food and treats",
+      "type": "official-food-handling",
+      "checkedAt": "2026-11-06",
+      "method": "Web reader, snapshot marked crawled today",
+      "facts": ["Promptly refrigerate or discard unused or leftover canned and pouched pet food; wash food bowls and utensils after each use. This is general handling guidance, not F20 validation."]
+    }
+  ],
+  "unavailable": [
+    {"url":"https://robotailpets.com/products/c32","checkedAt":"2026-11-06","error":"Web reader 404; do not infer permanent discontinuation."},
+    {"url":"https://robotailpets.com/products/c32.js","checkedAt":"2026-11-06","error":"Direct HTTP 429."},
+    {"url":"https://robotailpets.com/products/c42.js","checkedAt":"2026-11-06","error":"Direct HTTP 429; readable HTML snapshot used with freshness disclosure."},
+    {"url":"https://robotailpets.com/products/f20.js","checkedAt":"2026-11-06","error":"Direct HTTP 429; readable HTML snapshot used with freshness disclosure."},
+    {"url":"https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D","checkedAt":"2026-11-06","error":"Web reader 503; complete storefront and European marketplaces not verified."},
+    {"url":"https://robotailpets.com/pages/c42-user-guide","checkedAt":"2026-11-06","error":"Web reader unavailable; alternate c42m HTML page accessible."},
+    {"url":"https://robotailpets.com/pages/f20-user-guide","checkedAt":"2026-11-06","error":"Web reader unavailable; successfully recovered with direct HTTP 200 and linked PDF read."},
+    {"url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/","checkedAt":"2026-11-06","error":"Reader returned CAPTCHA; not used as article evidence."},
+    {"url":"https://woodgreen.org.uk/pet-advice/cat/multi-cat-households/","checkedAt":"2026-11-06","error":"Direct HTTP 403; reader snapshot accessible but not used in article claims."}
+  ]
+}

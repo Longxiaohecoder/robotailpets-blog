@@ -146,6 +146,45 @@
       ],
       "approvedAt": "2026-10-30T08:42:21.319Z",
       "confirmation": "确认 2026-11-02 这三篇"
+    },
+    {
+      "id": "2026-11-09",
+      "status": "approved",
+      "preparedAt": "2026-11-06T07:04:11.138Z",
+      "researchFile": "content/research/2026-11-06.json",
+      "researchSha256": "d5af064c649f7c9045facf3d8052037053956d345b79d1141edb740f8e2d2496",
+      "reviewFile": "content/reviews/2026-11-09.md",
+      "items": [
+        {
+          "file": "2026-11-06-cat-resource-access.md",
+          "title": "Can Your Cat Reach It? The Missing Question in a Beautiful Cat Corner",
+          "summary": "观点：资源数量不等于实际可达性。从门口、通路和家庭日常检查多猫资源布局，再决定是否购买设备；不把一台大猫砂盆当作多处分散资源的替代。",
+          "sha256": "9e388c7d8ffa4e892cf0db916b1bc386cd1113521def5a66ee7abf2e457e73ec",
+          "scheduledFor": "2026-11-09",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-09T18:17:23.000Z"
+        },
+        {
+          "file": "2026-11-06-play-with-an-ending.md",
+          "title": "A Better Play Session Gives Your Cat Something to Catch",
+          "summary": "观点：陪玩质量取决于猫能否参与、捕捉和自主退出，而非人完成了多少分钟。提供可重复的观察和调整方法，明确定时喂食不能替代互动。",
+          "sha256": "fb13186d6f55958fbd66a1c39a9e38c959553c6e67327a841d25f2f5916e09df",
+          "scheduledFor": "2026-11-10",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-10T15:43:37.000Z"
+        },
+        {
+          "file": "2026-11-06-f20-backup-power.md",
+          "title": "What the Robotail F20 Backup Battery Actually Keeps Running",
+          "summary": "观点：F20 备用电池维持已设定喂食，停电时制冷和回温暂停。依据本次重新下载并核对的官方说明书，区分电源、网络和食物处理责任，不承诺续航或断电保鲜。",
+          "sha256": "d085c01b43b870a067e6e8b53d5e9b235002983c88f772ad9b8613aa217186e1",
+          "scheduledFor": "2026-11-12",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-12T17:26:41.000Z"
+        }
+      ],
+      "approvedAt": "2026-11-06T07:09:08.553Z",
+      "confirmation": "确认 2026-11-09 这三篇"
     }
   ]
 }
