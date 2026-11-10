@@ -1,10 +1,15 @@
 ---
-title: "A Better Play Session Gives Your Cat Something to Catch"
-description: "Rethink play around opportunities, pauses and successful catches, with a simple observation framework that fits everyday life at home."
-pubDate: 2026-11-10
-tags: [Life with Cats, Cat Play, Everyday Routines, Robotail]
+title: A Better Play Session Gives Your Cat Something to Catch
+description: Rethink play around opportunities, pauses and successful catches,
+  with a simple observation framework that fits everyday life at home.
+pubDate: 2026-11-10T21:26:02.439Z
+tags:
+  - Life with Cats
+  - Cat Play
+  - Everyday Routines
+  - Robotail
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Life with Cats
 cover: /images/journal/playtime-with-cats.webp
 coverAlt: A woman playing with a tuxedo cat on a warm living-room rug
@@ -13,7 +18,8 @@ sources:
   - https://www.battersea.org.uk/pet-advice/cat-advice/playing-your-cat
   - https://robotailpets.com/products/f20
 sourceVerifiedAt: 2026-11-06
-reviewNote: "Pending owner review. Generic lifestyle illustration plus official product photograph; not a customer story or product test."
+reviewNote: Approved batch 2026-11-09, confirmed 2026-11-06T07:09:08.553Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine finishing a long day and deciding your cat deserves some attention. You wave a toy enthusiastically, keep it moving whenever a paw gets close, and stop when your own arm gets tired. You have put in effort. But what opportunities did the game actually give your cat?
