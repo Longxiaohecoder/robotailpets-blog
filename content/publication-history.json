@@ -120,6 +120,17 @@
       "scheduledFor": "2026-11-05",
       "timezone": "America/New_York",
       "scheduledAt": "2026-11-05T17:26:41.000Z"
+    },
+    {
+      "date": "2026-11-09",
+      "publishedAt": "2026-11-10T01:34:14.324Z",
+      "file": "2026-11-06-cat-resource-access.md",
+      "title": "Can Your Cat Reach It? The Missing Question in a Beautiful Cat Corner",
+      "batchId": "2026-11-09",
+      "approvedAt": "2026-11-06T07:09:08.553Z",
+      "scheduledFor": "2026-11-09",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-11-09T18:17:23.000Z"
     }
   ]
 }

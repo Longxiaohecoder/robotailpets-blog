@@ -1,10 +1,16 @@
 ---
-title: "Can Your Cat Reach It? The Missing Question in a Beautiful Cat Corner"
-description: "A practical home audit for multi-cat households: evaluate doorways, daily traffic and resource access before choosing another litter box."
-pubDate: 2026-11-09
-tags: [Cat-Friendly Homes, Multi-Cat Homes, Room Planning, Robotail]
+title: Can Your Cat Reach It? The Missing Question in a Beautiful Cat Corner
+description: "A practical home audit for multi-cat households: evaluate
+  doorways, daily traffic and resource access before choosing another litter
+  box."
+pubDate: 2026-11-10T01:34:14.324Z
+tags:
+  - Cat-Friendly Homes
+  - Multi-Cat Homes
+  - Room Planning
+  - Robotail
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Cat-Friendly Homes
 cover: /images/journal/2026-10-22-window-retreat.webp
 coverAlt: A silver tabby resting on a sunny window bench while a person opens the curtain
@@ -13,7 +19,8 @@ sources:
   - https://robotailpets.com/products/c42
   - https://www.amazon.com/dp/B0H2YPTF68
 sourceVerifiedAt: 2026-11-06
-reviewNote: "Pending owner review. Lifestyle cover is an editorial illustration; product photograph is official and unaltered. No hands-on test."
+reviewNote: Approved batch 2026-11-09, confirmed 2026-11-06T07:09:08.553Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Imagine a beautifully arranged utility corner: two litter boxes, neatly stored supplies and a washable floor. On a shopping checklist, the household seems well equipped. Now imagine that the only approach is a narrow doorway where another cat often rests.
