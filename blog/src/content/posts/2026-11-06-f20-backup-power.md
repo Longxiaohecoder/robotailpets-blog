@@ -1,13 +1,21 @@
 ---
-title: "What the Robotail F20 Backup Battery Actually Keeps Running"
-description: "Understand the F20 manual's distinction between scheduled feeding and temperature control, then build a practical power-loss plan for wet-food care."
-pubDate: 2026-11-12
-tags: [Product Guides, F20, Feeding Routines, Backup Power, Robotail]
+title: What the Robotail F20 Backup Battery Actually Keeps Running
+description: Understand the F20 manual's distinction between scheduled feeding
+  and temperature control, then build a practical power-loss plan for wet-food
+  care.
+pubDate: 2026-11-12T22:49:39.469Z
+tags:
+  - Product Guides
+  - F20
+  - Feeding Routines
+  - Backup Power
+  - Robotail
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Product Guides
 cover: /images/journal/2026-10-22-care-supply-shelf.webp
-coverAlt: A person organizing baskets in a low cabinet while a tabby watches from a doorway
+coverAlt: A person organizing baskets in a low cabinet while a tabby watches
+  from a doorway
 sources:
   - https://robotailpets.com/products/f20
   - https://robotailpets.com/pages/f20-user-guide
@@ -15,7 +23,8 @@ sources:
   - https://www.amazon.com/dp/B0FRZZ12QV
   - https://www.fda.gov/animal-veterinary/animal-health-literacy/tips-safe-handling-pet-food-and-treats
 sourceVerifiedAt: 2026-11-06
-reviewNote: "Pending owner review. Manual English printed pages 03 and 07 visually checked on 2026-11-06. Manufacturer specifications, not a battery-runtime or food-safety test."
+reviewNote: Approved batch 2026-11-09, confirmed 2026-11-06T07:09:08.553Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 A backup battery sounds reassuring. It can also invite an assumption that every normal function will continue after the plug loses power. With a wet-food feeder, that assumption matters: serving a scheduled meal and controlling its temperature are different jobs.

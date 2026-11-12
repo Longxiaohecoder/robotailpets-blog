@@ -142,6 +142,17 @@
       "scheduledFor": "2026-11-10",
       "timezone": "America/New_York",
       "scheduledAt": "2026-11-10T15:43:37.000Z"
+    },
+    {
+      "date": "2026-11-12",
+      "publishedAt": "2026-11-12T22:49:39.469Z",
+      "file": "2026-11-06-f20-backup-power.md",
+      "title": "What the Robotail F20 Backup Battery Actually Keeps Running",
+      "batchId": "2026-11-09",
+      "approvedAt": "2026-11-06T07:09:08.553Z",
+      "scheduledFor": "2026-11-12",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-11-12T17:26:41.000Z"
     }
   ]
 }
