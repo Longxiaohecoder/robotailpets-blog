@@ -185,6 +185,45 @@
       ],
       "approvedAt": "2026-11-06T07:09:08.553Z",
       "confirmation": "确认 2026-11-09 这三篇"
+    },
+    {
+      "id": "2026-11-16",
+      "status": "approved",
+      "preparedAt": "2026-11-13T07:33:28.726Z",
+      "researchFile": "content/research/2026-11-13.json",
+      "researchSha256": "ef50931694240fd0d874f5a97eeace2fb6cc01eaacd5add65883968c3a8fe6c0",
+      "reviewFile": "content/reviews/2026-11-16.md",
+      "items": [
+        {
+          "file": "2026-11-13-a-box-your-cat-can-leave.md",
+          "title": "A Cardboard Hideout Your Cat Can Leave Easily",
+          "summary": "从猫的视角检查纸箱入口、退路和摆放位置，为多猫家庭留出独立藏身点。",
+          "sha256": "90b4adac84431d488f64d0c5469e0b2f96d779e03c9ed8d98f619649b7ed2381",
+          "scheduledFor": "2026-11-16",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-16T18:17:23.000Z"
+        },
+        {
+          "file": "2026-11-13-when-guests-come-over.md",
+          "title": "A Quiet Plan for Your Cat When Guests Come Over",
+          "summary": "来客前留好熟悉的退路，给客人一句简单提示，让猫自己决定何时靠近。",
+          "sha256": "ec66b81ba2016ba3e186d78f762d159a0bfef2d0ee51f3b6acf8ce21c3d07df9",
+          "scheduledFor": "2026-11-17",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-17T15:43:37.000Z"
+        },
+        {
+          "file": "2026-11-13-c42-cleaning-dry-drum.md",
+          "title": "Cleaning the Robotail C42 Drum and Base",
+          "summary": "根据 C42 说明书规划滚筒清洗和晾干，区分滚筒与电气底座的清洁方法。",
+          "sha256": "e6732339f1bb00fc619823edb85720b61cc9f23d4d3a97ba35aa2fb41f73135e",
+          "scheduledFor": "2026-11-19",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-19T17:26:41.000Z"
+        }
+      ],
+      "approvedAt": "2026-11-13T08:38:15.779Z",
+      "confirmation": "确认 2026-11-16 这三篇"
     }
   ]
 }

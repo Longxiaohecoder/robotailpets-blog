@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-11-12",
   "brandColor": {
     "pantone": "2725 C",
     "screenApproximation": "#685BC7",
@@ -463,6 +463,137 @@
       "alt": "A cat beside a Robotail litter box in a warm living room",
       "sourcePage": "https://robotailpets.com/",
       "sourceImage": "https://robotailpets.com/cdn/shop/files/banner01_a98e1a2d-bc51-49b1-bded-cfa38e373990.jpg?v=1783356889&width=1200"
+    },
+    {
+      "publicPath": "/images/journal/2026-11-12-cardboard-hideout.webp",
+      "width": 1500,
+      "height": 1001,
+      "origin": "AI-generated editorial lifestyle image",
+      "generatedAt": "2026-11-12",
+      "style": "Documentary-style photography",
+      "categories": [
+        "Cat-Friendly Homes"
+      ],
+      "topics": [
+        "hideout",
+        "indoor enrichment"
+      ],
+      "alt": "A gray-and-white cat peers out of a cardboard box",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Single 3:2 landscape full-bleed realistic documentary editorial photograph for Robotail Journal. A gray-and-white cat peeking from the large opening of a plain cardboard box on a living room floor, close eye-level view, realistically frayed cardboard edge and soft light inside box, violet throw in distant background. Natural color grading, realistic camera exposure, physically plausible light, accurate feline anatomy, fine individual hairs, realistic whiskers and paw joints, natural catchlights where visible. Authentic lived-in home, subtle visual imperfections, avoid oversmoothing and staged advertising. Cats only, no other animals. No plants, branding, captions, watermarks, collages, or pet appliances.",
+      "masterFile": "output/imagegen/library-2026-11-12-documentary/cardboard-hideout.png",
+      "masterSha256": "bc4a515f8961065f8fa07fb3ac6b30d30e5c9f7f81b818a7601b72d4994a48b6",
+      "bytes": 135174,
+      "sha256": "f6965225dcc312231fa4b0a127650c9ed939f57daf5d517829a05939dc798222",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-11-12-cardboard-hideout-640.webp",
+          "bytes": 36902,
+          "sha256": "c4c48f341386211fe3763f10399c417ec6286de259a73836d1718c6465a9aae8"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-11-12-cardboard-hideout-960.webp",
+          "bytes": 71630,
+          "sha256": "81487c437cc2a721b4c32352913ec7fe5eeb3f21b2a940f26d2cde51408ef3b4"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-11-12-cardboard-hideout.webp",
+          "bytes": 135174,
+          "sha256": "f6965225dcc312231fa4b0a127650c9ed939f57daf5d517829a05939dc798222"
+        }
+      ],
+      "useNote": "Lifestyle cover or inline illustration. Pair with a corresponding original manufacturer photograph for model-specific product coverage."
+    },
+    {
+      "publicPath": "/images/journal/2026-11-12-cat-sitter-arrival.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle image",
+      "generatedAt": "2026-11-12",
+      "style": "Documentary-style photography",
+      "categories": [
+        "Life with Cats"
+      ],
+      "topics": [
+        "cat sitter",
+        "introductions"
+      ],
+      "alt": "A black-and-white cat approaches an adult seated in a hallway",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Single 3:2 landscape full-bleed realistic documentary editorial photograph for Robotail Journal. A tuxedo cat cautiously approaching a seated adult in a relaxed hallway, side view, adult's hands naturally resting in their lap, no touching, candid 35mm reportage, daylight and warm wood. Show comfortable clear space between them. Natural color grading, realistic camera exposure, physically plausible light, accurate feline anatomy, fine individual hairs, realistic whiskers and paw joints, natural catchlights where visible. Authentic lived-in home, subtle visual imperfections, avoid oversmoothing and staged advertising. Cats only, no other animals. No plants, branding, captions, watermarks, collages, or pet appliances.",
+      "masterFile": "output/imagegen/library-2026-11-12-documentary/cat-sitter-arrival.png",
+      "masterSha256": "873f93172c3793b73e20ae12a8f5df6c0cb4f51b2c4845a10e73c02d87184723",
+      "bytes": 139850,
+      "sha256": "528163c4a1165386ad6903e95b2bf73859877646d8250f5ef7451fc48ebeccf3",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-11-12-cat-sitter-arrival-640.webp",
+          "bytes": 40228,
+          "sha256": "72c9bb68fd52da26fb57194d395742565450fdf4fd54a84cca1715e1d5a49911"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-11-12-cat-sitter-arrival-960.webp",
+          "bytes": 74620,
+          "sha256": "a5bf2abbc295d2f155cc28921f6657619d6e8c3817edd20b0ad77ab62352c7c5"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-11-12-cat-sitter-arrival.webp",
+          "bytes": 139850,
+          "sha256": "528163c4a1165386ad6903e95b2bf73859877646d8250f5ef7451fc48ebeccf3"
+        }
+      ],
+      "useNote": "Lifestyle cover or inline illustration. Pair with a corresponding original manufacturer photograph for model-specific product coverage."
+    },
+    {
+      "publicPath": "/images/journal/2026-11-12-care-checklist.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle image",
+      "generatedAt": "2026-11-12",
+      "style": "Screen-print illustration",
+      "categories": [
+        "Life with Cats",
+        "Product Guides"
+      ],
+      "topics": [
+        "care checklist",
+        "household routine",
+        "cat sitter"
+      ],
+      "alt": "A tuxedo cat watches a person write in a notebook at a kitchen counter",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Create a single landscape 3:2 blog cover for Robotail Journal, a contemporary editorial magazine about life with cats in warm homes. Scene and style: sophisticated screen-printed editorial illustration with grain, muted purple, golden ochre and cream, an adult at a kitchen counter with an unmarked notebook and a plain dish, tuxedo cat observing from floor, simple geometric composition. Strong composition at thumbnail size, visually distinct foreground and background, preserve main subjects in central 80% for responsive crop. Cats only, natural feline anatomy. No commercial pet appliances, no branded products, no logos, no readable text, no graphic overlays, no collage. Keep this one complete full-bleed image.",
+      "masterFile": "output/imagegen/library-2026-11-12/care-checklist.png",
+      "masterSha256": "c362e2df805d7cf0fd0e888676799b9c09e87b4744b425fa740bbb4d5caf709e",
+      "bytes": 399920,
+      "sha256": "9533728baa7ac9ac3ceb9d624e22c0094923a444bce63e45a25514c7cb04b5d7",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-11-12-care-checklist-640.webp",
+          "bytes": 74670,
+          "sha256": "a9edb307ad22e4a1f634c3ece7353eb94fff43f0cde0825e6c3f7f0de6fb34a9"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-11-12-care-checklist-960.webp",
+          "bytes": 169330,
+          "sha256": "8aeba43a4c2b3c1971c0bb524c17431a8fc2184357fcc08ca19cfac535ee55ef"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-11-12-care-checklist.webp",
+          "bytes": 399920,
+          "sha256": "9533728baa7ac9ac3ceb9d624e22c0094923a444bce63e45a25514c7cb04b5d7"
+        }
+      ],
+      "useNote": "Lifestyle cover or inline illustration. Pair with the correct original manufacturer photograph when demonstrating a specific product."
     }
   ]
 }

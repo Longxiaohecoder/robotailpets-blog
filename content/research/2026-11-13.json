@@ -1,0 +1,155 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-11-13",
+  "publicationWeek": "2026-11-16",
+  "freshnessNote": "Sources were consulted on 2026-11-13 via the web reader. Cached pages are labeled with the freshness reported by the reader. No live commerce checks are inferred.",
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "title": "Robotail homepage",
+      "facts": [
+        "Official navigation links to Journal and model manuals."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "today"
+    },
+    {
+      "url": "https://robotailpets.com/collections/robotail",
+      "title": "Robotail collection",
+      "facts": [
+        "Brand collection and model navigation reviewed."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "about two weeks old"
+    },
+    {
+      "url": "https://robotailpets.com/pages/about-us",
+      "title": "Robotail About Us",
+      "facts": [
+        "Identifies Robotail as a brand of MOXO LTD and describes its product range."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "six days old"
+    },
+    {
+      "url": "https://robotailpets.com/products/c32",
+      "title": "C32 Pro product page",
+      "facts": [
+        "Manufacturer describes an open-top design."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "two days old"
+    },
+    {
+      "url": "https://robotailpets.com/pages/product-manual",
+      "title": "C32 user guide",
+      "facts": [
+        "Guide landing page provides a PDF link. PDF content was not used."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "last week"
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "C42 product page",
+      "facts": [
+        "Manufacturer describes a semi-open entry and removable drum. No performance claims used."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "two days old"
+    },
+    {
+      "url": "https://robotailpets.com/pages/c42m",
+      "title": "UCAT C42 official manual",
+      "facts": [
+        "Keep room around the unit. Care section describes unplugging, removing side cover and releasing the shaft lock before removing drum. Air dry the drum before reassembly. Wipe the base with a soft damp cloth, without rinsing or immersion."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "two days old"
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "title": "F20 official product page",
+      "facts": [
+        "F20 feeder listing and brand identity reviewed. No new performance claims used."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "last week"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "title": "Amazon C32 listing",
+      "facts": [
+        "Cached details identify C32RO. Live commerce details unverified."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "last month"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "title": "Amazon C42 listing",
+      "facts": [
+        "Cached details identify C42C. Confirm the specific model and manual before applying care instructions."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "two months old"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "title": "Amazon F20 listing",
+      "facts": [
+        "Cached A+ content contains a power-outage protection label. No battery or cooling claim used."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "last week"
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-hiding",
+      "title": "Cats Protection hiding guidance",
+      "facts": [
+        "Provide a safe hiding place that the cat can easily leave. In multi-cat homes, provide separate options."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "today"
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/caring-for-your-cat/cats-and-your-family/meeting-other-people",
+      "title": "Cats Protection visitor guidance",
+      "facts": [
+        "Let cats approach guests on their own terms and keep an escape route available."
+      ],
+      "checkedAt": "2026-11-13",
+      "method": "Web reader",
+      "snapshotAge": "yesterday"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D",
+      "checkedAt": "2026-11-13",
+      "error": "HTTP 503"
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "checkedAt": "2026-11-13",
+      "error": "Web reader could not access"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856",
+      "checkedAt": "2026-11-13",
+      "error": "Web reader could not access; no F20 manual claims used"
+    }
+  ]
+}
