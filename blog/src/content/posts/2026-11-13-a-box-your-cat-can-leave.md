@@ -1,10 +1,13 @@
 ---
-title: "A Cardboard Hideout Your Cat Can Leave Easily"
-description: "Make a simple hiding place work in a shared room by checking the opening, the approach and the space beyond it."
-pubDate: 2026-11-13
-tags: [Cat Care, Robotail]
+title: A Cardboard Hideout Your Cat Can Leave Easily
+description: Make a simple hiding place work in a shared room by checking the
+  opening, the approach and the space beyond it.
+pubDate: 2026-11-17T01:52:26.585Z
+tags:
+  - Cat Care
+  - Robotail
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Cat-Friendly Homes
 cover: /images/journal/2026-11-12-cardboard-hideout.webp
 coverAlt: A gray-and-white cat peers out of a cardboard box
@@ -12,6 +15,8 @@ sources:
   - https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-hiding
   - https://robotailpets.com/products/c32
 sourceVerifiedAt: 2026-11-13
+reviewNote: Approved batch 2026-11-16, confirmed 2026-11-13T08:38:15.779Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 An empty delivery box can become the most popular piece of furniture in a room. Where you put it determines whether it stays a useful retreat after the novelty wears off. Before you buy a purpose-built hideout, try arranging a simple box around the routes your cat already takes through the room.
