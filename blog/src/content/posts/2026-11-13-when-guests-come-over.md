@@ -1,10 +1,13 @@
 ---
-title: "A Quiet Plan for Your Cat When Guests Come Over"
-description: "Set up an open retreat, give guests one simple instruction and let your cat choose how much to take part."
-pubDate: 2026-11-13
-tags: [Cat Care, Robotail]
+title: A Quiet Plan for Your Cat When Guests Come Over
+description: Set up an open retreat, give guests one simple instruction and let
+  your cat choose how much to take part.
+pubDate: 2026-11-17T23:09:25.511Z
+tags:
+  - Cat Care
+  - Robotail
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Life with Cats
 cover: /images/journal/2026-11-12-cat-sitter-arrival.webp
 coverAlt: A black-and-white cat approaches an adult seated in a hallway
@@ -13,6 +16,8 @@ sources:
   - https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-hiding
   - https://robotailpets.com/products/f20
 sourceVerifiedAt: 2026-11-13
+reviewNote: Approved batch 2026-11-16, confirmed 2026-11-13T08:38:15.779Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 If your cat spends the first half of a visit in another room, let the visit happen around that choice. You can make an evening easier by arranging a quiet place before the doorbell rings and giving everyone a simple way to respond if the cat comes out.

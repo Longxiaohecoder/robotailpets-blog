@@ -164,6 +164,17 @@
       "scheduledFor": "2026-11-16",
       "timezone": "America/New_York",
       "scheduledAt": "2026-11-16T18:17:23.000Z"
+    },
+    {
+      "date": "2026-11-17",
+      "publishedAt": "2026-11-17T23:09:25.511Z",
+      "file": "2026-11-13-when-guests-come-over.md",
+      "title": "A Quiet Plan for Your Cat When Guests Come Over",
+      "batchId": "2026-11-16",
+      "approvedAt": "2026-11-13T08:38:15.779Z",
+      "scheduledFor": "2026-11-17",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-11-17T15:43:37.000Z"
     }
   ]
 }
