@@ -1,10 +1,13 @@
 ---
-title: "Cleaning the Robotail C42 Drum and Base"
-description: "Use the C42 manual to plan a drum wash, keep water away from the base and allow time for thorough air drying."
-pubDate: 2026-11-13
-tags: [Cat Care, Robotail]
+title: Cleaning the Robotail C42 Drum and Base
+description: Use the C42 manual to plan a drum wash, keep water away from the
+  base and allow time for thorough air drying.
+pubDate: 2026-11-19T23:40:57.158Z
+tags:
+  - Cat Care
+  - Robotail
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Product Guides
 cover: /images/journal/2026-11-12-care-checklist.webp
 coverAlt: A tuxedo cat watches a person write in a notebook at a kitchen counter
@@ -13,6 +16,8 @@ sources:
   - https://robotailpets.com/products/c42
   - https://www.amazon.com/dp/B0H2YPTF68
 sourceVerifiedAt: 2026-11-13
+reviewNote: Approved batch 2026-11-16, confirmed 2026-11-13T08:38:15.779Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Before you start cleaning the Robotail C42, decide where its removable drum can drain and air dry. The wash is only one step. Having a clear drying space lets you leave the drum there until it is dry and gives you room to keep wet parts away from the powered base.
