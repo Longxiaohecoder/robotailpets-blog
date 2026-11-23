@@ -594,6 +594,136 @@
         }
       ],
       "useNote": "Lifestyle cover or inline illustration. Pair with the correct original manufacturer photograph when demonstrating a specific product."
+    },
+    {
+      "publicPath": "/images/journal/2026-11-12-cat-bed-choice.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle image",
+      "generatedAt": "2026-11-12",
+      "style": "Documentary-style photography",
+      "categories": [
+        "Cat-Friendly Homes"
+      ],
+      "topics": [
+        "resting spaces",
+        "winter light"
+      ],
+      "alt": "A tortoiseshell cat sits on a cushioned bench beside a window and a wicker basket",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Single 3:2 landscape full-bleed realistic documentary editorial photograph for Robotail Journal. A tortoiseshell cat sits on a low cushioned bench with a folded blanket and an empty basket on the floor nearby, diagonal editorial composition, late winter sunlight across the room, natural fur texture and realistic proportions. Natural color grading, realistic camera exposure, physically plausible light, accurate feline anatomy, fine individual hairs, realistic whiskers and paw joints, natural catchlights where visible. Authentic lived-in home, subtle visual imperfections, avoid oversmoothing and staged advertising. Cats only, no other animals. No plants, branding, captions, watermarks, collages, or pet appliances.",
+      "masterFile": "output/imagegen/library-2026-11-12-documentary/cat-bed-choice.png",
+      "masterSha256": "ce848669ceb1cecfd8d76d356ff84346beef02d07385ad9e725f805112652589",
+      "bytes": 180134,
+      "sha256": "3079cc365b33952329b2bc0ffcbf010147fbf207ca2a220741b89005daddbd2a",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-11-12-cat-bed-choice-640.webp",
+          "bytes": 47946,
+          "sha256": "613e67ca0bf16d4fecbd8cecaf75b37c68fc8255f5f6cabeb303a8c6b67bc82e"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-11-12-cat-bed-choice-960.webp",
+          "bytes": 91462,
+          "sha256": "bdb64d7a3904c92799073a48010258a28954d1abb7e446871af25111fdb258c8"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-11-12-cat-bed-choice.webp",
+          "bytes": 180134,
+          "sha256": "3079cc365b33952329b2bc0ffcbf010147fbf207ca2a220741b89005daddbd2a"
+        }
+      ],
+      "useNote": "Lifestyle cover or inline illustration. Pair with a corresponding original manufacturer photograph for model-specific product coverage."
+    },
+    {
+      "publicPath": "/images/journal/2026-11-12-breakfast-kitchen.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle image",
+      "generatedAt": "2026-11-12",
+      "style": "Scandinavian editorial photography",
+      "categories": [
+        "Life with Cats",
+        "Product Guides"
+      ],
+      "topics": [
+        "morning routine",
+        "feeding station"
+      ],
+      "alt": "An orange tabby looks up beside a ceramic bowl and a pair of slippers",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Create a single landscape 3:2 blog cover for Robotail Journal, a contemporary editorial magazine about life with cats in warm homes. Scene and style: high-key Scandinavian editorial photography, overhead composition of a ginger cat near a person's slippers beside a small plain ceramic dish on pale kitchen tiles, morning shadows, sparse composition with oatmeal and lavender accents. Strong composition at thumbnail size, visually distinct foreground and background, preserve main subjects in central 80% for responsive crop. Cats only, natural feline anatomy. No commercial pet appliances, no branded products, no logos, no readable text, no graphic overlays, no collage. Keep this one complete full-bleed image.",
+      "masterFile": "output/imagegen/library-2026-11-12/breakfast-kitchen.png",
+      "masterSha256": "e1dbabcb92054193fb4504e306f5e3e07246842cb24366fe7d62a70c257ae053",
+      "bytes": 159458,
+      "sha256": "9e5c2521c56b0166e6bc6eb51a01898baa3b787d596309ab6d9127d8fc3d3365",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-11-12-breakfast-kitchen-640.webp",
+          "bytes": 45950,
+          "sha256": "bb218c86dc92c3ff6fa04ca0fd2793e0d8453809a9fafa30cf96235a281dfcde"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-11-12-breakfast-kitchen-960.webp",
+          "bytes": 84234,
+          "sha256": "a1fe3a5ab56a05680a27100b7871ce81ca1b352e2d5c9a8ca866c48a817af84e"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-11-12-breakfast-kitchen.webp",
+          "bytes": 159458,
+          "sha256": "9e5c2521c56b0166e6bc6eb51a01898baa3b787d596309ab6d9127d8fc3d3365"
+        }
+      ],
+      "useNote": "Lifestyle cover or inline illustration. Pair with the correct original manufacturer photograph when demonstrating a specific product."
+    },
+    {
+      "publicPath": "/images/journal/2026-11-12-bowl-prep.webp",
+      "width": 1500,
+      "height": 1000,
+      "origin": "AI-generated editorial lifestyle image",
+      "generatedAt": "2026-11-12",
+      "style": "Documentary-style photography",
+      "categories": [
+        "Product Guides"
+      ],
+      "topics": [
+        "feeding routine",
+        "bowl cleaning"
+      ],
+      "alt": "A ginger cat watches a person rinse a ceramic bowl at the kitchen sink",
+      "generationMode": "Built-in image_gen",
+      "prompt": "Single 3:2 landscape full-bleed realistic documentary editorial photograph for Robotail Journal. A person rinses a plain ceramic cat bowl in a stainless-steel sink while a ginger cat watches from the kitchen floor, wide side view showing both at believable relative heights, neutral kitchen with a muted blue towel, realistic water and hand anatomy. Natural color grading, realistic camera exposure, physically plausible light, accurate feline anatomy, fine individual hairs, realistic whiskers and paw joints, natural catchlights where visible. Authentic lived-in home, subtle visual imperfections, avoid oversmoothing and staged advertising. Cats only, no other animals. No plants, branding, captions, watermarks, collages, or pet appliances.",
+      "masterFile": "output/imagegen/library-2026-11-12-documentary/bowl-prep.png",
+      "masterSha256": "90a632605f0029810633203b8f4b2be34e891d9e39fee585dca9363c207028cb",
+      "bytes": 141792,
+      "sha256": "1e97c4301effef7d02f122d18bedda452de29dc64bd29516e04e8b04297062de",
+      "variants": [
+        {
+          "width": 640,
+          "src": "/images/journal/2026-11-12-bowl-prep-640.webp",
+          "bytes": 40138,
+          "sha256": "f5c5718a4186d76f5387df5956790594deb55170a0c18c692ef675940fd2d79e"
+        },
+        {
+          "width": 960,
+          "src": "/images/journal/2026-11-12-bowl-prep-960.webp",
+          "bytes": 74160,
+          "sha256": "9e93548686aaeaba30cdd04fbcdf6d6c557ccd7b02b863ab5d712ce1ae1b2bea"
+        },
+        {
+          "width": 1500,
+          "src": "/images/journal/2026-11-12-bowl-prep.webp",
+          "bytes": 141792,
+          "sha256": "1e97c4301effef7d02f122d18bedda452de29dc64bd29516e04e8b04297062de"
+        }
+      ],
+      "useNote": "Lifestyle cover or inline illustration. Pair with a corresponding original manufacturer photograph for model-specific product coverage."
     }
   ]
 }

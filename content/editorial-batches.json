@@ -224,6 +224,45 @@
       ],
       "approvedAt": "2026-11-13T08:38:15.779Z",
       "confirmation": "确认 2026-11-16 这三篇"
+    },
+    {
+      "id": "2026-11-23",
+      "status": "approved",
+      "preparedAt": "2026-11-20T07:49:44.300Z",
+      "researchFile": "content/research/2026-11-20.json",
+      "researchSha256": "d34066c5afde3930d56c53d9ce972acaead54eadc63d1cd008a592deb4242ea6",
+      "reviewFile": "content/reviews/2026-11-23.md",
+      "items": [
+        {
+          "file": "2026-11-20-cat-bed-location.md",
+          "title": "Before You Replace the Cat Bed, Try a Different Location",
+          "summary": "先检查位置，再决定是否换猫床。观察猫实际选择的地点、时段与家庭活动，逐项调整休息空间。",
+          "sha256": "8129b4422a4a687ffdfa7f150e8b4fd66d3b1959f22dc088d1a296e7f3e37df8",
+          "scheduledFor": "2026-11-23",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-23T18:17:23.000Z"
+        },
+        {
+          "file": "2026-11-20-shared-cat-feeding-handover.md",
+          "title": "A Shared Cat-Feeding Routine That Survives a Busy Morning",
+          "summary": "针对多人共同喂养的信息交接，用上次完成事项、待处理事项与下一位负责人三个字段组织日常。",
+          "sha256": "e619dedfdf5a0f76d60dad464bb6bda5729ff0b0a4f15269554a727319b636d2",
+          "scheduledFor": "2026-11-24",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-24T15:43:37.000Z"
+        },
+        {
+          "file": "2026-11-20-f20-tray-app-mapping.md",
+          "title": "How to Match Robotail F20 Tray Numbers to the App",
+          "summary": "依据本次重新下载的 F20 官方说明书，核对实体餐盘编号、App 位置、食物条目与上传照片的对应。",
+          "sha256": "e14a434496e4dcca79b127c16825689e78ce92233bcfe0dc16f7fa3190e1ce9f",
+          "scheduledFor": "2026-11-26",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-26T17:26:41.000Z"
+        }
+      ],
+      "approvedAt": "2026-11-23T08:12:32.729Z",
+      "confirmation": "确认 2026-11-23 这三篇"
     }
   ]
 }

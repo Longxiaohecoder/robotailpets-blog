@@ -1,0 +1,198 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-11-20",
+  "publicationWeek": "2026-11-23",
+  "freshnessNote": "Consulted on 2026-11-20. Snapshot ages are disclosed separately from today's consultation. Download timestamps and hashes are recorded in output/editorial-2026-11-23/retrievals.json. No prior week's research is labeled as newly verified.",
+  "editorialRules": [
+    "English, cats only, US/Europe owners, warm home theme with #685BC7 brand accent.",
+    "Explain a practical judgment with actionable steps and limits; never invent customer use or independent tests.",
+    "Lifestyle illustrations from the existing reviewed library plus original manufacturer product photographs.",
+    "Prepare three drafts only. Approval and deployment await user confirmation."
+  ],
+  "sources": [
+    {
+      "url": "https://robotailpets.com/",
+      "title": "Robotail official home",
+      "type": "official",
+      "facts": [
+        "Product collections and model-guide navigation reviewed."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; snapshot marked crawled today"
+    },
+    {
+      "url": "https://robotailpets.com/pages/about-us",
+      "title": "Robotail About Us",
+      "type": "official-brand",
+      "facts": [
+        "Page describes automatic litter boxes, feeders and accessories, and identifies Robotail as a brand of MOXO LTD."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; snapshot marked crawled today"
+    },
+    {
+      "url": "https://robotailpets.com/collections/robotail",
+      "title": "Robotail collection",
+      "type": "official",
+      "facts": [
+        "Collection readable; not used to establish live stock or regional availability."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; approximately three-week-old snapshot"
+    },
+    {
+      "url": "https://robotailpets.com/products/c32",
+      "title": "C32 manufacturer page",
+      "type": "official-product",
+      "facts": [
+        "Manufacturer describes an open-top automatic litter box. No universal comfort or safety guarantee adopted."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; three-day-old snapshot"
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "C42 manufacturer page",
+      "type": "official-product",
+      "facts": [
+        "Manufacturer describes automatic cleaning and a semi-open entrance. No noise, fit-for-all-cats or safety guarantees adopted."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; three-day-old snapshot"
+    },
+    {
+      "url": "https://robotailpets.com/pages/c42m",
+      "title": "UCAT C42 HTML manual",
+      "type": "official-manual",
+      "facts": [
+        "Manual readable. No new C42 parameter, timing-control or maintenance claim is needed for this batch."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; three-day-old snapshot"
+    },
+    {
+      "url": "https://robotailpets.com/pages/product-manual",
+      "title": "C32 guide landing page",
+      "type": "official-manual",
+      "facts": [
+        "Landing page accessible; its PDF contents were not freshly read and no new C32 manual facts used."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; approximately two-week-old snapshot"
+    },
+    {
+      "url": "https://robotailpets.com/products/f20",
+      "title": "F20 manufacturer page",
+      "type": "official-product",
+      "facts": [
+        "Manufacturer describes app schedules and immediate feeding. Does not establish how much food a cat ate. No camera, voice, hopper-volume or live monitoring feature inferred from image alt text."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; snapshot marked crawled today"
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "title": "F20 manual download page",
+      "type": "official-manual",
+      "facts": [
+        "Direct retrieval succeeds and PDF href points to f20_521.pdf?v=1785140856."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Direct HTTP 200 at 2026-11-20T07:24:24.847066+00:00"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856",
+      "title": "F20 official PDF manual",
+      "type": "official-manual",
+      "facts": [
+        "English printed page 06 says physical plates 1/2/3/4 correspond to app positions 1/2/3/4 and the food type and uploaded image order should match actual food.",
+        "Printed page 02 lists a double-click rotating the tray counterclockwise one notch to align it with app order. This batch refers users to the manual rather than asking them to turn a powered tray by hand.",
+        "Printed page 05 says avoid overfilling and close the top cover securely. Printed page 08 instructs disconnecting power and removing backup batteries for cleaning, rinsing and drying the tray, cleaning after every food change, and wiping the main unit dry without rinsing.",
+        "No photo recognition, eating detection, precise portion accuracy or live camera function is implied."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Direct HTTP 200 at 2026-11-20T07:24:24.847439+00:00. Text read on physical pages 4, 7, 8 and 10; physical pages 7 and 8 rendered and visually checked. SHA256 e85de3d6be80659ea27e8079af125124806877ba3a414522b647b6fe04368919"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0FRZZ12QV",
+      "title": "F20 Amazon listing",
+      "type": "amazon-product",
+      "facts": [
+        "Readable cached listing details identify Robotail and model F20. No live price, stock, rating, package equivalence or delivery promises used."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; approximately two-week-old snapshot"
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-sleep",
+      "title": "Cats Protection sleep guidance",
+      "type": "independent-care",
+      "facts": [
+        "Cats can change preferred sleeping areas; comfortable safe resting choices matter. Increased sleep relative to usual may warrant veterinary advice. No diagnosis or fixed sleep-hour target supplied."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Direct HTTP 200 at 2026-11-20T07:24:24.850603+00:00 and web reader"
+    },
+    {
+      "url": "https://www.cats.org.uk/cats-blog/how-to-create-perfect-cat-sleeping-spot",
+      "title": "Cats Protection sleeping-spot guidance",
+      "type": "independent-care",
+      "facts": [
+        "Place resting spots away from noisy appliances and busy passages, leave sleeping cats undisturbed, keep resting places separate from feeding/drinking/toileting, and avoid washing all bedding at once."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Direct HTTP 200 at 2026-11-20T07:24:27.266926+00:00 and web reader"
+    },
+    {
+      "url": "https://www.cats.org.uk/help-and-advice/getting-a-cat/preparing-for-a-cat",
+      "title": "Cats Protection home preparation",
+      "type": "independent-care",
+      "facts": [
+        "Quiet, private bed locations and a choice of resting areas are advised."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; snapshot marked crawled today"
+    },
+    {
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/tips-safe-handling-pet-food-and-treats",
+      "title": "FDA pet-food handling guidance",
+      "type": "official-food-handling",
+      "facts": [
+        "Wash bowls and food utensils with soap and hot water after use. Promptly refrigerate or discard unused or leftover canned or pouched pet food, following food-label directions. General guidance does not validate a specific feeder."
+      ],
+      "checkedAt": "2026-11-20",
+      "method": "Web reader; relevant preparation/storage sections read, snapshot marked crawled today"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://www.amazon.com/dp/B0G648Z6YL",
+      "checkedAt": "2026-11-20",
+      "error": "Web reader HTTP 503; old details not reused as today's verification."
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0H2YPTF68",
+      "checkedAt": "2026-11-20",
+      "error": "Web reader HTTP 503; old details not reused as today's verification."
+    },
+    {
+      "url": "https://www.amazon.com/stores/SafeSmartRobotail/page/02F4D9D4-25BA-42B5-B8AC-524E49F49D3D",
+      "checkedAt": "2026-11-20",
+      "error": "Web reader HTTP 503; complete brand store not verified."
+    },
+    {
+      "url": "https://robotailpets.com/pages/f20-user-guide",
+      "checkedAt": "2026-11-20",
+      "error": "Web reader unavailable; direct origin retrieval and linked PDF recovered successfully."
+    }
+  ],
+  "mediaSelection": {
+    "method": "scripts/media-selection.js called against current published history; prioritize unused topic-relevant covers, three different images and correct model-specific originals.",
+    "covers": [
+      "/images/journal/2026-11-12-cat-bed-choice.webp",
+      "/images/journal/2026-11-12-breakfast-kitchen.webp",
+      "/images/journal/2026-11-12-bowl-prep.webp"
+    ],
+    "note": "Existing generated lifestyle illustrations, never represented as customer photography. Original manufacturer product image appearance preserved."
+  }
+}
