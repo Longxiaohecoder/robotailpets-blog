@@ -10,6 +10,7 @@ const isBlog = Astro.url.pathname.startsWith('/blog');
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {Astro.url.pathname === '/' && <meta name="google-site-verification" content="bec9Jg022LFf88qQMJ3uC2-khoKxdYcSvaS4vP-Wv2w" />}
   <meta name="description" content={description} />
   {noindex && <meta name="robots" content="noindex, nofollow" />}
   <meta name="theme-color" content="#685bc7" />
