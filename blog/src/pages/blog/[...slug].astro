@@ -5,16 +5,36 @@ import { topicOf, coverOf, readingTime } from '../../lib/journal';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: post,
-  }));
+  return posts.map((post) => {
+    const topic = topicOf(post);
+    const tags = new Set(post.data.tags.map(tag => tag.toLowerCase()));
+    const related = posts.filter(candidate => candidate.slug !== post.slug && topicOf(candidate) === topic)
+      .map(candidate => ({
+        candidate,
+        overlap: new Set(candidate.data.tags.map(tag => tag.toLowerCase()).filter(tag => tags.has(tag))).size,
+      }))
+      .sort((a, b) => b.overlap - a.overlap || b.candidate.data.pubDate.getTime() - a.candidate.data.pubDate.getTime())
+      .slice(0, 3)
+      .map(({ candidate }) => ({ title: candidate.data.title, href: '/blog/' + candidate.slug + '/' }));
+    return {
+      params: { slug: post.slug },
+      props: { post, related },
+    };
+  });
 }
 
-const post = Astro.props;
+const { post, related } = Astro.props;
 const { Content, headings } = await post.render();
 ---
 
 <PostLayout {...post.data} category={topicOf(post)} cover={coverOf(post)} minutes={readingTime(post.body)} headings={headings}>
   <Content />
+  {related.length > 0 && (
+    <section aria-labelledby="related-reading">
+      <h2 id="related-reading">Related reading</h2>
+      <ul>
+        {related.map(article => <li><a href={article.href}>{article.title}</a></li>)}
+      </ul>
+    </section>
+  )}
 </PostLayout>
