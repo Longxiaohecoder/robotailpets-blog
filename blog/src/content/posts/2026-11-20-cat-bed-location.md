@@ -1,19 +1,25 @@
 ---
-title: "Before You Replace the Cat Bed, Try a Different Location"
-description: "Use the places your cat already chooses to plan quiet resting options, with a practical way to compare location, access and daily activity."
-pubDate: 2026-11-23
-tags: [Robotail, Cat Care, Cat-Friendly Homes]
+title: Before You Replace the Cat Bed, Try a Different Location
+description: Use the places your cat already chooses to plan quiet resting
+  options, with a practical way to compare location, access and daily activity.
+pubDate: 2026-11-24T03:58:08.291Z
+tags:
+  - Robotail
+  - Cat Care
+  - Cat-Friendly Homes
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Cat-Friendly Homes
 cover: /images/journal/2026-11-12-cat-bed-choice.webp
-coverAlt: A tortoiseshell cat sits on a cushioned bench beside a window and a wicker basket
+coverAlt: A tortoiseshell cat sits on a cushioned bench beside a window and a
+  wicker basket
 sources:
   - https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-sleep
   - https://www.cats.org.uk/cats-blog/how-to-create-perfect-cat-sleeping-spot
   - https://robotailpets.com/products/c42
 sourceVerifiedAt: 2026-11-20
-reviewNote: Pending owner review. Generated lifestyle cover and original manufacturer product illustration. Source-backed editorial advice, with no hands-on testing claimed.
+reviewNote: Approved batch 2026-11-23, confirmed 2026-11-23T08:12:32.729Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 You bought a soft bed in a colour that suits the room. Your cat still sleeps on the folded blanket beside it. Before ordering another bed, look closely at that blanket's location. Does it catch the afternoon light? Is it farther from the doorway? Can the cat settle there without somebody moving it?
