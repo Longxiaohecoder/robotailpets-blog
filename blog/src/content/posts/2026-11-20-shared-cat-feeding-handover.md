@@ -1,10 +1,14 @@
 ---
-title: "A Shared Cat-Feeding Routine That Survives a Busy Morning"
-description: "Give everyone at home a clear way to record the last completed feeding task and identify who handles the next step."
-pubDate: 2026-11-24
-tags: [Robotail, Cat Care, Life with Cats]
+title: A Shared Cat-Feeding Routine That Survives a Busy Morning
+description: Give everyone at home a clear way to record the last completed
+  feeding task and identify who handles the next step.
+pubDate: 2026-11-25T00:06:30.788Z
+tags:
+  - Robotail
+  - Cat Care
+  - Life with Cats
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Life with Cats
 cover: /images/journal/2026-11-12-breakfast-kitchen.webp
 coverAlt: An orange tabby looks up beside a ceramic bowl and a pair of slippers
@@ -13,7 +17,8 @@ sources:
   - https://robotailpets.com/products/f20
   - https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856
 sourceVerifiedAt: 2026-11-20
-reviewNote: Pending owner review. Generated lifestyle cover and original manufacturer product illustration. Source-backed editorial advice, with no hands-on testing claimed.
+reviewNote: Approved batch 2026-11-23, confirmed 2026-11-23T08:12:32.729Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 Two people can both care deeply about a cat and still be unsure whether breakfast has happened. One person filled the feeder before leaving. Another sees a clean dish and wonders whether it has already been washed. A message saying “sorted” can mean different things to each of them.

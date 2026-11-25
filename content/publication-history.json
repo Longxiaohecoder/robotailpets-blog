@@ -197,6 +197,17 @@
       "scheduledFor": "2026-11-23",
       "timezone": "America/New_York",
       "scheduledAt": "2026-11-23T18:17:23.000Z"
+    },
+    {
+      "date": "2026-11-24",
+      "publishedAt": "2026-11-25T00:06:30.788Z",
+      "file": "2026-11-20-shared-cat-feeding-handover.md",
+      "title": "A Shared Cat-Feeding Routine That Survives a Busy Morning",
+      "batchId": "2026-11-23",
+      "approvedAt": "2026-11-23T08:12:32.729Z",
+      "scheduledFor": "2026-11-24",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-11-24T15:43:37.000Z"
     }
   ]
 }
