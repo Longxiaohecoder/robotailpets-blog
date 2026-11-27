@@ -263,6 +263,28 @@
       ],
       "approvedAt": "2026-11-23T08:12:32.729Z",
       "confirmation": "确认 2026-11-23 这三篇"
+    },
+    {
+      "id": "2026-11-30",
+      "status": "approved",
+      "preparedAt": "2026-11-27T08:27:54.005Z",
+      "researchFile": "content/research/2026-11-27.json",
+      "researchSha256": "97efed43afd99214b2dc718d14cef55888bb3674a6969f357826766e1bf414f0",
+      "reviewFile": "content/reviews/2026-11-30.md",
+      "items": [
+        {
+          "file": "2026-11-30-c42-litter-compatibility.md",
+          "title": "What Cat Litter Works in the Robotail C42?",
+          "summary": "教 UCAT C42 用户从包装判断猫砂是否适配，再对照原厂插图加砂，避免超过 MAX 线。换砂出问题时，先核对颗粒长度、加砂量和清空用挡板。",
+          "sha256": "7bff08be7aa09a53ac2cb73471cd074f5d78ef5017b6900a5cc6d1db179dd841",
+          "scheduledFor": "2026-11-30",
+          "scheduledTimezone": "America/New_York",
+          "scheduledAt": "2026-11-30T18:17:23.000Z"
+        }
+      ],
+      "singleArticle": true,
+      "approvedAt": "2026-11-27T09:35:06.196Z",
+      "confirmation": "确认 2026-11-30 这一篇"
     }
   ]
 }

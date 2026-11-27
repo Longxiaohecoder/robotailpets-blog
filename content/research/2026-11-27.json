@@ -1,0 +1,38 @@
+{
+  "brand": "Robotail",
+  "verifiedAt": "2026-11-27",
+  "publicationWeek": "2026-11-30",
+  "sources": [
+    {
+      "url": "https://robotailpets.com/pages/c42m",
+      "title": "Robotail UCAT C42 User Manual",
+      "type": "official manual",
+      "checkedAt": "2026-11-27",
+      "method": "Web text review; search copy crawled on the check date",
+      "facts": [
+        "The specifications list clumping litter with grain length under 15 mm.",
+        "The replacing-litter section recommends a tofu and cassava blend and describes removal of the litter cleaning board after emptying.",
+        "The control panel section identifies a flatten function. Safety instructions say to keep hands away while rotating and to avoid forcing a cat into the box."
+      ]
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/B1uUA5iatfL.pdf",
+      "title": "Robotail UCAT C42 illustrated manufacturer manual",
+      "type": "manufacturer manual hosted by Amazon",
+      "checkedAt": "2026-11-27",
+      "method": "Downloaded and visually inspected the original PDF, rendered PDF page 7, printed page 06",
+      "facts": [
+        "Replacing litter, step 6, shows where the maximum fill level is indicated and directs owners to add fresh litter below it."
+      ]
+    },
+    {
+      "url": "https://robotailpets.com/products/c42",
+      "title": "Robotail C42 product page",
+      "type": "official product page",
+      "checkedAt": "2026-11-27",
+      "method": "Web text review; copy crawled on the check date",
+      "facts": ["The product page identifies the C42 automatic litter box and links to the brand storefront."]
+    }
+  ],
+  "unavailable": []
+}

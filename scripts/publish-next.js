@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import YAML from 'yaml';
 import { validateEditorialArticle } from './content-policy.js';
-import { approvedCandidate } from './weekly-editorial.js';
+import { approvedCandidate, localImagePattern } from './weekly-editorial.js';
 import { localDate, publicationTime, publicationDates } from './publication-schedule.js';
 
 export function publicationSlot(now, plan) {
@@ -40,7 +40,7 @@ export async function publishNext({ root, now = new Date() }) {
   if (post.metadata.cover && !fs.existsSync(path.join(root, 'blog/public', post.metadata.cover))) {
     throw new Error('Missing cover image: ' + post.metadata.cover);
   }
-  for (const match of post.body.matchAll(/\/images\/[\w/.-]+/g)) {
+  for (const match of post.body.matchAll(localImagePattern)) {
     if (!fs.existsSync(path.join(root, 'blog/public', match[0]))) throw new Error('Missing image: ' + match[0]);
   }
   post.metadata.draft = false;

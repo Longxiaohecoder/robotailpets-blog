@@ -9,6 +9,8 @@ import { localDate, publicationTime, publicationDates } from './publication-sche
 
 const hash = value => createHash('sha256').update(value).digest('hex');
 const jsonPath = root => path.join(root, 'content/editorial-batches.json');
+export const localImagePattern = /(?<=\]\()\/images\/[\w/.-]+/g;
+
 export function readBatches(root) {
   return JSON.parse(fs.readFileSync(jsonPath(root), 'utf8'));
 }
@@ -21,7 +23,7 @@ export function readEditorialPost(root, file) {
 }
 export function articleDigest(root, file) {
   const post = readEditorialPost(root, file);
-  const paths = [...new Set([post.metadata.cover, ...[...post.body.matchAll(/\/images\/[\w/.-]+/g)].map(m => m[0])].filter(Boolean))].sort();
+  const paths = [...new Set([post.metadata.cover, ...[...post.body.matchAll(localImagePattern)].map(m => m[0])].filter(Boolean))].sort();
   const images = paths.map(src => {
     if (!/^\/images\/[\w/.-]+$/.test(src) || src.includes('..')) throw new Error('Invalid image path');
     return [src, hash(fs.readFileSync(path.join(root, 'blog/public', src)))];
@@ -67,8 +69,11 @@ export function releaseDates(now, plan, history, reserved = [], count = 3) {
   if (dates.length !== count) throw new Error('Unable to allocate publication dates');
   return dates;
 }
-export function prepareBatch({ root, researchFile, files, summaries = [], now = new Date() }) {
-  if (files.length !== 3 || new Set(files).size !== 3) throw new Error('A weekly batch requires exactly three distinct drafts');
+export function prepareBatch({ root, researchFile, files, summaries = [], now = new Date(), singleArticle = false }) {
+  const count = singleArticle ? 1 : 3;
+  if (files.length !== count || new Set(files).size !== count) {
+    throw new Error(singleArticle ? 'A single-article exception requires one draft' : 'A weekly batch requires exactly three distinct drafts');
+  }
   const researchRaw = fs.readFileSync(researchPath(root, researchFile), 'utf8');
   const research = JSON.parse(researchRaw);
   if (!research.verifiedAt || !Array.isArray(research.sources) || !research.sources.length) throw new Error('Research requires dated, verified sources');
@@ -89,15 +94,20 @@ export function prepareBatch({ root, researchFile, files, summaries = [], now = 
     return { status: 'existing', batch: existing };
   }
   if (existing?.status === 'approved') throw new Error('An approved batch cannot be silently replaced; revoke its approval before revision');
+  if (existing?.singleArticle === true && !singleArticle) throw new Error('This week is reserved for a single-article review');
   const reviewFile = `content/reviews/${id}.md`;
-  const batch = { id, status: 'pending', preparedAt: now.toISOString(), researchFile, researchSha256, reviewFile, items };
+  const batch = { id, status: 'pending', preparedAt: now.toISOString(), researchFile, researchSha256, reviewFile, items, ...(singleArticle ? { singleArticle: true } : {}) };
   if (existing) state.batches[state.batches.indexOf(existing)] = batch;
   else state.batches.push(batch);
-  const review = [`# Robotail 周度博客待确认：${id}`, '', '本批三篇均未公开发布。请阅读正文及配图，回复“确认 ' + id + ' 这三篇”后才会部署并排期。', '', '如修改正文、来源或图片，需要确认修改后的版本。', ''];
+  const review = [
+    `# Robotail 周度博客待确认：${id}`, '',
+    `本批待审稿件共 ${count} 篇。请阅读正文及配图，回复“确认 ${id} ${singleArticle ? '这一篇' : '这三篇'}”后才会部署并排期。`,
+    '', '如修改正文、来源或图片，需要确认修改后的版本。', ''
+  ];
   for (const [i, item] of items.entries()) {
     const post = readEditorialPost(root, item.file);
     const imagePath = path.join(root, 'blog/public', post.metadata.cover);
-    const body = post.body.replace(/\/images\/[\w/.-]+/g, src => path.join(root, 'blog/public', src));
+    const body = post.body.replace(localImagePattern, src => path.join(root, 'blog/public', src));
     review.push(`## ${i + 1}. ${item.title}`, '', item.summary, '', `确认版本：\`${item.sha256.slice(0, 12)}\``, '', `![${post.metadata.coverAlt || item.title}](${imagePath})`, '', body, '', '来源：', '', ...post.metadata.sources.map(url => `- [${url}](${url})`), '', '---', '');
   }
   fs.mkdirSync(path.join(root, 'content/reviews'), { recursive: true });
@@ -111,7 +121,7 @@ export function approveBatch({ root, id, confirmation, now = new Date() }) {
   const batch = state.batches.find(batch => batch.id === id);
   if (!batch) throw new Error('Unknown editorial batch');
   if (batch.status === 'approved') return { status: 'already-approved', batch };
-  if (batch.status !== 'pending' || batch.items.length !== 3) throw new Error('Batch is not ready for approval');
+  if (batch.status !== 'pending' || batch.items.length !== (batch.singleArticle === true ? 1 : 3)) throw new Error('Batch is not ready for approval');
   if (hash(fs.readFileSync(researchPath(root, batch.researchFile))) !== batch.researchSha256) throw new Error('Research changed after review; prepare a new version');
   for (const item of batch.items) {
     if (readEditorialPost(root, item.file).metadata.draft !== true || articleDigest(root, item.file) !== item.sha256) throw new Error('Article or image changed after review: ' + item.file);
@@ -152,13 +162,15 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   try {
     const [command, ...args] = process.argv.slice(2);
     let result;
-    if (command === 'prepare') {
+    if (command === 'prepare' || command === 'prepare-single') {
       const [researchFile, ...files] = args;
-      result = prepareBatch({ root, researchFile, files });
+      result = prepareBatch({
+        root, researchFile, files, singleArticle: command === 'prepare-single'
+      });
     } else if (command === 'approve') {
       result = approveBatch({ root, id: args[0], confirmation: args.slice(1).join(' ') });
     } else if (command === 'status') result = readBatches(root);
-    else throw new Error('Usage: weekly-editorial.js prepare content/research/YYYY-MM-DD.json file1.md file2.md file3.md | approve YYYY-MM-DD "human confirmation" | status');
+    else throw new Error('Usage: weekly-editorial.js prepare content/research/YYYY-MM-DD.json file1.md file2.md file3.md | prepare-single research.json file.md | approve YYYY-MM-DD "human confirmation" | status');
     console.log(JSON.stringify(result, null, 2));
   } catch (error) { console.error('Editorial batch: ' + error.message); process.exitCode = 1; }
 }

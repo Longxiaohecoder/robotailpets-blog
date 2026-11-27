@@ -119,3 +119,25 @@ test('Changing reviewed research blocks approval', t => {
   fs.appendFileSync(path.join(root, 'content/research/2026-10-19.json'), '\n');
   assert.throws(() => approve(root), /Research changed/);
 });
+
+test('An explicit single-article week keeps the normal release gate and skips other slots', async t => {
+  const root = fixture(t);
+  const researchFile = 'content/research/2026-10-19.json';
+  const externalManual = 'https://manual.example/images/I/c42.pdf';
+  const researchPath = path.join(root, researchFile);
+  const research = JSON.parse(fs.readFileSync(researchPath));
+  research.sources.push({ url: externalManual, facts: ['Original manual'] });
+  fs.writeFileSync(researchPath, JSON.stringify(research));
+  fs.appendFileSync(path.join(root, 'blog/src/content/posts/one.md'), `\n[Manual](${externalManual})\n`);
+
+  const result = prepareBatch({ root, researchFile, files: ['one.md'], singleArticle: true, now: monday8 });
+  assert.equal(result.batch.items.length, 1);
+  assert.match(fs.readFileSync(path.join(root, result.batch.reviewFile), 'utf8'), /https:\/\/manual\.example\/images\/I\/c42\.pdf/);
+  assert.throws(() => prepare(root), /reserved for a single-article review/);
+  assert.equal((await publishNext({ root, now: monday9 })).status, 'skipped');
+
+  const approved = approveBatch({ root, id: result.batch.id, confirmation: 'Confirm the reviewed article', now: monday8 });
+  assert.deepEqual(approved.batch.items.map(item => item.scheduledAt), ['2026-10-19T01:00:00.000Z']);
+  assert.equal((await publishNext({ root, now: monday9 })).file, 'one.md');
+  assert.equal((await publishNext({ root, now: new Date('2026-10-20T01:00:00Z') })).status, 'skipped');
+});
