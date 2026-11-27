@@ -208,6 +208,17 @@
       "scheduledFor": "2026-11-24",
       "timezone": "America/New_York",
       "scheduledAt": "2026-11-24T15:43:37.000Z"
+    },
+    {
+      "date": "2026-11-26",
+      "publishedAt": "2026-11-27T01:06:03.731Z",
+      "file": "2026-11-20-f20-tray-app-mapping.md",
+      "title": "How to Match Robotail F20 Tray Numbers to the App",
+      "batchId": "2026-11-23",
+      "approvedAt": "2026-11-23T08:12:32.729Z",
+      "scheduledFor": "2026-11-26",
+      "timezone": "America/New_York",
+      "scheduledAt": "2026-11-26T17:26:41.000Z"
     }
   ]
 }

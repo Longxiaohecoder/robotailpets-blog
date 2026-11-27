@@ -1,10 +1,14 @@
 ---
-title: "How to Match Robotail F20 Tray Numbers to the App"
-description: "Check the relationship between F20 physical tray positions, food entries and app images before relying on a feeding schedule."
-pubDate: 2026-11-26
-tags: [Robotail, Cat Care, Product Guides]
+title: How to Match Robotail F20 Tray Numbers to the App
+description: Check the relationship between F20 physical tray positions, food
+  entries and app images before relying on a feeding schedule.
+pubDate: 2026-11-27T01:06:03.731Z
+tags:
+  - Robotail
+  - Cat Care
+  - Product Guides
 author: Robotail Editorial Team
-draft: true
+draft: false
 category: Product Guides
 cover: /images/journal/2026-11-12-bowl-prep.webp
 coverAlt: A ginger cat watches a person rinse a ceramic bowl at the kitchen sink
@@ -14,7 +18,8 @@ sources:
   - https://cdn.shopify.com/s/files/1/0707/2441/9802/files/f20_521.pdf?v=1785140856
   - https://www.amazon.com/dp/B0FRZZ12QV
 sourceVerifiedAt: 2026-11-20
-reviewNote: Pending owner review. Generated lifestyle cover and original manufacturer product illustration. Source-backed editorial advice, with no hands-on testing claimed.
+reviewNote: Approved batch 2026-11-23, confirmed 2026-11-23T08:12:32.729Z.
+  Product information is source-backed; not hands-on testing.
 ---
 
 A feeding schedule can look complete while a basic setup question remains unanswered. Does the food shown for a tray position match what you put in that physical compartment?
